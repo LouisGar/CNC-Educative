@@ -964,6 +964,15 @@ public class frmControl extends javax.swing.JFrame
         jLabel87 = new javax.swing.JLabel();
         jButtonCancel5 = new javax.swing.JButton();
         jButtonOk5 = new javax.swing.JButton();
+        jFrame1 = new javax.swing.JFrame();
+        jLabel36 = new javax.swing.JLabel();
+        jSeparator2 = new javax.swing.JSeparator();
+        jLabel37 = new javax.swing.JLabel();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        jButton9 = new javax.swing.JButton();
+        jButton10 = new javax.swing.JButton();
+        jButton11 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabelRowsInFile = new javax.swing.JLabel();
         jLabelRowsInFile1 = new javax.swing.JLabel();
@@ -1013,7 +1022,6 @@ public class frmControl extends javax.swing.JFrame
         jScrollPane3 = new javax.swing.JScrollPane();
         jTextPane1 = new javax.swing.JTextPane();
         jComboBox1 = new javax.swing.JComboBox<>();
-        jSeparator2 = new javax.swing.JSeparator();
         jComboBox2 = new javax.swing.JComboBox<>();
         jScrollPane4 = new javax.swing.JScrollPane();
         jTextPane2 = new javax.swing.JTextPane();
@@ -2580,6 +2588,137 @@ public class frmControl extends javax.swing.JFrame
                 .addContainerGap())
         );
 
+        jLabel36.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel36.setText("<html>  <h1> Apprenez le G Code </h1> </html>");
+
+        jLabel37.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel37.setText("<html> G-code est un langage de programmation utilisé pour contrôler les machines CNC. Il indique à la machine quoi faire et comment le faire, notamment le mouvement, la vitesse et la sélection d'outil. G-code est utilisé pour transformer un modèle 3D en un ensemble d'instructions que la machine CNC peut suivre. </html>");
+
+        jTable1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"S", "Vitesse de rotation de la broche. Contrôle la vitesse de rotation de la broche qui fait tourner l'outil de coupe. "},
+                {"F", "Vitesse d'alimentation. Contrôle la vitesse d'avance de l'outil par unité de temps. "},
+                {"G00", "Positionnement rapide. Déplace rapidement la machine vers un point spécifique sans couper ni déplacer de matériau. "},
+                {"G01", "Interpolation linéaire. Déplace la machine en ligne droite d'un point à un autre. "},
+                {"G02", "Déplace la machine dans un arc dans le sens horaire d'un point à un autre. L'arc est défini par un point central et un rayon. "},
+                {"G03", "Déplace la machine dans un arc dans le sens antihoraire d'un point à un autre. L'arc est défini par un point central et un rayon. "},
+                {"G04", "Attente. Indique à la machine de faire une pause pendant une durée spécifiée. Le temps est défini par la commande P"},
+                {"G17", "Plan de déplacement XY. Définit le plan de déplacement XY pour les commandes de déplacement linéaire et circulaire."},
+                {"G18", "Plan de déplacement XZ. Définit le plan de déplacement XZ pour les commandes de déplacement linéaire et circulaire."},
+                {"G19", "Plan de déplacement YZ. Définit le plan de déplacement YZ pour les commandes de déplacement linéaire et circulaire."},
+                {"G20", "Mode pouce. Cette commande permet à la machine d'utiliser des pouces pour les mesures."},
+                {"G21", "Mode millimètre. Cette commande permet à la machine d'utiliser des millimètres pour les mesures"},
+                {"G28", "Position de référence. Déplace la machine vers sa position de référence."},
+                {"G40", "Désactive la compensation de rayon d'outil, qui ajuste le chemin de l'outil pour tenir compte du rayon de l'outil de coupe"},
+                {"G41", "Ative la compensation de rayon d'outil vers la gauche, qui ajuste le chemin de l'outil pour tenir compte du rayon de l'outil de coupe"},
+                {"G42", "Active la compensation de rayon d'outil vers la droite, qui ajuste le chemin de l'outil pour tenir compte du rayon de l'outil de coupe."},
+                {"G90", "Mode absolu. Toutes les positions sont mesurées à partir de l'origine de la machine"},
+                {"G91", "Mode incrémental. Toutes les positions sont mesurées à partir de la position actuelle de la machine"},
+                {"M03", "Activation de la broche dans le sens horaire. Fait tourner l'outil de coupe."},
+                {"M04", "Activation de la broche dans le sens antihoraire. Fait tourner l'outil de coupe."},
+                {"M05", "Désactivation de la broche. Arrête la rotation de l'outil de coupe."},
+                {"M08", "Activation du liquide de refroidissement."},
+                {"M09", "Désactivation du liquide de refroidissement. "}
+            },
+            new String [] {
+                "G CODE", "Explication"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, true
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jTable1.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_ALL_COLUMNS);
+        jTable1.setColumnSelectionAllowed(true);
+        jTable1.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
+        jTable1.setEditingColumn(0);
+        jTable1.setSelectionMode(javax.swing.ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
+        jTable1.setShowGrid(true);
+        jTable1.setShowVerticalLines(true);
+        jTable1.getTableHeader().setReorderingAllowed(false);
+        jScrollPane7.setViewportView(jTable1);
+        jTable1.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
+        if (jTable1.getColumnModel().getColumnCount() > 0) {
+            jTable1.getColumnModel().getColumn(0).setMinWidth(55);
+            jTable1.getColumnModel().getColumn(0).setPreferredWidth(50);
+            jTable1.getColumnModel().getColumn(0).setMaxWidth(55);
+            jTable1.getColumnModel().getColumn(1).setResizable(false);
+        }
+
+        jButton9.setLabel("Voir des exemples");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
+
+        jButton10.setLabel("Quitter le cours");
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
+
+        jButton11.setActionCommand("");
+        jButton11.setLabel("+ d'information");
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
+        jFrame1.getContentPane().setLayout(jFrame1Layout);
+        jFrame1Layout.setHorizontalGroup(
+            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel36)
+            .addComponent(jSeparator2)
+            .addGroup(jFrame1Layout.createSequentialGroup()
+                .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jFrame1Layout.createSequentialGroup()
+                        .addGap(14, 14, 14)
+                        .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 910, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 894, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jFrame1Layout.createSequentialGroup()
+                        .addGap(217, 217, 217)
+                        .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(32, 32, 32)
+                        .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(32, 32, 32)
+                        .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jFrame1Layout.setVerticalGroup(
+            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jFrame1Layout.createSequentialGroup()
+                .addComponent(jLabel36, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(27, 27, 27)
+                .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(22, Short.MAX_VALUE))
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("SourceRabbit GCODE Sender");
 
@@ -2978,7 +3117,7 @@ public class frmControl extends javax.swing.JFrame
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Vitesse de rotation");
-        jPanel6.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, 170, -1));
+        jPanel6.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 170, -1));
         jLabel1.getAccessibleContext().setAccessibleName("Vitesse de rotation\n");
 
         jTextPane1.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
@@ -2991,10 +3130,14 @@ public class frmControl extends javax.swing.JFrame
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "V bit", "flat bit", "drill bit", "etc bit" }));
         jComboBox1.setName(""); // NOI18N
         jPanel6.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, 170, -1));
-        jPanel6.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 170, 10));
 
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bois", "MDF", "Aluminium", "Plastique", "PCB", "Bronze", "Vinyle" }));
         jComboBox2.setName(""); // NOI18N
+        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox2ActionPerformed(evt);
+            }
+        });
         jPanel6.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 170, -1));
 
         jTextPane2.setText("Vitesse de rotation :");
@@ -4733,8 +4876,27 @@ public class frmControl extends javax.swing.JFrame
     }//GEN-LAST:event_jButtonVisualiseActionPerformed
 
 
+    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox2ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+       this.dispose();
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton11ActionPerformed
+
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton15;
     private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton17;
@@ -4751,6 +4913,7 @@ public class frmControl extends javax.swing.JFrame
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JButton jButtonBrowse;
     private javax.swing.JButton jButtonCancel;
     private javax.swing.JButton jButtonCancel1;
@@ -4813,6 +4976,7 @@ public class frmControl extends javax.swing.JFrame
     private javax.swing.JDialog jDialogTab2;
     private javax.swing.JDialog jDialogTab3;
     private javax.swing.JDialog jDialogTab4;
+    private javax.swing.JFrame jFrame1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -4842,6 +5006,8 @@ public class frmControl extends javax.swing.JFrame
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel45;
@@ -5022,6 +5188,7 @@ public class frmControl extends javax.swing.JFrame
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator10;
     private javax.swing.JSeparator jSeparator11;
@@ -5042,6 +5209,7 @@ public class frmControl extends javax.swing.JFrame
     private javax.swing.JSlider jSliderStepSize;
     private javax.swing.JSpinner jSpinnerStep;
     private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JTable jTable1;
     private javax.swing.JTable jTableGCodeLog;
     private javax.swing.JTextArea jTextAreaConsole;
     private javax.swing.JTextArea jTextAreaConsole1;

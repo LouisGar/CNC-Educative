@@ -2905,6 +2905,196 @@
         </Component>
       </SubComponents>
     </Container>
+    <Container class="javax.swing.JFrame" name="jFrame1">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="jLabel36" max="32767" attributes="0"/>
+              <Component id="jSeparator2" alignment="0" max="32767" attributes="0"/>
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jLabel37" alignment="0" min="-2" pref="910" max="-2" attributes="0"/>
+                              <Component id="jScrollPane7" alignment="0" min="-2" pref="894" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="217" max="-2" attributes="0"/>
+                          <Component id="jButton9" min="-2" pref="129" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                          <Component id="jButton10" min="-2" pref="129" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                          <Component id="jButton11" min="-2" pref="129" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="jLabel36" min="-2" pref="81" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jSeparator2" min="-2" pref="10" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLabel37" min="-2" pref="94" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jScrollPane7" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jButton9" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
+                      <Component id="jButton10" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
+                      <Component id="jButton11" alignment="3" min="-2" pref="37" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="22" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel36">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt;  &lt;h1&gt; Apprenez le G Code &lt;/h1&gt; &lt;/html&gt;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JSeparator" name="jSeparator2">
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel37">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt; G-code est un langage de programmation utilis&#xe9; pour contr&#xf4;ler les machines CNC. Il indique &#xe0; la machine quoi faire et comment le faire, notamment le mouvement, la vitesse et la s&#xe9;lection d&apos;outil. G-code est utilis&#xe9; pour transformer un mod&#xe8;le 3D en un ensemble d&apos;instructions que la machine CNC peut suivre. &lt;/html&gt;"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane7">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTable" name="jTable1">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+                    <EmptyBorder/>
+                  </Border>
+                </Property>
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                  <Table columnCount="2" rowCount="23">
+                    <Column editable="false" title="G CODE" type="java.lang.String">
+                      <Data value="S"/>
+                      <Data value="F"/>
+                      <Data value="G00"/>
+                      <Data value="G01"/>
+                      <Data value="G02"/>
+                      <Data value="G03"/>
+                      <Data value="G04"/>
+                      <Data value="G17"/>
+                      <Data value="G18"/>
+                      <Data value="G19"/>
+                      <Data value="G20"/>
+                      <Data value="G21"/>
+                      <Data value="G28"/>
+                      <Data value="G40"/>
+                      <Data value="G41"/>
+                      <Data value="G42"/>
+                      <Data value="G90"/>
+                      <Data value="G91"/>
+                      <Data value="M03"/>
+                      <Data value="M04"/>
+                      <Data value="M05"/>
+                      <Data value="M08"/>
+                      <Data value="M09"/>
+                    </Column>
+                    <Column editable="true" title="Explication" type="java.lang.String">
+                      <Data value="Vitesse de rotation de la broche. Contr&#xf4;le la vitesse de rotation de la broche qui fait tourner l&apos;outil de coupe. "/>
+                      <Data value="Vitesse d&apos;alimentation. Contr&#xf4;le la vitesse d&apos;avance de l&apos;outil par unit&#xe9; de temps. "/>
+                      <Data value="Positionnement rapide. D&#xe9;place rapidement la machine vers un point sp&#xe9;cifique sans couper ni d&#xe9;placer de mat&#xe9;riau. "/>
+                      <Data value="Interpolation lin&#xe9;aire. D&#xe9;place la machine en ligne droite d&apos;un point &#xe0; un autre. "/>
+                      <Data value="D&#xe9;place la machine dans un arc dans le sens horaire d&apos;un point &#xe0; un autre. L&apos;arc est d&#xe9;fini par un point central et un rayon. "/>
+                      <Data value="D&#xe9;place la machine dans un arc dans le sens antihoraire d&apos;un point &#xe0; un autre. L&apos;arc est d&#xe9;fini par un point central et un rayon. "/>
+                      <Data value="Attente. Indique &#xe0; la machine de faire une pause pendant une dur&#xe9;e sp&#xe9;cifi&#xe9;e. Le temps est d&#xe9;fini par la commande P"/>
+                      <Data value="Plan de d&#xe9;placement XY. D&#xe9;finit le plan de d&#xe9;placement XY pour les commandes de d&#xe9;placement lin&#xe9;aire et circulaire."/>
+                      <Data value="Plan de d&#xe9;placement XZ. D&#xe9;finit le plan de d&#xe9;placement XZ pour les commandes de d&#xe9;placement lin&#xe9;aire et circulaire."/>
+                      <Data value="Plan de d&#xe9;placement YZ. D&#xe9;finit le plan de d&#xe9;placement YZ pour les commandes de d&#xe9;placement lin&#xe9;aire et circulaire."/>
+                      <Data value="Mode pouce. Cette commande permet &#xe0; la machine d&apos;utiliser des pouces pour les mesures."/>
+                      <Data value="Mode millim&#xe8;tre. Cette commande permet &#xe0; la machine d&apos;utiliser des millim&#xe8;tres pour les mesures"/>
+                      <Data value="Position de r&#xe9;f&#xe9;rence. D&#xe9;place la machine vers sa position de r&#xe9;f&#xe9;rence."/>
+                      <Data value="D&#xe9;sactive la compensation de rayon d&apos;outil, qui ajuste le chemin de l&apos;outil pour tenir compte du rayon de l&apos;outil de coupe"/>
+                      <Data value="Ative la compensation de rayon d&apos;outil vers la gauche, qui ajuste le chemin de l&apos;outil pour tenir compte du rayon de l&apos;outil de coupe"/>
+                      <Data value="Active la compensation de rayon d&apos;outil vers la droite, qui ajuste le chemin de l&apos;outil pour tenir compte du rayon de l&apos;outil de coupe."/>
+                      <Data value="Mode absolu. Toutes les positions sont mesur&#xe9;es &#xe0; partir de l&apos;origine de la machine"/>
+                      <Data value="Mode incr&#xe9;mental. Toutes les positions sont mesur&#xe9;es &#xe0; partir de la position actuelle de la machine"/>
+                      <Data value="Activation de la broche dans le sens horaire. Fait tourner l&apos;outil de coupe."/>
+                      <Data value="Activation de la broche dans le sens antihoraire. Fait tourner l&apos;outil de coupe."/>
+                      <Data value="D&#xe9;sactivation de la broche. Arr&#xea;te la rotation de l&apos;outil de coupe."/>
+                      <Data value="Activation du liquide de refroidissement."/>
+                      <Data value="D&#xe9;sactivation du liquide de refroidissement. "/>
+                    </Column>
+                  </Table>
+                </Property>
+                <Property name="autoResizeMode" type="int" value="4"/>
+                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                  <TableColumnModel selectionModel="3">
+                    <Column maxWidth="55" minWidth="55" prefWidth="50" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                  </TableColumnModel>
+                </Property>
+                <Property name="columnSelectionAllowed" type="boolean" value="true"/>
+                <Property name="debugGraphicsOptions" type="int" value="-1"/>
+                <Property name="editingColumn" type="int" value="0"/>
+                <Property name="selectionModel" type="javax.swing.ListSelectionModel" editor="org.netbeans.modules.form.editors2.JTableSelectionModelEditor">
+                  <JTableSelectionModel selectionMode="2"/>
+                </Property>
+                <Property name="showGrid" type="boolean" value="true"/>
+                <Property name="showVerticalLines" type="boolean" value="true"/>
+                <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                  <TableHeader reorderingAllowed="false" resizingAllowed="true"/>
+                </Property>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JButton" name="jButton9">
+          <Properties>
+            <Property name="label" type="java.lang.String" value="Voir des exemples"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton9ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton10">
+          <Properties>
+            <Property name="label" type="java.lang.String" value="Quitter le cours"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton10ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton11">
+          <Properties>
+            <Property name="actionCommand" type="java.lang.String" value=""/>
+            <Property name="label" type="java.lang.String" value="+ d&apos;information"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton11ActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
     <Menu class="javax.swing.JMenuBar" name="jMenuBar1">
       <SubComponents>
         <Menu class="javax.swing.JMenu" name="jMenu1">
@@ -3821,7 +4011,7 @@
           </AccessibilityProperties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="10" y="160" width="170" height="-1"/>
+              <AbsoluteConstraints x="0" y="20" width="170" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -3869,13 +4059,6 @@
             </Constraint>
           </Constraints>
         </Component>
-        <Component class="javax.swing.JSeparator" name="jSeparator2">
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="10" y="150" width="170" height="10"/>
-            </Constraint>
-          </Constraints>
-        </Component>
         <Component class="javax.swing.JComboBox" name="jComboBox2">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
@@ -3891,6 +4074,9 @@
             </Property>
             <Property name="name" type="java.lang.String" value="" noResource="true"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBox2ActionPerformed"/>
+          </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
