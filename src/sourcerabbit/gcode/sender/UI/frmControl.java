@@ -766,6 +766,10 @@ public class frmControl extends javax.swing.JFrame
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jDialogLevel = new javax.swing.JDialog();
+        jPanel13 = new javax.swing.JPanel();
+        jConfirmerBoutton = new javax.swing.JButton();
+        jLevelCombo = new javax.swing.JComboBox<>();
         jDialog1 = new javax.swing.JDialog();
         jPanelConnection1 = new javax.swing.JPanel();
         jLabelMachineX2 = new javax.swing.JLabel();
@@ -1082,6 +1086,67 @@ public class frmControl extends javax.swing.JFrame
         jMenuItem4 = new javax.swing.JMenuItem();
         jMenuItem5 = new javax.swing.JMenuItem();
         jMenu6 = new javax.swing.JMenu();
+        jMenuItem6 = new javax.swing.JMenuItem();
+        jMenuItem7 = new javax.swing.JMenuItem();
+        jMenuItem8 = new javax.swing.JMenuItem();
+
+        jDialogLevel.setModalExclusionType(java.awt.Dialog.ModalExclusionType.APPLICATION_EXCLUDE);
+        jDialogLevel.setModalityType(java.awt.Dialog.ModalityType.APPLICATION_MODAL);
+
+        jConfirmerBoutton.setText("Confirmer");
+        jConfirmerBoutton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jConfirmerBouttonActionPerformed(evt);
+            }
+        });
+
+        jLevelCombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Débutant", "Intermédiaire", "Expert" }));
+        jLevelCombo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jLevelComboActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
+        jPanel13.setLayout(jPanel13Layout);
+        jPanel13Layout.setHorizontalGroup(
+            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel13Layout.createSequentialGroup()
+                .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel13Layout.createSequentialGroup()
+                        .addGap(103, 103, 103)
+                        .addComponent(jConfirmerBoutton))
+                    .addGroup(jPanel13Layout.createSequentialGroup()
+                        .addGap(66, 66, 66)
+                        .addComponent(jLevelCombo, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(68, Short.MAX_VALUE))
+        );
+        jPanel13Layout.setVerticalGroup(
+            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel13Layout.createSequentialGroup()
+                .addGap(43, 43, 43)
+                .addComponent(jLevelCombo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 63, Short.MAX_VALUE)
+                .addComponent(jConfirmerBoutton)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout jDialogLevelLayout = new javax.swing.GroupLayout(jDialogLevel.getContentPane());
+        jDialogLevel.getContentPane().setLayout(jDialogLevelLayout);
+        jDialogLevelLayout.setHorizontalGroup(
+            jDialogLevelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialogLevelLayout.createSequentialGroup()
+                .addGap(35, 35, 35)
+                .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(43, Short.MAX_VALUE))
+        );
+        jDialogLevelLayout.setVerticalGroup(
+            jDialogLevelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialogLevelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(28, Short.MAX_VALUE))
+        );
 
         jDialog1.setModal(true);
         jDialog1.setModalExclusionType(java.awt.Dialog.ModalExclusionType.APPLICATION_EXCLUDE);
@@ -1198,8 +1263,7 @@ public class frmControl extends javax.swing.JFrame
                             .addComponent(jLabel18)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialog1Layout.createSequentialGroup()
                                 .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(jPanelConnection1, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                .addComponent(jPanelConnection1, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
             .addGroup(jDialog1Layout.createSequentialGroup()
@@ -1257,7 +1321,7 @@ public class frmControl extends javax.swing.JFrame
         });
         jPanel10.add(jButtonResetWorkPosition1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 240, 32));
 
-        jPanel11.setLayout(new java.awt.GridLayout());
+        jPanel11.setLayout(new java.awt.GridLayout(1, 0));
 
         jLabel27.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel27.setForeground(new java.awt.Color(0, 75, 127));
@@ -1858,7 +1922,7 @@ public class frmControl extends javax.swing.JFrame
         });
         jPanel16.add(jButtonResetWorkPosition4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 240, 32));
 
-        jPanel17.setLayout(new java.awt.GridLayout());
+        jPanel17.setLayout(new java.awt.GridLayout(1, 0));
 
         jLabel57.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel57.setForeground(new java.awt.Color(0, 75, 127));
@@ -2107,7 +2171,7 @@ public class frmControl extends javax.swing.JFrame
         });
         jPanel18.add(jButtonResetWorkPosition5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 240, 32));
 
-        jPanel19.setLayout(new java.awt.GridLayout());
+        jPanel19.setLayout(new java.awt.GridLayout(1, 0));
 
         jLabel68.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel68.setForeground(new java.awt.Color(0, 75, 127));
@@ -2356,7 +2420,7 @@ public class frmControl extends javax.swing.JFrame
         });
         jPanel20.add(jButtonResetWorkPosition6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 240, 32));
 
-        jPanel21.setLayout(new java.awt.GridLayout());
+        jPanel21.setLayout(new java.awt.GridLayout(1, 0));
 
         jLabel79.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel79.setForeground(new java.awt.Color(0, 75, 127));
@@ -2708,7 +2772,7 @@ public class frmControl extends javax.swing.JFrame
                     .addComponent(jButtonGCodeCancel)
                     .addComponent(jButtonGCodeVisualize)
                     .addComponent(jButtonGCodeBrowse))
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel1.add(jPanelGCodeFile, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 530, 70));
@@ -3516,9 +3580,34 @@ public class frmControl extends javax.swing.JFrame
 
         jMenuBar1.add(jMenu3);
 
-        jMenu6.setText("Débutant");
+        jMenu6.setText("Level");
         jMenu6.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jMenu6.setName("jMenuLevel"); // NOI18N
+
+        jMenuItem6.setText("Débutant");
+        jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem6ActionPerformed(evt);
+            }
+        });
+        jMenu6.add(jMenuItem6);
+
+        jMenuItem7.setText("Intermédiaire");
+        jMenuItem7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem7ActionPerformed(evt);
+            }
+        });
+        jMenu6.add(jMenuItem7);
+
+        jMenuItem8.setText("Expert");
+        jMenuItem8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem8ActionPerformed(evt);
+            }
+        });
+        jMenu6.add(jMenuItem8);
+
         jMenuBar1.add(jMenu6);
 
         setJMenuBar(jMenuBar1);
@@ -4098,7 +4187,7 @@ public class frmControl extends javax.swing.JFrame
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
         if(tutorial){
             
-        new Level().setVisible(true);
+        
         
         tutorial=false;
         // Vider tous les Panels sauf CONNECTION
@@ -4122,6 +4211,12 @@ public class frmControl extends javax.swing.JFrame
         jLabel16.setVisible(false); jLabelMachineHomePosition.setVisible(false); jLabelLastStatusUpdate.setVisible(false); jLabel17.setVisible(false);
         
          /***********DEBUT DU TUTORIEL *****************/
+        
+        jDialogLevel.pack();
+        jDialogLevel.setLocationRelativeTo(null); 
+        jDialogLevel.setVisible(true);
+        
+        
         
         jDialog1.pack();
         jDialog1.setLocationRelativeTo(null);
@@ -4599,26 +4694,70 @@ public class frmControl extends javax.swing.JFrame
         jDialogTab1.dispose();
     }//GEN-LAST:event_jButtonCancel2ActionPerformed
 
+//--------------------------Partie NONO--------------------------------
+    private void jConfirmerBouttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jConfirmerBouttonActionPerformed
+
+        jDialogLevel.dispose();
+    }//GEN-LAST:event_jConfirmerBouttonActionPerformed
+
+    private void jLevelComboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jLevelComboActionPerformed
+        level = jLevelCombo.getSelectedIndex(); //niveau de l'utilisateur entre 1 et 3
+        if (level == 0){
+            jMenu6.setText("Débutant");
+        }
+        if(level == 1){
+            jMenu6.setText("Intermédiaire");
+        }
+        if(level == 2){
+            jMenu6.setText("Expert");
+        }
+    }//GEN-LAST:event_jLevelComboActionPerformed
+
+    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
+        
+        jMenuItem6.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent e){
+                
+            }
+        });
+    }//GEN-LAST:event_jMenuItem6ActionPerformed
+
+    private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
+       jMenuItem7.addActionListener(new ActionListener(){
+           public void actionPerformed(ActionEvent e){
+               
+           }
+       });
+    }//GEN-LAST:event_jMenuItem7ActionPerformed
+
+    private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
+        jMenuItem8.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent e){
+            
+            }
+        });
+    }//GEN-LAST:event_jMenuItem8ActionPerformed
+
        private void checkStatus(){
 
     //debutant
-    if(Utilisateurs.getLevel() == 1){
+    if(level == 1){
         jMenuItem1.setEnabled(false);
         jMenuItemHoleCenterFinder.setEnabled(false);
         jPanel5.setEnabled(false);
         jPanelMacros.setEnabled(false);
         jPanelMachineControl.setEnabled(false);
-        jMenuItemToolChangeSettings.setEnabled(false);
-    
+        jMenuItemToolChangeSettings.setEnabled(false);    
+        
 }
     
    //Intermédiaire
-    if(Utilisateurs.getLevel() == 2){
+    if(level == 2){
     
 }
     
     //Expert
-    if(Utilisateurs.getLevel() == 3){
+    if(level == 3){
         jMenuItem1.setEnabled(true);
         jMenuItemHoleCenterFinder.setEnabled(true);
         jPanel5.setEnabled(true);
@@ -4701,9 +4840,11 @@ public class frmControl extends javax.swing.JFrame
     private javax.swing.JCheckBox jCheckBoxShowVerboseOutput1;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
+    private javax.swing.JButton jConfirmerBoutton;
     private javax.swing.JDialog jDialog1;
     private javax.swing.JDialog jDialog2;
     private javax.swing.JDialog jDialogGSender;
+    private javax.swing.JDialog jDialogLevel;
     private javax.swing.JDialog jDialogTab1;
     private javax.swing.JDialog jDialogTab2;
     private javax.swing.JDialog jDialogTab3;
@@ -4865,6 +5006,7 @@ public class frmControl extends javax.swing.JFrame
     private javax.swing.JLabel jLabelWorkPositionZ5;
     private javax.swing.JLabel jLabelWorkPositionZ6;
     private javax.swing.JLayeredPane jLayeredPane1;
+    private javax.swing.JComboBox<String> jLevelCombo;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
@@ -4876,6 +5018,9 @@ public class frmControl extends javax.swing.JFrame
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
+    private javax.swing.JMenuItem jMenuItem6;
+    private javax.swing.JMenuItem jMenuItem7;
+    private javax.swing.JMenuItem jMenuItem8;
     private javax.swing.JMenuItem jMenuItemExit;
     private javax.swing.JMenuItem jMenuItemGRBLSettings;
     private javax.swing.JMenuItem jMenuItemHoleCenterFinder;
@@ -4885,6 +5030,7 @@ public class frmControl extends javax.swing.JFrame
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
+    private javax.swing.JPanel jPanel13;
     private javax.swing.JPanel jPanel16;
     private javax.swing.JPanel jPanel17;
     private javax.swing.JPanel jPanel18;
@@ -4949,7 +5095,7 @@ public class frmControl extends javax.swing.JFrame
     private javax.swing.JTextPane jTextPane3;
     // End of variables declaration//GEN-END:variables
     boolean tutorial=true;
+    int level;
 
-    
    
 }
