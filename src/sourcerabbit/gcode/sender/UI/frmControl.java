@@ -968,6 +968,15 @@ public class frmControl extends javax.swing.JFrame
         jLabel87 = new javax.swing.JLabel();
         jButtonCancel5 = new javax.swing.JButton();
         jButtonOk5 = new javax.swing.JButton();
+        jFrame1 = new javax.swing.JFrame();
+        jLabel36 = new javax.swing.JLabel();
+        jSeparator2 = new javax.swing.JSeparator();
+        jLabel37 = new javax.swing.JLabel();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        jButton9 = new javax.swing.JButton();
+        jButton10 = new javax.swing.JButton();
+        jButton11 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabelRowsInFile = new javax.swing.JLabel();
         jLabelRowsInFile1 = new javax.swing.JLabel();
@@ -980,13 +989,15 @@ public class frmControl extends javax.swing.JFrame
         jLabelRowsInFile5 = new javax.swing.JLabel();
         jProgressBarGCodeProgress = new javax.swing.JProgressBar();
         jPanelGCodeFile = new javax.swing.JPanel();
+        jButtonGCodeBrowse = new javax.swing.JButton();
         jTextFieldGCodeFile = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        jButtonGCodeBrowse = new javax.swing.JButton();
         jButtonGCodePause = new javax.swing.JButton();
         jButtonGCodeSend = new javax.swing.JButton();
         jButtonGCodeCancel = new javax.swing.JButton();
         jButtonGCodeVisualize = new javax.swing.JButton();
+        jButtonBrowse = new javax.swing.JButton();
+        jButtonVisualise = new javax.swing.JButton();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel5 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
@@ -1015,7 +1026,6 @@ public class frmControl extends javax.swing.JFrame
         jScrollPane3 = new javax.swing.JScrollPane();
         jTextPane1 = new javax.swing.JTextPane();
         jComboBox1 = new javax.swing.JComboBox<>();
-        jSeparator2 = new javax.swing.JSeparator();
         jComboBox2 = new javax.swing.JComboBox<>();
         jScrollPane4 = new javax.swing.JScrollPane();
         jTextPane2 = new javax.swing.JTextPane();
@@ -1303,7 +1313,7 @@ public class frmControl extends javax.swing.JFrame
         jLabel22.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         jLabel23.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel23.setText("<html> <h4 text-align=\"center\">Cette interface permets de voir laposition de la CNC </h4>  \nLa position des axes XYZ est affichée. ( Ne pas oublier de <i color=\"blue\"> Home </i> la CNC) <br>\nØ permets de tare l'axe de la CNC");
+        jLabel23.setText("<html> <h4><center>Cette interface permets de voir laposition de la CNC </center></h4>  \nLa position des axes XYZ est affichée. ( Ne pas oublier de <i color=\"blue\"> Home </i> la CNC) <br>\nØ permets de tare l'axe de la CNC");
         jLabel23.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         jPanel10.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Machine Status", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(255, 255, 255))); // NOI18N
@@ -1552,7 +1562,7 @@ public class frmControl extends javax.swing.JFrame
         jLabel25.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         jLabel26.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel26.setText("<html> <h2 text-align=\"center\">Importer l'adresse du fichier a découper </h2>   Il est possible de mettre en pause ou annuler la découpe ici cependant l'installation d'un bouton d'URGENCE est recommandé !<br><br> L'avancée de l'impression s'affiche sur la barre de progrès </html> ");
+        jLabel26.setText("<html> <h2><center>Importer l'adresse du fichier a découper </center> </h2>   Il est possible de mettre en pause ou annuler la découpe ici cependant l'installation d'un bouton d'URGENCE est recommandé !<br><br> L'avancée de l'impression s'affiche sur la barre de progrès </html> ");
         jLabel26.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jLabel26.setVerifyInputWhenFocusTarget(false);
 
@@ -1720,20 +1730,19 @@ public class frmControl extends javax.swing.JFrame
                             .addComponent(jLabel25, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(jDialogGSenderLayout.createSequentialGroup()
-                        .addGroup(jDialogGSenderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jDialogGSenderLayout.createSequentialGroup()
-                                .addGap(179, 179, 179)
-                                .addComponent(jButtonOk1, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(32, 32, 32)
-                                .addComponent(jButtonCancel1, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jDialogGSenderLayout.createSequentialGroup()
-                                .addGap(112, 112, 112)
-                                .addComponent(jLabelRowsInFile19, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(14, 14, 14)
-                                .addComponent(jProgressBarGCodeProgress2, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(179, 179, 179)
+                        .addComponent(jButtonOk1, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(32, 32, 32)
+                        .addComponent(jButtonCancel1, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addComponent(jLabel26, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addContainerGap())
+            .addGroup(jDialogGSenderLayout.createSequentialGroup()
+                .addGap(103, 103, 103)
+                .addComponent(jLabelRowsInFile19, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(14, 14, 14)
+                .addComponent(jProgressBarGCodeProgress2, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jDialogGSenderLayout.setVerticalGroup(
             jDialogGSenderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1746,13 +1755,13 @@ public class frmControl extends javax.swing.JFrame
                 .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator9, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(28, 28, 28)
                 .addGroup(jDialogGSenderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabelRowsInFile19)
                     .addComponent(jProgressBarGCodeProgress2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(72, 72, 72)
+                .addGap(56, 56, 56)
                 .addGroup(jDialogGSenderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButtonOk1)
                     .addComponent(jButtonCancel1))
@@ -1767,7 +1776,7 @@ public class frmControl extends javax.swing.JFrame
         jLabel44.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         jLabel45.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel45.setText("<html> <h4 text-align=\"center\">Cette interface permets de voir laposition de la CNC </h4>  \nLa position des axes XYZ est affichée. ( Ne pas oublier de <i color=\"blue\"> Home </i> la CNC) <br>\nØ permets de tare l'axe de la CNC");
+        jLabel45.setText("<html> <h4><center>Cette interface envoie des commandes GCODE</center></h4>  \nIl est possible de controler les paramètres de la CNC, sa configuration et ses déplacements via des commandes G Code.<br>\n<br>\nUn tutoriel plus complet est accessible dans le menu <i> Aide</i> puis <i> Tutoriel G-Code </i>");
         jLabel45.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         jButtonCancel2.setText("Quitter");
@@ -1861,7 +1870,7 @@ public class frmControl extends javax.swing.JFrame
                         .addContainerGap()
                         .addGroup(jDialogTab1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel44, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel45))))
+                            .addComponent(jLabel45, javax.swing.GroupLayout.DEFAULT_SIZE, 600, Short.MAX_VALUE))))
                 .addContainerGap())
             .addGroup(jDialogTab1Layout.createSequentialGroup()
                 .addGroup(jDialogTab1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2643,6 +2652,137 @@ public class frmControl extends javax.swing.JFrame
                 .addContainerGap())
         );
 
+        jLabel36.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel36.setText("<html>  <h1> Apprenez le G Code </h1> </html>");
+
+        jLabel37.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel37.setText("<html> G-code est un langage de programmation utilisé pour contrôler les machines CNC. Il indique à la machine quoi faire et comment le faire, notamment le mouvement, la vitesse et la sélection d'outil. G-code est utilisé pour transformer un modèle 3D en un ensemble d'instructions que la machine CNC peut suivre. </html>");
+
+        jTable1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"S", "Vitesse de rotation de la broche. Contrôle la vitesse de rotation de la broche qui fait tourner l'outil de coupe. "},
+                {"F", "Vitesse d'alimentation. Contrôle la vitesse d'avance de l'outil par unité de temps. "},
+                {"G00", "Positionnement rapide. Déplace rapidement la machine vers un point spécifique sans couper ni déplacer de matériau. "},
+                {"G01", "Interpolation linéaire. Déplace la machine en ligne droite d'un point à un autre. "},
+                {"G02", "Déplace la machine dans un arc dans le sens horaire d'un point à un autre. L'arc est défini par un point central et un rayon. "},
+                {"G03", "Déplace la machine dans un arc dans le sens antihoraire d'un point à un autre. L'arc est défini par un point central et un rayon. "},
+                {"G04", "Attente. Indique à la machine de faire une pause pendant une durée spécifiée. Le temps est défini par la commande P"},
+                {"G17", "Plan de déplacement XY. Définit le plan de déplacement XY pour les commandes de déplacement linéaire et circulaire."},
+                {"G18", "Plan de déplacement XZ. Définit le plan de déplacement XZ pour les commandes de déplacement linéaire et circulaire."},
+                {"G19", "Plan de déplacement YZ. Définit le plan de déplacement YZ pour les commandes de déplacement linéaire et circulaire."},
+                {"G20", "Mode pouce. Cette commande permet à la machine d'utiliser des pouces pour les mesures."},
+                {"G21", "Mode millimètre. Cette commande permet à la machine d'utiliser des millimètres pour les mesures"},
+                {"G28", "Position de référence. Déplace la machine vers sa position de référence."},
+                {"G40", "Désactive la compensation de rayon d'outil, qui ajuste le chemin de l'outil pour tenir compte du rayon de l'outil de coupe"},
+                {"G41", "Ative la compensation de rayon d'outil vers la gauche, qui ajuste le chemin de l'outil pour tenir compte du rayon de l'outil de coupe"},
+                {"G42", "Active la compensation de rayon d'outil vers la droite, qui ajuste le chemin de l'outil pour tenir compte du rayon de l'outil de coupe."},
+                {"G90", "Mode absolu. Toutes les positions sont mesurées à partir de l'origine de la machine"},
+                {"G91", "Mode incrémental. Toutes les positions sont mesurées à partir de la position actuelle de la machine"},
+                {"M03", "Activation de la broche dans le sens horaire. Fait tourner l'outil de coupe."},
+                {"M04", "Activation de la broche dans le sens antihoraire. Fait tourner l'outil de coupe."},
+                {"M05", "Désactivation de la broche. Arrête la rotation de l'outil de coupe."},
+                {"M08", "Activation du liquide de refroidissement."},
+                {"M09", "Désactivation du liquide de refroidissement. "}
+            },
+            new String [] {
+                "G CODE", "Explication"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, true
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jTable1.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_ALL_COLUMNS);
+        jTable1.setColumnSelectionAllowed(true);
+        jTable1.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
+        jTable1.setEditingColumn(0);
+        jTable1.setSelectionMode(javax.swing.ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
+        jTable1.setShowGrid(true);
+        jTable1.setShowVerticalLines(true);
+        jTable1.getTableHeader().setReorderingAllowed(false);
+        jScrollPane7.setViewportView(jTable1);
+        jTable1.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
+        if (jTable1.getColumnModel().getColumnCount() > 0) {
+            jTable1.getColumnModel().getColumn(0).setMinWidth(55);
+            jTable1.getColumnModel().getColumn(0).setPreferredWidth(50);
+            jTable1.getColumnModel().getColumn(0).setMaxWidth(55);
+            jTable1.getColumnModel().getColumn(1).setResizable(false);
+        }
+
+        jButton9.setLabel("Voir des exemples");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
+
+        jButton10.setLabel("Quitter le cours");
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
+
+        jButton11.setActionCommand("");
+        jButton11.setLabel("+ d'information");
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
+        jFrame1.getContentPane().setLayout(jFrame1Layout);
+        jFrame1Layout.setHorizontalGroup(
+            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel36)
+            .addComponent(jSeparator2)
+            .addGroup(jFrame1Layout.createSequentialGroup()
+                .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jFrame1Layout.createSequentialGroup()
+                        .addGap(14, 14, 14)
+                        .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 910, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 894, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jFrame1Layout.createSequentialGroup()
+                        .addGap(217, 217, 217)
+                        .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(32, 32, 32)
+                        .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(32, 32, 32)
+                        .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jFrame1Layout.setVerticalGroup(
+            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jFrame1Layout.createSequentialGroup()
+                .addComponent(jLabel36, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(27, 27, 27)
+                .addGroup(jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(22, Short.MAX_VALUE))
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("SourceRabbit GCODE Sender");
 
@@ -2680,14 +2820,7 @@ public class frmControl extends javax.swing.JFrame
         jProgressBarGCodeProgress.setPreferredSize(new java.awt.Dimension(146, 16));
         jPanel1.add(jProgressBarGCodeProgress, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 110, 230, -1));
 
-        jTextFieldGCodeFile.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextFieldGCodeFileActionPerformed(evt);
-            }
-        });
-
-        jLabel5.setText("File:");
-
+        jButtonGCodeBrowse.setBackground(new java.awt.Color(255, 0, 255));
         jButtonGCodeBrowse.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jButtonGCodeBrowse.setForeground(new java.awt.Color(255, 255, 255));
         jButtonGCodeBrowse.setText("Browse");
@@ -2696,6 +2829,14 @@ public class frmControl extends javax.swing.JFrame
                 jButtonGCodeBrowseActionPerformed(evt);
             }
         });
+
+        jTextFieldGCodeFile.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldGCodeFileActionPerformed(evt);
+            }
+        });
+
+        jLabel5.setText("File:");
 
         jButtonGCodePause.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jButtonGCodePause.setForeground(new java.awt.Color(255, 255, 255));
@@ -2735,6 +2876,20 @@ public class frmControl extends javax.swing.JFrame
             }
         });
 
+        jButtonBrowse.setText("Browse");
+        jButtonBrowse.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonBrowseActionPerformed(evt);
+            }
+        });
+
+        jButtonVisualise.setText("Visualize");
+        jButtonVisualise.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonVisualiseActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanelGCodeFileLayout = new javax.swing.GroupLayout(jPanelGCodeFile);
         jPanelGCodeFile.setLayout(jPanelGCodeFileLayout);
         jPanelGCodeFileLayout.setHorizontalGroup(
@@ -2752,10 +2907,17 @@ public class frmControl extends javax.swing.JFrame
                         .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTextFieldGCodeFile)))
-                .addGap(582, 582, 582)
-                .addComponent(jButtonGCodeVisualize)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButtonGCodeBrowse, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(jPanelGCodeFileLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelGCodeFileLayout.createSequentialGroup()
+                        .addComponent(jButtonVisualise)
+                        .addGap(489, 489, 489)
+                        .addComponent(jButtonGCodeVisualize)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButtonGCodeBrowse, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanelGCodeFileLayout.createSequentialGroup()
+                        .addComponent(jButtonBrowse)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanelGCodeFileLayout.setVerticalGroup(
@@ -2764,15 +2926,20 @@ public class frmControl extends javax.swing.JFrame
                 .addContainerGap()
                 .addGroup(jPanelGCodeFileLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(jTextFieldGCodeFile, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextFieldGCodeFile, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonBrowse))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanelGCodeFileLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButtonGCodePause)
                     .addComponent(jButtonGCodeSend)
                     .addComponent(jButtonGCodeCancel)
                     .addComponent(jButtonGCodeVisualize)
-                    .addComponent(jButtonGCodeBrowse))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+
+
+                    .addComponent(jButtonGCodeBrowse)
+                    .addComponent(jButtonVisualise))
+                .addContainerGap(14, Short.MAX_VALUE))
+
         );
 
         jPanel1.add(jPanelGCodeFile, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 530, 70));
@@ -3017,7 +3184,7 @@ public class frmControl extends javax.swing.JFrame
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Vitesse de rotation");
-        jPanel6.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, 170, -1));
+        jPanel6.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 170, -1));
         jLabel1.getAccessibleContext().setAccessibleName("Vitesse de rotation\n");
 
         jTextPane1.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
@@ -3030,10 +3197,14 @@ public class frmControl extends javax.swing.JFrame
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "V bit", "flat bit", "drill bit", "etc bit" }));
         jComboBox1.setName(""); // NOI18N
         jPanel6.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, 170, -1));
-        jPanel6.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 170, 10));
 
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bois", "MDF", "Aluminium", "Plastique", "PCB", "Bronze", "Vinyle" }));
         jComboBox2.setName(""); // NOI18N
+        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox2ActionPerformed(evt);
+            }
+        });
         jPanel6.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 170, -1));
 
         jTextPane2.setText("Vitesse de rotation :");
@@ -3751,8 +3922,8 @@ public class frmControl extends javax.swing.JFrame
             startCycle = false;
             int answer = JOptionPane.showConfirmDialog(
                     null,
-                    "The work position is not 0,0,0.\nDo you want to start the GCode Cycle?",
-                    "Work position is not 0,0,0",
+                    "La position de travail n'est pas 0,0,0.\nVoulez vous démarrer le cycle G Code?",
+                    "Position de travail n'est pas 0,0,0",
                     JOptionPane.YES_NO_OPTION);
 
             startCycle = (answer == JOptionPane.YES_OPTION);
@@ -4694,6 +4865,7 @@ public class frmControl extends javax.swing.JFrame
         jDialogTab1.dispose();
     }//GEN-LAST:event_jButtonCancel2ActionPerformed
 
+
 //--------------------------Partie NONO--------------------------------
     private void jConfirmerBouttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jConfirmerBouttonActionPerformed
 
@@ -4738,6 +4910,7 @@ public class frmControl extends javax.swing.JFrame
         });
     }//GEN-LAST:event_jMenuItem8ActionPerformed
 
+
        private void checkStatus(){
 
     //debutant
@@ -4769,8 +4942,104 @@ public class frmControl extends javax.swing.JFrame
         
     }
     
+
+    private void jButtonBrowseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBrowseActionPerformed
+       final String path = SettingsManager.getLastGCodeBrowsedDirectory();
+        JFileChooser fc;
+        try
+        {
+            fc = new JFileChooser(new File(path));
+            FileNameExtensionFilter filter = new FileNameExtensionFilter("GCode Files (.nc, .gcode, .tap, .gc)", "nc", "gcode", "tap", "gc");
+            fc.setFileFilter(filter);
+        }
+        catch (Exception ex)
+        {
+            fc = new JFileChooser();
+        }
+        int returnVal = fc.showOpenDialog(this);
+
+        if (fc.getSelectedFile() != null && returnVal == JFileChooser.APPROVE_OPTION)
+        {
+            File gcodeFile = fc.getSelectedFile();
+            String gcodeFilePath = fc.getSelectedFile().getPath();
+            jTextFieldGCodeFile.setText(gcodeFilePath);
+
+            SettingsManager.setLastGCodeBrowsedDirectory(gcodeFile.getParent());
+
+            // Ask the GCodeSender of the active connection handler to load the GCode File
+            if (ConnectionHelper.ACTIVE_CONNECTION_HANDLER.getMyGCodeSender().LoadGCodeFile(gcodeFile))
+            {
+                jLabelRowsInFile.setText(String.valueOf(ConnectionHelper.ACTIVE_CONNECTION_HANDLER.getMyGCodeSender().getRowsInFile()));
+            }
+        }
+    }//GEN-LAST:event_jButtonBrowseActionPerformed
+
+    private void jButtonVisualiseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonVisualiseActionPerformed
+        try
+        {
+            final Chart2D chart = new Chart2D();
+            // Create an ITrace: 
+            ITrace2D trace = new Trace2DSimple();
+            // Add the trace to the chart. This has to be done before adding points (deadlock prevention): 
+            chart.addTrace(trace);
+
+            final Queue<String> gcodeQueue = new ArrayDeque(ConnectionHelper.ACTIVE_CONNECTION_HANDLER.getMyGCodeSender().getGCodeQueue());
+            double x = 0, y = 0, z = 0, maxX = 0, maxY = 0;
+
+            while (gcodeQueue.size() > 0)
+            {
+                final GCodeCommand command = new GCodeCommand(gcodeQueue.remove());
+                x = (command.getCoordinates().getX() != null) ? command.getCoordinates().getX() : x;
+                y = (command.getCoordinates().getY() != null) ? command.getCoordinates().getY() : y;
+                z = (command.getCoordinates().getZ() != null) ? command.getCoordinates().getZ() : z;
+
+                if (z < 0)
+                {
+                    maxX = Math.max(x, maxX);
+                    maxY = Math.max(y, maxY);
+                    trace.addPoint(x, y);
+                }
+            }
+
+            chart.getAxisX().setRangePolicy(new RangePolicyFixedViewport(new Range(0, Math.max(maxY, maxX))));
+            chart.getAxisY().setRangePolicy(new RangePolicyFixedViewport(new Range(0, Math.max(maxY, maxX))));
+
+            // Make it visible:
+            // Create a frame.
+            final JFrame frame = new JFrame(ConnectionHelper.ACTIVE_CONNECTION_HANDLER.getMyGCodeSender().getGCodeFile().getName());
+            // add the chart to the frame: 
+            frame.getContentPane().add(chart);
+            frame.setSize(600, 600);
+            frame.setVisible(true);
+        }
+        catch (Exception ex)
+        {
+
+        }
+    }//GEN-LAST:event_jButtonVisualiseActionPerformed
+
+
+    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox2ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+       this.dispose();
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton11ActionPerformed
+
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton15;
     private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton17;
@@ -4787,6 +5056,8 @@ public class frmControl extends javax.swing.JFrame
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
+    private javax.swing.JButton jButtonBrowse;
     private javax.swing.JButton jButtonCancel;
     private javax.swing.JButton jButtonCancel1;
     private javax.swing.JButton jButtonCancel2;
@@ -4828,6 +5099,7 @@ public class frmControl extends javax.swing.JFrame
     private javax.swing.JButton jButtonSoftReset;
     private javax.swing.JButton jButtonSoftReset1;
     private javax.swing.JButton jButtonSoftReset2;
+    private javax.swing.JButton jButtonVisualise;
     private javax.swing.JButton jButtonXMinus;
     private javax.swing.JButton jButtonXPlus;
     private javax.swing.JButton jButtonYMinus;
@@ -4849,6 +5121,7 @@ public class frmControl extends javax.swing.JFrame
     private javax.swing.JDialog jDialogTab2;
     private javax.swing.JDialog jDialogTab3;
     private javax.swing.JDialog jDialogTab4;
+    private javax.swing.JFrame jFrame1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -4878,6 +5151,8 @@ public class frmControl extends javax.swing.JFrame
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel45;
@@ -5063,6 +5338,7 @@ public class frmControl extends javax.swing.JFrame
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator10;
     private javax.swing.JSeparator jSeparator11;
@@ -5083,6 +5359,7 @@ public class frmControl extends javax.swing.JFrame
     private javax.swing.JSlider jSliderStepSize;
     private javax.swing.JSpinner jSpinnerStep;
     private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JTable jTable1;
     private javax.swing.JTable jTableGCodeLog;
     private javax.swing.JTextArea jTextAreaConsole;
     private javax.swing.JTextArea jTextAreaConsole1;
