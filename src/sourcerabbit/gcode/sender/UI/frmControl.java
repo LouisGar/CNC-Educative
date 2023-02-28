@@ -4265,6 +4265,9 @@ public class frmControl extends javax.swing.JFrame
 
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
         if(tutorial){
+            
+        new Level().setVisible(true);
+        
         tutorial=false;
         // Vider tous les Panels sauf CONNECTION
         /* Elements de Machine Status */
@@ -4764,6 +4767,39 @@ public class frmControl extends javax.swing.JFrame
         jDialogTab1.dispose();
     }//GEN-LAST:event_jButtonCancel2ActionPerformed
 
+
+       private void checkStatus(){
+
+    //debutant
+    if(Utilisateurs.getLevel() == 1){
+        jMenuItem1.setEnabled(false);
+        jMenuItemHoleCenterFinder.setEnabled(false);
+        jPanel5.setEnabled(false);
+        jPanelMacros.setEnabled(false);
+        jPanelMachineControl.setEnabled(false);
+        jMenuItemToolChangeSettings.setEnabled(false);
+    
+}
+    
+   //Intermédiaire
+    if(Utilisateurs.getLevel() == 2){
+    
+}
+    
+    //Expert
+    if(Utilisateurs.getLevel() == 3){
+        jMenuItem1.setEnabled(true);
+        jMenuItemHoleCenterFinder.setEnabled(true);
+        jPanel5.setEnabled(true);
+        jPanelMacros.setEnabled(true);
+        jPanelMachineControl.setEnabled(true);
+        jMenuItemToolChangeSettings.setEnabled(true);
+    
+}
+        
+    }
+    
+
     private void jButtonBrowseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBrowseActionPerformed
        final String path = SettingsManager.getLastGCodeBrowsedDirectory();
         JFileChooser fc;
@@ -4839,6 +4875,7 @@ public class frmControl extends javax.swing.JFrame
         }
     }//GEN-LAST:event_jButtonVisualiseActionPerformed
 
+
     private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox2ActionPerformed
@@ -4854,6 +4891,7 @@ public class frmControl extends javax.swing.JFrame
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton11ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
