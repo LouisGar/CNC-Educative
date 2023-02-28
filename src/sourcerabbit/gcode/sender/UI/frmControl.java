@@ -976,13 +976,15 @@ public class frmControl extends javax.swing.JFrame
         jLabelRowsInFile5 = new javax.swing.JLabel();
         jProgressBarGCodeProgress = new javax.swing.JProgressBar();
         jPanelGCodeFile = new javax.swing.JPanel();
+        jButtonGCodeBrowse = new javax.swing.JButton();
         jTextFieldGCodeFile = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        jButtonGCodeBrowse = new javax.swing.JButton();
         jButtonGCodePause = new javax.swing.JButton();
         jButtonGCodeSend = new javax.swing.JButton();
         jButtonGCodeCancel = new javax.swing.JButton();
         jButtonGCodeVisualize = new javax.swing.JButton();
+        jButtonBrowse = new javax.swing.JButton();
+        jButtonVisualise = new javax.swing.JButton();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel5 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
@@ -1239,7 +1241,7 @@ public class frmControl extends javax.swing.JFrame
         jLabel22.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         jLabel23.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel23.setText("<html> <h4 text-align=\"center\">Cette interface permets de voir laposition de la CNC </h4>  \nLa position des axes XYZ est affichée. ( Ne pas oublier de <i color=\"blue\"> Home </i> la CNC) <br>\nØ permets de tare l'axe de la CNC");
+        jLabel23.setText("<html> <h4><center>Cette interface permets de voir laposition de la CNC </center></h4>  \nLa position des axes XYZ est affichée. ( Ne pas oublier de <i color=\"blue\"> Home </i> la CNC) <br>\nØ permets de tare l'axe de la CNC");
         jLabel23.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         jPanel10.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Machine Status", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(255, 255, 255))); // NOI18N
@@ -1488,7 +1490,7 @@ public class frmControl extends javax.swing.JFrame
         jLabel25.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         jLabel26.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel26.setText("<html> <h2 text-align=\"center\">Importer l'adresse du fichier a découper </h2>   Il est possible de mettre en pause ou annuler la découpe ici cependant l'installation d'un bouton d'URGENCE est recommandé !<br><br> L'avancée de l'impression s'affiche sur la barre de progrès </html> ");
+        jLabel26.setText("<html> <h2><center>Importer l'adresse du fichier a découper </center> </h2>   Il est possible de mettre en pause ou annuler la découpe ici cependant l'installation d'un bouton d'URGENCE est recommandé !<br><br> L'avancée de l'impression s'affiche sur la barre de progrès </html> ");
         jLabel26.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jLabel26.setVerifyInputWhenFocusTarget(false);
 
@@ -1656,20 +1658,19 @@ public class frmControl extends javax.swing.JFrame
                             .addComponent(jLabel25, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(jDialogGSenderLayout.createSequentialGroup()
-                        .addGroup(jDialogGSenderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jDialogGSenderLayout.createSequentialGroup()
-                                .addGap(179, 179, 179)
-                                .addComponent(jButtonOk1, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(32, 32, 32)
-                                .addComponent(jButtonCancel1, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jDialogGSenderLayout.createSequentialGroup()
-                                .addGap(112, 112, 112)
-                                .addComponent(jLabelRowsInFile19, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(14, 14, 14)
-                                .addComponent(jProgressBarGCodeProgress2, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(179, 179, 179)
+                        .addComponent(jButtonOk1, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(32, 32, 32)
+                        .addComponent(jButtonCancel1, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addComponent(jLabel26, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addContainerGap())
+            .addGroup(jDialogGSenderLayout.createSequentialGroup()
+                .addGap(103, 103, 103)
+                .addComponent(jLabelRowsInFile19, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(14, 14, 14)
+                .addComponent(jProgressBarGCodeProgress2, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jDialogGSenderLayout.setVerticalGroup(
             jDialogGSenderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1682,13 +1683,13 @@ public class frmControl extends javax.swing.JFrame
                 .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator9, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(28, 28, 28)
                 .addGroup(jDialogGSenderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabelRowsInFile19)
                     .addComponent(jProgressBarGCodeProgress2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(72, 72, 72)
+                .addGap(56, 56, 56)
                 .addGroup(jDialogGSenderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButtonOk1)
                     .addComponent(jButtonCancel1))
@@ -1703,7 +1704,7 @@ public class frmControl extends javax.swing.JFrame
         jLabel44.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         jLabel45.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel45.setText("<html> <h4 text-align=\"center\">Cette interface permets de voir laposition de la CNC </h4>  \nLa position des axes XYZ est affichée. ( Ne pas oublier de <i color=\"blue\"> Home </i> la CNC) <br>\nØ permets de tare l'axe de la CNC");
+        jLabel45.setText("<html> <h4><center>Cette interface envoie des commandes GCODE</center></h4>  \nIl est possible de controler les paramètres de la CNC, sa configuration et ses déplacements via des commandes G Code.<br>\n<br>\nUn tutoriel plus complet est accessible dans le menu <i> Aide</i> puis <i> Tutoriel G-Code </i>");
         jLabel45.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         jButtonCancel2.setText("Quitter");
@@ -1797,7 +1798,7 @@ public class frmControl extends javax.swing.JFrame
                         .addContainerGap()
                         .addGroup(jDialogTab1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel44, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel45))))
+                            .addComponent(jLabel45, javax.swing.GroupLayout.DEFAULT_SIZE, 600, Short.MAX_VALUE))))
                 .addContainerGap())
             .addGroup(jDialogTab1Layout.createSequentialGroup()
                 .addGroup(jDialogTab1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2616,14 +2617,7 @@ public class frmControl extends javax.swing.JFrame
         jProgressBarGCodeProgress.setPreferredSize(new java.awt.Dimension(146, 16));
         jPanel1.add(jProgressBarGCodeProgress, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 110, 230, -1));
 
-        jTextFieldGCodeFile.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextFieldGCodeFileActionPerformed(evt);
-            }
-        });
-
-        jLabel5.setText("File:");
-
+        jButtonGCodeBrowse.setBackground(new java.awt.Color(255, 0, 255));
         jButtonGCodeBrowse.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jButtonGCodeBrowse.setForeground(new java.awt.Color(255, 255, 255));
         jButtonGCodeBrowse.setText("Browse");
@@ -2632,6 +2626,14 @@ public class frmControl extends javax.swing.JFrame
                 jButtonGCodeBrowseActionPerformed(evt);
             }
         });
+
+        jTextFieldGCodeFile.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldGCodeFileActionPerformed(evt);
+            }
+        });
+
+        jLabel5.setText("File:");
 
         jButtonGCodePause.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jButtonGCodePause.setForeground(new java.awt.Color(255, 255, 255));
@@ -2671,6 +2673,20 @@ public class frmControl extends javax.swing.JFrame
             }
         });
 
+        jButtonBrowse.setText("Browse");
+        jButtonBrowse.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonBrowseActionPerformed(evt);
+            }
+        });
+
+        jButtonVisualise.setText("Visualize");
+        jButtonVisualise.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonVisualiseActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanelGCodeFileLayout = new javax.swing.GroupLayout(jPanelGCodeFile);
         jPanelGCodeFile.setLayout(jPanelGCodeFileLayout);
         jPanelGCodeFileLayout.setHorizontalGroup(
@@ -2688,10 +2704,17 @@ public class frmControl extends javax.swing.JFrame
                         .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTextFieldGCodeFile)))
-                .addGap(582, 582, 582)
-                .addComponent(jButtonGCodeVisualize)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButtonGCodeBrowse, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(jPanelGCodeFileLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelGCodeFileLayout.createSequentialGroup()
+                        .addComponent(jButtonVisualise)
+                        .addGap(489, 489, 489)
+                        .addComponent(jButtonGCodeVisualize)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButtonGCodeBrowse, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanelGCodeFileLayout.createSequentialGroup()
+                        .addComponent(jButtonBrowse)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanelGCodeFileLayout.setVerticalGroup(
@@ -2700,15 +2723,17 @@ public class frmControl extends javax.swing.JFrame
                 .addContainerGap()
                 .addGroup(jPanelGCodeFileLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(jTextFieldGCodeFile, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextFieldGCodeFile, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonBrowse))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanelGCodeFileLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButtonGCodePause)
                     .addComponent(jButtonGCodeSend)
                     .addComponent(jButtonGCodeCancel)
                     .addComponent(jButtonGCodeVisualize)
-                    .addComponent(jButtonGCodeBrowse))
-                .addContainerGap(15, Short.MAX_VALUE))
+                    .addComponent(jButtonGCodeBrowse)
+                    .addComponent(jButtonVisualise))
+                .addContainerGap(14, Short.MAX_VALUE))
         );
 
         jPanel1.add(jPanelGCodeFile, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 530, 70));
@@ -3662,8 +3687,8 @@ public class frmControl extends javax.swing.JFrame
             startCycle = false;
             int answer = JOptionPane.showConfirmDialog(
                     null,
-                    "The work position is not 0,0,0.\nDo you want to start the GCode Cycle?",
-                    "Work position is not 0,0,0",
+                    "La position de travail n'est pas 0,0,0.\nVoulez vous démarrer le cycle G Code?",
+                    "Position de travail n'est pas 0,0,0",
                     JOptionPane.YES_NO_OPTION);
 
             startCycle = (answer == JOptionPane.YES_OPTION);
@@ -4599,6 +4624,7 @@ public class frmControl extends javax.swing.JFrame
         jDialogTab1.dispose();
     }//GEN-LAST:event_jButtonCancel2ActionPerformed
 
+
        private void checkStatus(){
 
     //debutant
@@ -4630,6 +4656,83 @@ public class frmControl extends javax.swing.JFrame
         
     }
     
+
+    private void jButtonBrowseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBrowseActionPerformed
+       final String path = SettingsManager.getLastGCodeBrowsedDirectory();
+        JFileChooser fc;
+        try
+        {
+            fc = new JFileChooser(new File(path));
+            FileNameExtensionFilter filter = new FileNameExtensionFilter("GCode Files (.nc, .gcode, .tap, .gc)", "nc", "gcode", "tap", "gc");
+            fc.setFileFilter(filter);
+        }
+        catch (Exception ex)
+        {
+            fc = new JFileChooser();
+        }
+        int returnVal = fc.showOpenDialog(this);
+
+        if (fc.getSelectedFile() != null && returnVal == JFileChooser.APPROVE_OPTION)
+        {
+            File gcodeFile = fc.getSelectedFile();
+            String gcodeFilePath = fc.getSelectedFile().getPath();
+            jTextFieldGCodeFile.setText(gcodeFilePath);
+
+            SettingsManager.setLastGCodeBrowsedDirectory(gcodeFile.getParent());
+
+            // Ask the GCodeSender of the active connection handler to load the GCode File
+            if (ConnectionHelper.ACTIVE_CONNECTION_HANDLER.getMyGCodeSender().LoadGCodeFile(gcodeFile))
+            {
+                jLabelRowsInFile.setText(String.valueOf(ConnectionHelper.ACTIVE_CONNECTION_HANDLER.getMyGCodeSender().getRowsInFile()));
+            }
+        }
+    }//GEN-LAST:event_jButtonBrowseActionPerformed
+
+    private void jButtonVisualiseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonVisualiseActionPerformed
+        try
+        {
+            final Chart2D chart = new Chart2D();
+            // Create an ITrace: 
+            ITrace2D trace = new Trace2DSimple();
+            // Add the trace to the chart. This has to be done before adding points (deadlock prevention): 
+            chart.addTrace(trace);
+
+            final Queue<String> gcodeQueue = new ArrayDeque(ConnectionHelper.ACTIVE_CONNECTION_HANDLER.getMyGCodeSender().getGCodeQueue());
+            double x = 0, y = 0, z = 0, maxX = 0, maxY = 0;
+
+            while (gcodeQueue.size() > 0)
+            {
+                final GCodeCommand command = new GCodeCommand(gcodeQueue.remove());
+                x = (command.getCoordinates().getX() != null) ? command.getCoordinates().getX() : x;
+                y = (command.getCoordinates().getY() != null) ? command.getCoordinates().getY() : y;
+                z = (command.getCoordinates().getZ() != null) ? command.getCoordinates().getZ() : z;
+
+                if (z < 0)
+                {
+                    maxX = Math.max(x, maxX);
+                    maxY = Math.max(y, maxY);
+                    trace.addPoint(x, y);
+                }
+            }
+
+            chart.getAxisX().setRangePolicy(new RangePolicyFixedViewport(new Range(0, Math.max(maxY, maxX))));
+            chart.getAxisY().setRangePolicy(new RangePolicyFixedViewport(new Range(0, Math.max(maxY, maxX))));
+
+            // Make it visible:
+            // Create a frame.
+            final JFrame frame = new JFrame(ConnectionHelper.ACTIVE_CONNECTION_HANDLER.getMyGCodeSender().getGCodeFile().getName());
+            // add the chart to the frame: 
+            frame.getContentPane().add(chart);
+            frame.setSize(600, 600);
+            frame.setVisible(true);
+        }
+        catch (Exception ex)
+        {
+
+        }
+    }//GEN-LAST:event_jButtonVisualiseActionPerformed
+
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton15;
@@ -4648,6 +4751,7 @@ public class frmControl extends javax.swing.JFrame
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButtonBrowse;
     private javax.swing.JButton jButtonCancel;
     private javax.swing.JButton jButtonCancel1;
     private javax.swing.JButton jButtonCancel2;
@@ -4689,6 +4793,7 @@ public class frmControl extends javax.swing.JFrame
     private javax.swing.JButton jButtonSoftReset;
     private javax.swing.JButton jButtonSoftReset1;
     private javax.swing.JButton jButtonSoftReset2;
+    private javax.swing.JButton jButtonVisualise;
     private javax.swing.JButton jButtonXMinus;
     private javax.swing.JButton jButtonXPlus;
     private javax.swing.JButton jButtonYMinus;
