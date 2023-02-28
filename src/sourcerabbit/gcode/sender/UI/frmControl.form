@@ -391,7 +391,7 @@
         <Component class="javax.swing.JLabel" name="jLabel23">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="&lt;html&gt; &lt;h4 text-align=&quot;center&quot;&gt;Cette interface permets de voir laposition de la CNC &lt;/h4&gt;  &#xa;La position des axes XYZ est affich&#xe9;e. ( Ne pas oublier de &lt;i color=&quot;blue&quot;&gt; Home &lt;/i&gt; la CNC) &lt;br&gt;&#xa;&#xd8; permets de tare l&apos;axe de la CNC"/>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt; &lt;h4&gt;&lt;center&gt;Cette interface permets de voir laposition de la CNC &lt;/center&gt;&lt;/h4&gt;  &#xa;La position des axes XYZ est affich&#xe9;e. ( Ne pas oublier de &lt;i color=&quot;blue&quot;&gt; Home &lt;/i&gt; la CNC) &lt;br&gt;&#xa;&#xd8; permets de tare l&apos;axe de la CNC"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
         </Component>
@@ -817,25 +817,22 @@
                           </Group>
                       </Group>
                       <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="179" max="-2" attributes="0"/>
-                                  <Component id="jButtonOk1" min="-2" pref="81" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-                                  <Component id="jButtonCancel1" min="-2" pref="81" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="112" max="-2" attributes="0"/>
-                                  <Component id="jLabelRowsInFile19" min="-2" pref="66" max="-2" attributes="0"/>
-                                  <EmptySpace min="14" pref="14" max="-2" attributes="0"/>
-                                  <Component id="jProgressBarGCodeProgress2" min="-2" pref="230" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
+                          <EmptySpace min="-2" pref="179" max="-2" attributes="0"/>
+                          <Component id="jButtonOk1" min="-2" pref="81" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                          <Component id="jButtonCancel1" min="-2" pref="81" max="-2" attributes="0"/>
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
                       <Component id="jLabel26" alignment="1" pref="0" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="103" max="-2" attributes="0"/>
+                  <Component id="jLabelRowsInFile19" min="-2" pref="66" max="-2" attributes="0"/>
+                  <EmptySpace min="14" pref="14" max="-2" attributes="0"/>
+                  <Component id="jProgressBarGCodeProgress2" min="-2" pref="230" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -850,14 +847,14 @@
                   <Component id="jPanel9" min="-2" pref="154" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="jSeparator9" min="-2" pref="10" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jLabel26" min="-2" pref="141" max="-2" attributes="0"/>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jLabel26" min="-2" pref="129" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jLabelRowsInFile19" min="-2" max="-2" attributes="0"/>
                       <Component id="jProgressBarGCodeProgress2" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jButtonOk1" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jButtonCancel1" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -878,7 +875,7 @@
         <Component class="javax.swing.JLabel" name="jLabel26">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="&lt;html&gt; &lt;h2 text-align=&quot;center&quot;&gt;Importer l&apos;adresse du fichier a d&#xe9;couper &lt;/h2&gt;   Il est possible de mettre en pause ou annuler la d&#xe9;coupe ici cependant l&apos;installation d&apos;un bouton d&apos;URGENCE est recommand&#xe9; !&lt;br&gt;&lt;br&gt; L&apos;avanc&#xe9;e de l&apos;impression s&apos;affiche sur la barre de progr&#xe8;s &lt;/html&gt; "/>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt; &lt;h2&gt;&lt;center&gt;Importer l&apos;adresse du fichier a d&#xe9;couper &lt;/center&gt; &lt;/h2&gt;   Il est possible de mettre en pause ou annuler la d&#xe9;coupe ici cependant l&apos;installation d&apos;un bouton d&apos;URGENCE est recommand&#xe9; !&lt;br&gt;&lt;br&gt; L&apos;avanc&#xe9;e de l&apos;impression s&apos;affiche sur la barre de progr&#xe8;s &lt;/html&gt; "/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
             <Property name="verifyInputWhenFocusTarget" type="boolean" value="false"/>
           </Properties>
@@ -1200,7 +1197,7 @@
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jLabel44" alignment="1" max="32767" attributes="0"/>
-                              <Component id="jLabel45" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jLabel45" alignment="0" pref="600" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -1258,7 +1255,7 @@
         <Component class="javax.swing.JLabel" name="jLabel45">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="&lt;html&gt; &lt;h4 text-align=&quot;center&quot;&gt;Cette interface permets de voir laposition de la CNC &lt;/h4&gt;  &#xa;La position des axes XYZ est affich&#xe9;e. ( Ne pas oublier de &lt;i color=&quot;blue&quot;&gt; Home &lt;/i&gt; la CNC) &lt;br&gt;&#xa;&#xd8; permets de tare l&apos;axe de la CNC"/>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt; &lt;h4&gt;&lt;center&gt;Cette interface envoie des commandes GCODE&lt;/center&gt;&lt;/h4&gt;  &#xa;Il est possible de controler les param&#xe8;tres de la CNC, sa configuration et ses d&#xe9;placements via des commandes G Code.&lt;br&gt;&#xa;&lt;br&gt;&#xa;Un tutoriel plus complet est accessible dans le menu &lt;i&gt; Aide&lt;/i&gt; puis &lt;i&gt; Tutoriel G-Code &lt;/i&gt;"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
         </Component>
@@ -3235,7 +3232,7 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jButtonGCodeSend" min="-2" pref="82" max="-2" attributes="0"/>
@@ -3250,10 +3247,20 @@
                               <Component id="jTextFieldGCodeFile" max="32767" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace min="-2" pref="582" max="-2" attributes="0"/>
-                      <Component id="jButtonGCodeVisualize" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButtonGCodeBrowse" min="-2" pref="76" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="jButtonVisualise" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="489" max="-2" attributes="0"/>
+                              <Component id="jButtonGCodeVisualize" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" max="-2" attributes="0"/>
+                              <Component id="jButtonGCodeBrowse" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="jButtonBrowse" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -3265,6 +3272,7 @@
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jTextFieldGCodeFile" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButtonBrowse" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -3273,25 +3281,19 @@
                           <Component id="jButtonGCodeCancel" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jButtonGCodeVisualize" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jButtonGCodeBrowse" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButtonVisualise" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="15" max="32767" attributes="0"/>
+                      <EmptySpace pref="14" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JTextField" name="jTextFieldGCodeFile">
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldGCodeFileActionPerformed"/>
-              </Events>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabel5">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="File:"/>
-              </Properties>
-            </Component>
             <Component class="javax.swing.JButton" name="jButtonGCodeBrowse">
               <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="0" red="ff" type="rgb"/>
+                </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="12" style="0"/>
                 </Property>
@@ -3303,6 +3305,16 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGCodeBrowseActionPerformed"/>
               </Events>
+            </Component>
+            <Component class="javax.swing.JTextField" name="jTextFieldGCodeFile">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldGCodeFileActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel5">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="File:"/>
+              </Properties>
             </Component>
             <Component class="javax.swing.JButton" name="jButtonGCodePause">
               <Properties>
@@ -3360,6 +3372,22 @@
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGCodeVisualizeActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButtonBrowse">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Browse"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonBrowseActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButtonVisualise">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Visualize"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonVisualiseActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>
