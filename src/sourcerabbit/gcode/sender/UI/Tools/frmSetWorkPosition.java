@@ -265,6 +265,7 @@ public class frmSetWorkPosition extends javax.swing.JDialog
             Process_SetWorkPosition process = new Process_SetWorkPosition(this, x, y, z);
             process.Execute();
             process.Dispose();
+            this.dispose();
         }
         catch (Exception ex)
         {
