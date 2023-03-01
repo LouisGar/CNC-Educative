@@ -25,7 +25,7 @@ import java.awt.Color;
 import java.awt.Component;
 import java.awt.KeyEventDispatcher;
 import java.awt.KeyboardFocusManager;
-
+import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyAdapter;
@@ -76,6 +76,9 @@ import sourcerabbit.gcode.sender.UI.Tools.frmHoleCenterFinder;
 import sourcerabbit.gcode.sender.UI.Tools.frmSetWorkPosition;
 import sourcerabbit.gcode.sender.UI.Tools.frmZAxisTouchProbe;
 import sourcerabbit.gcode.sender.UI.UITools.UITools;
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
+
 
 
 /**
@@ -793,6 +796,10 @@ public class frmControl extends javax.swing.JFrame
         jLevelCombo = new javax.swing.JComboBox<>();
         jLabel48 = new javax.swing.JLabel();
         jConfirmerBoutton = new javax.swing.JButton();
+        jDialog3 = new javax.swing.JDialog();
+        jPanel30 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jButton26 = new javax.swing.JButton();
         jDialog1 = new javax.swing.JDialog();
         jPanelConnection1 = new javax.swing.JPanel();
         jLabelMachineX2 = new javax.swing.JLabel();
@@ -1250,6 +1257,62 @@ public class frmControl extends javax.swing.JFrame
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 13, Short.MAX_VALUE)
                 .addComponent(jConfirmerBoutton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(16, 16, 16))
+        );
+
+        jDialog3.setTitle("BIENVENUE");
+        jDialog3.setMinimumSize(new java.awt.Dimension(500, 150));
+        jDialog3.setModalExclusionType(java.awt.Dialog.ModalExclusionType.APPLICATION_EXCLUDE);
+        jDialog3.setModalityType(java.awt.Dialog.ModalityType.APPLICATION_MODAL);
+
+        jPanel30.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "BIENVENUE", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(51, 51, 255))); // NOI18N
+
+        jLabel1.setText("<html>Aides disponibles en haut de l'écran au niveau de l'onglet \"Tutoriel\"<html>");
+
+        javax.swing.GroupLayout jPanel30Layout = new javax.swing.GroupLayout(jPanel30);
+        jPanel30.setLayout(jPanel30Layout);
+        jPanel30Layout.setHorizontalGroup(
+            jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel30Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 397, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel30Layout.setVerticalGroup(
+            jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel30Layout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addComponent(jLabel1)
+                .addContainerGap())
+        );
+
+        jButton26.setText("Ok");
+        jButton26.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton26ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jDialog3Layout = new javax.swing.GroupLayout(jDialog3.getContentPane());
+        jDialog3.getContentPane().setLayout(jDialog3Layout);
+        jDialog3Layout.setHorizontalGroup(
+            jDialog3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialog3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jDialog3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel30, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialog3Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jButton26)))
+                .addContainerGap())
+        );
+        jDialog3Layout.setVerticalGroup(
+            jDialog3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialog3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel30, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton26)
+                .addContainerGap())
         );
 
         jDialog1.setModal(true);
@@ -2986,7 +3049,6 @@ public class frmControl extends javax.swing.JFrame
                 .addContainerGap(28, Short.MAX_VALUE))
         );
 
-        jDialogZeroAxes.setMaximumSize(new java.awt.Dimension(755, 625));
         jDialogZeroAxes.setMinimumSize(new java.awt.Dimension(755, 625));
         jDialogZeroAxes.setName("jDialogMiseEnPlace"); // NOI18N
 
@@ -3208,6 +3270,8 @@ public class frmControl extends javax.swing.JFrame
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jPanel27.add(jPanelMachineControl1);
+
         jPanelConnection2.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Connection", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(255, 255, 255))); // NOI18N
         jPanelConnection2.setToolTipText("Cette interface permets de vérifier l'état de la connection avec la CNC. \\n Lorsqu'une erreur intervient, la CNC se mets en état \"Arlarm\". Pour continuer ou recommencer la découpe, cliquez sur \"Kill Alarm\", puis \"Soft Reset\". \\n En cas d'erreur de connection, cliquez sur \"Disconnect\" et changez le paramètres de connection dans System --> GRBL Settings");
         jPanelConnection2.setVerifyInputWhenFocusTarget(false);
@@ -3254,10 +3318,13 @@ public class frmControl extends javax.swing.JFrame
         });
         jPanelConnection2.add(jButtonConnectDisconnect3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, -1, -1));
 
+
         jPanelConnection4.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "En Cas D'Erreur", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(255, 255, 255))); // NOI18N
         jPanelConnection4.setToolTipText("Cette interface permets de vérifier l'état de la connection avec la CNC. \\n Lorsqu'une erreur intervient, la CNC se mets en état \"Arlarm\". Pour continuer ou recommencer la découpe, cliquez sur \"Kill Alarm\", puis \"Soft Reset\". \\n En cas d'erreur de connection, cliquez sur \"Disconnect\" et changez le paramètres de connection dans System --> GRBL Settings");
         jPanelConnection4.setVerifyInputWhenFocusTarget(false);
         jPanelConnection4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel27.add(jPanelConnection3);
+
 
         jLabel1.setText("jLabel1");
         jPanelConnection4.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 240, 120));
@@ -3590,6 +3657,18 @@ public class frmControl extends javax.swing.JFrame
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("SourceRabbit GCODE Sender");
         setSize(new java.awt.Dimension(1000, 728));
+
+        addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                formMouseDragged(evt);
+            }
+        });
+        addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentResized(java.awt.event.ComponentEvent evt) {
+                formComponentResized(evt);
+            }
+        });
+
         addWindowFocusListener(new java.awt.event.WindowFocusListener() {
             public void windowGainedFocus(java.awt.event.WindowEvent evt) {
                 formWindowGainedFocus(evt);
@@ -6244,7 +6323,7 @@ public class frmControl extends javax.swing.JFrame
 //--------------------------Partie NONO--------------------------------
     private void jConfirmerBouttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jConfirmerBouttonActionPerformed
 
-        jDialogLevel.dispose();
+
         checkStatus();
     }//GEN-LAST:event_jConfirmerBouttonActionPerformed
 
@@ -6282,11 +6361,6 @@ public class frmControl extends javax.swing.JFrame
 
 
 private void checkStatus(){
-
-    
-    indexonglets = jTabbedPane1.getSelectedIndex();
-    
-    
     //debutant
     if(level == 1){
         jMenuSetWorkPos.setEnabled(false);
@@ -6366,9 +6440,14 @@ private void checkStatus(){
         jLabelRemoveFocus.setEnabled(true);
         jLabel4.setEnabled(true);
         jTabbedPane1.setEnabledAt(2,true);
+        jDialogLevel.dispose();
+        jDialog3.setLocationRelativeTo(null);
+        jDialog3.setVisible(true);
     
     }
 }
+    
+
     
 
     private void jButtonBrowseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBrowseActionPerformed
@@ -6804,10 +6883,8 @@ private void checkStatus(){
         if(jMenu6.getText()=="Level"){
         // Choix du level
         jDialogLevel.pack();
-        jDialogLevel.setLocationRelativeTo(null); 
         jDialogLevel.setVisible(true);
-        verified_level = jLevelCombo.getSelectedIndex() + 1;
-   
+        verified_level = jLevelCombo.getSelectedIndex() + 1 ;
         }
         else{
             if(null!=jMenu6.getText())switch (jMenu6.getText()) {
@@ -6824,6 +6901,7 @@ private void checkStatus(){
                     break;
             }
         }
+
                
             switch (verified_level) {
                 case 1:
@@ -7610,13 +7688,43 @@ private void checkStatus(){
         
     }//GEN-LAST:event_jLabelActiveStatePropertyChange
 
-    private void jLabelActiveState2PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jLabelActiveState2PropertyChange
+   
+
+
+
+
+    private void jButtonConnectDisconnect3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonConnectDisconnect3ActionPerformed
         // TODO add your handling code here:
-       
-    }//GEN-LAST:event_jLabelActiveState2PropertyChange
+    }//GEN-LAST:event_jButtonConnectDisconnect3ActionPerformed
 
+    private void jLabelActiveStateInputMethodTextChanged(java.awt.event.InputMethodEvent evt) {//GEN-FIRST:event_jLabelActiveStateInputMethodTextChanged
+        
+    }//GEN-LAST:event_jLabelActiveStateInputMethodTextChanged
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private void jLabelActiveStatePropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jLabelActiveStatePropertyChange
+        // TODO add your handling code here:
+        jLabelActiveState2.setText(jLabelActiveState.getText());
+        jLabelActiveState2.setForeground(jLabelActiveState.getForeground());
+    }//GEN-LAST:event_jLabelActiveStatePropertyChange
+
+    private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
+        jDialog3.dispose();
+        jDialogLevel.dispose();
+        jDialogLevel.dispose();
+    }//GEN-LAST:event_jButton26ActionPerformed
+
+    private void formComponentResized(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentResized
+
+    }//GEN-LAST:event_formComponentResized
+
+    private void formMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMouseDragged
+
+    }//GEN-LAST:event_formMouseDragged
+
+    
+  
+
+   // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
@@ -7635,6 +7743,7 @@ private void checkStatus(){
     private javax.swing.JButton jButton23;
     private javax.swing.JButton jButton24;
     private javax.swing.JButton jButton25;
+    private javax.swing.JButton jButton26;
     private javax.swing.JButton jButton27;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
@@ -7719,6 +7828,7 @@ private void checkStatus(){
     private javax.swing.JButton jConfirmerBoutton;
     private javax.swing.JDialog jDialog1;
     private javax.swing.JDialog jDialog2;
+    private javax.swing.JDialog jDialog3;
     private javax.swing.JDialog jDialogGSender;
     private javax.swing.JDialog jDialogImportGCode;
     private javax.swing.JDialog jDialogLevel;
