@@ -1078,19 +1078,16 @@ public class frmControl extends javax.swing.JFrame
         jPanel6 = new javax.swing.JPanel();
         jSeparator1 = new javax.swing.JSeparator();
         jButtonConnectDisconnect7 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        jTextPane1 = new javax.swing.JTextPane();
         jComboBox1 = new javax.swing.JComboBox<>();
         jComboBox2 = new javax.swing.JComboBox<>();
-        jScrollPane4 = new javax.swing.JScrollPane();
-        jTextPane2 = new javax.swing.JTextPane();
         jLabel11 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jSeparator3 = new javax.swing.JSeparator();
-        jScrollPane5 = new javax.swing.JScrollPane();
-        jTextPane3 = new javax.swing.JTextPane();
         jLabelRecommendedRPM = new javax.swing.JLabel();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
+        jLabel47 = new javax.swing.JLabel();
+        jLabelRecommendedRPM1 = new javax.swing.JLabel();
         jLayeredPane1 = new javax.swing.JLayeredPane();
         jPanel2 = new javax.swing.JPanel();
         jButtonResetWorkPosition = new javax.swing.JButton();
@@ -1766,7 +1763,7 @@ public class frmControl extends javax.swing.JFrame
                     .addComponent(jButtonGCodeCancel1)
                     .addComponent(jButtonGCodeVisualize1)
                     .addComponent(jButtonGCodeBrowse1))
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel9.add(jPanelGCodeFile1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 530, 70));
@@ -1923,6 +1920,7 @@ public class frmControl extends javax.swing.JFrame
         jDialogTab1.getContentPane().setLayout(jDialogTab1Layout);
         jDialogTab1Layout.setHorizontalGroup(
             jDialogTab1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jSeparator10)
             .addGroup(jDialogTab1Layout.createSequentialGroup()
                 .addGroup(jDialogTab1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jSeparator11)
@@ -1930,20 +1928,19 @@ public class frmControl extends javax.swing.JFrame
                         .addContainerGap()
                         .addGroup(jDialogTab1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel44, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel45, javax.swing.GroupLayout.DEFAULT_SIZE, 600, Short.MAX_VALUE))))
+                            .addComponent(jLabel45, javax.swing.GroupLayout.DEFAULT_SIZE, 600, Short.MAX_VALUE)))
+                    .addGroup(jDialogTab1Layout.createSequentialGroup()
+                        .addGroup(jDialogTab1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jDialogTab1Layout.createSequentialGroup()
+                                .addGap(201, 201, 201)
+                                .addComponent(jButtonOk2, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(32, 32, 32)
+                                .addComponent(jButtonCancel2, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jDialogTab1Layout.createSequentialGroup()
+                                .addGap(83, 83, 83)
+                                .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 71, Short.MAX_VALUE)))
                 .addContainerGap())
-            .addGroup(jDialogTab1Layout.createSequentialGroup()
-                .addGroup(jDialogTab1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jDialogTab1Layout.createSequentialGroup()
-                        .addGap(201, 201, 201)
-                        .addComponent(jButtonOk2, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(32, 32, 32)
-                        .addComponent(jButtonCancel2, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jDialogTab1Layout.createSequentialGroup()
-                        .addGap(83, 83, 83)
-                        .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(83, Short.MAX_VALUE))
-            .addComponent(jSeparator10)
         );
         jDialogTab1Layout.setVerticalGroup(
             jDialogTab1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2712,7 +2709,6 @@ public class frmControl extends javax.swing.JFrame
                 .addContainerGap())
         );
 
-        jFrame1.setMaximumSize(new java.awt.Dimension(930, 805));
         jFrame1.setMinimumSize(new java.awt.Dimension(930, 805));
         jFrame1.setResizable(false);
 
@@ -3168,7 +3164,7 @@ public class frmControl extends javax.swing.JFrame
         jPanel27.setLayout(jPanel27Layout);
         jPanel27Layout.setHorizontalGroup(
             jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 576, Short.MAX_VALUE)
+            .addGap(0, 590, Short.MAX_VALUE)
             .addGroup(jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel27Layout.createSequentialGroup()
                     .addGap(150, 150, 150)
@@ -3177,7 +3173,7 @@ public class frmControl extends javax.swing.JFrame
         );
         jPanel27Layout.setVerticalGroup(
             jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 284, Short.MAX_VALUE)
+            .addGap(0, 314, Short.MAX_VALUE)
             .addGroup(jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel27Layout.createSequentialGroup()
                     .addContainerGap()
@@ -3460,7 +3456,7 @@ public class frmControl extends javax.swing.JFrame
                     .addComponent(jButtonGCodeVisualize2)
                     .addComponent(jButtonGCodeBrowse2)
                     .addComponent(jButtonVisualise1))
-                .addContainerGap(14, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel29.add(jPanelGCodeFile2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 440, 70));
@@ -3470,15 +3466,13 @@ public class frmControl extends javax.swing.JFrame
         jDialogImportGCodeLayout.setHorizontalGroup(
             jDialogImportGCodeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jDialogImportGCodeLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton27, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jDialogImportGCodeLayout.createSequentialGroup()
                 .addComponent(jPanel26, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialogImportGCodeLayout.createSequentialGroup()
+            .addGroup(jDialogImportGCodeLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel29, javax.swing.GroupLayout.PREFERRED_SIZE, 495, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jDialogImportGCodeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton27, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel29, javax.swing.GroupLayout.PREFERRED_SIZE, 495, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jDialogImportGCodeLayout.setVerticalGroup(
@@ -3495,6 +3489,7 @@ public class frmControl extends javax.swing.JFrame
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("SourceRabbit GCODE Sender");
+        setSize(new java.awt.Dimension(1000, 728));
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "G-Code File", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(255, 255, 255))); // NOI18N
         jPanel1.setToolTipText("Ce panneau permets d'importer et visualiser les détails de découpe du fichier. ");
@@ -3646,7 +3641,7 @@ public class frmControl extends javax.swing.JFrame
                     .addComponent(jButtonGCodeVisualize)
                     .addComponent(jButtonGCodeBrowse)
                     .addComponent(jButtonVisualise))
-                .addContainerGap(14, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel1.add(jPanelGCodeFile, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 530, 70));
@@ -3815,7 +3810,7 @@ public class frmControl extends javax.swing.JFrame
                 .addGroup(jPanelMacrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel9)
                     .addComponent(jLabel10))
-                .addContainerGap(271, Short.MAX_VALUE))
+                .addContainerGap(277, Short.MAX_VALUE))
         );
         jPanelMacrosLayout.setVerticalGroup(
             jPanelMacrosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3824,7 +3819,7 @@ public class frmControl extends javax.swing.JFrame
                 .addComponent(jLabel9)
                 .addGap(3, 3, 3)
                 .addComponent(jLabel10)
-                .addContainerGap(430, Short.MAX_VALUE))
+                .addContainerGap(464, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Macros", jPanelMacros);
@@ -3874,9 +3869,8 @@ public class frmControl extends javax.swing.JFrame
 
         jTabbedPane1.addTab("Machine Information", jPanel7);
 
-        jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Vérification Paramètres de découpe", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(255, 255, 255))); // NOI18N
-        jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel6.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 350, 170, 10));
+        jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder(""), "Vérifications", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(255, 0, 51))); // NOI18N
+        jPanel6.setToolTipText("");
 
         jButtonConnectDisconnect7.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jButtonConnectDisconnect7.setActionCommand("Démarrer la découpe");
@@ -3886,24 +3880,9 @@ public class frmControl extends javax.swing.JFrame
                 jButtonConnectDisconnect7ActionPerformed(evt);
             }
         });
-        jPanel6.add(jButtonConnectDisconnect7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 450, 170, -1));
-
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Vitesse de rotation");
-        jPanel6.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 170, -1));
-        jLabel1.getAccessibleContext().setAccessibleName("Vitesse de rotation\n");
-
-        jTextPane1.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
-        jTextPane1.setText("Définir ces paramètres permets de sélctionner la bonne vitesse de rotation et de découpe");
-        jTextPane1.setFocusTraversalPolicyProvider(true);
-        jScrollPane3.setViewportView(jTextPane1);
-
-        jPanel6.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, 170, -1));
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "V bit", "flat bit", "drill bit", "etc bit" }));
         jComboBox1.setName(""); // NOI18N
-        jPanel6.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, 170, -1));
 
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bois", "MDF", "Aluminium", "Plastique", "PCB", "Bronze", "Vinyle" }));
         jComboBox2.setName(""); // NOI18N
@@ -3912,28 +3891,75 @@ public class frmControl extends javax.swing.JFrame
                 jComboBox2ActionPerformed(evt);
             }
         });
-        jPanel6.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 170, -1));
-
-        jTextPane2.setText("Vitesse de rotation :");
-        jScrollPane4.setViewportView(jTextPane2);
-
-        jPanel6.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 400, 130, -1));
 
         jLabel11.setText("Matériel");
-        jPanel6.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, 170, -1));
 
         jLabel13.setText("Fraiseuse");
-        jPanel6.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 300, 170, -1));
-        jPanel6.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 440, 170, 10));
-
-        jTextPane3.setText("Vitesse de découpe :");
-        jScrollPane5.setViewportView(jTextPane3);
-
-        jPanel6.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 370, 130, -1));
 
         jLabelRecommendedRPM.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabelRecommendedRPM.setText("0");
-        jPanel6.add(jLabelRecommendedRPM, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 370, 30, 20));
+
+        jLabel43.setText("<html>Définir ces paramètres permets de vérifier la bonne vitesse de rotation et de découpe</html>");
+
+        jLabel46.setText("<html>Vitesse de découpe :<html>");
+
+        jLabel47.setText("Vitesse de rotation :");
+
+        jLabelRecommendedRPM1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabelRecommendedRPM1.setText("0");
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(4, 4, 4)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel43, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(130, 130, 130)
+                        .addComponent(jLabelRecommendedRPM1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel46, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addComponent(jLabel47, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabelRecommendedRPM, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonConnectDisconnect7, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)))
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(3, 3, 3)
+                .addComponent(jLabel43, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(21, 21, 21)
+                .addComponent(jLabel11)
+                .addGap(4, 4, 4)
+                .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel13)
+                .addGap(4, 4, 4)
+                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(8, 8, 8)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabelRecommendedRPM1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel46, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(5, 5, 5)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel47, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelRecommendedRPM, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(9, 9, 9)
+                .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(jButtonConnectDisconnect7))
+        );
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Machine Status", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(255, 255, 255))); // NOI18N
         jPanel2.setToolTipText("Les informations de la CNC en temps réel sont affichées ici. En appuyant sur |Ø|, l'axe est remis à 0. ");
@@ -5120,7 +5146,6 @@ public class frmControl extends javax.swing.JFrame
         
         int verified_level = jLevelCombo.getSelectedIndex() + 1;
         System.out.println(verified_level);
-        
         if(tutorial){ // Verifier que l'utilisateur n'a pas quitté le tuto
             
 
@@ -5894,6 +5919,7 @@ public class frmControl extends javax.swing.JFrame
     private void jConfirmerBouttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jConfirmerBouttonActionPerformed
 
         jDialogLevel.dispose();
+        checkStatus();
     }//GEN-LAST:event_jConfirmerBouttonActionPerformed
 
     private void jLevelComboActionPerformed(java.awt.event.ActionEvent evt) {
@@ -5931,6 +5957,10 @@ public class frmControl extends javax.swing.JFrame
 
 private void checkStatus(){
 
+    
+    indexonglets = jTabbedPane1.getSelectedIndex();
+    
+    
     //debutant
     if(level == 1){
         jMenuSetWorkPos.setEnabled(false);
@@ -5938,13 +5968,51 @@ private void checkStatus(){
         jPanel5.setEnabled(false);
         jPanelMacros.setEnabled(false);
         jPanelMachineControl.setEnabled(false);
-        jMenuItemToolChangeSettings.setEnabled(false);    
-        
+        jMenuItemToolChangeSettings.setEnabled(false);
+        jPanel6.setVisible(true);
+        jRadioButtonInches.setEnabled(false);
+        jRadioButtonMillimeters.setEnabled(false);
+        jSpinnerStep.setEnabled(false);
+        jSliderStepSize.setEnabled(false);
+        jCheckBoxEnableKeyboardJogging.setEnabled(false);
+        jButtonZMinus.setEnabled(false);
+        jButtonZPlus.setEnabled(false);
+        jButtonXPlus.setEnabled(false);
+        jButtonYPlus.setEnabled(false);
+        jButtonXMinus.setEnabled(false);
+        jButtonYMinus.setEnabled(false);
+        jButtonReturnToZero.setEnabled(false);
+        jLabelRemoveFocus.setEnabled(false);
+        jLabel4.setEnabled(false);
+        jTabbedPane1.setEnabledAt(2,false);
 }
     
    //Intermédiaire
     if(level == 2){
-    
+        jMenuSetWorkPos.setEnabled(true);
+        jMenuItemHoleCenterFinder.setEnabled(true);
+        jPanel5.setEnabled(true);
+        jPanelMacros.setEnabled(true);
+        jPanelMachineControl.setEnabled(true);
+        jMenuItemToolChangeSettings.setEnabled(true);
+        /* Cacher aide débutants */
+        jPanel6.setVisible(true);
+        jRadioButtonInches.setEnabled(true);
+        jRadioButtonMillimeters.setEnabled(true);
+        jSpinnerStep.setEnabled(true);
+        jSliderStepSize.setEnabled(true);
+        jCheckBoxEnableKeyboardJogging.setEnabled(true);
+        jButtonZMinus.setEnabled(true);
+        jButtonZPlus.setEnabled(true);
+        jButtonXPlus.setEnabled(true);
+        jButtonYPlus.setEnabled(true);
+        jButtonXMinus.setEnabled(true);
+        jButtonYMinus.setEnabled(true);
+        jButtonReturnToZero.setEnabled(true);
+        jLabelRemoveFocus.setEnabled(true);
+        jLabel4.setEnabled(true);
+        jTabbedPane1.setEnabledAt(2,true);
+
 }
     
     //Expert
@@ -5957,6 +6025,21 @@ private void checkStatus(){
         jMenuItemToolChangeSettings.setEnabled(true);
         /* Cacher aide débutants */
         jPanel6.setVisible(false);
+        jRadioButtonInches.setEnabled(true);
+        jRadioButtonMillimeters.setEnabled(true);
+        jSpinnerStep.setEnabled(true);
+        jSliderStepSize.setEnabled(true);
+        jCheckBoxEnableKeyboardJogging.setEnabled(true);
+        jButtonZMinus.setEnabled(true);
+        jButtonZPlus.setEnabled(true);
+        jButtonXPlus.setEnabled(true);
+        jButtonYPlus.setEnabled(true);
+        jButtonXMinus.setEnabled(true);
+        jButtonYMinus.setEnabled(true);
+        jButtonReturnToZero.setEnabled(true);
+        jLabelRemoveFocus.setEnabled(true);
+        jLabel4.setEnabled(true);
+        jTabbedPane1.setEnabledAt(2,true);
     
     }
 }
@@ -6420,7 +6503,6 @@ private void checkStatus(){
     private javax.swing.JDialog jDialogTab4;
     private javax.swing.JDialog jDialogZeroAxes;
     private javax.swing.JFrame jFrame1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -6457,8 +6539,11 @@ private void checkStatus(){
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel55;
     private javax.swing.JLabel jLabel56;
@@ -6538,6 +6623,7 @@ private void checkStatus(){
     private javax.swing.JLabel jLabelRealTimeSpindleRPM8;
     private javax.swing.JLabel jLabelRealTimeSpindleRPM9;
     private javax.swing.JLabel jLabelRecommendedRPM;
+    private javax.swing.JLabel jLabelRecommendedRPM1;
     private javax.swing.JLabel jLabelRemainingRows;
     private javax.swing.JLabel jLabelRemainingRows1;
     private javax.swing.JLabel jLabelRemainingRows2;
@@ -6663,9 +6749,6 @@ private void checkStatus(){
     private javax.swing.JRadioButton jRadioButtonMillimeters1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JSeparator jSeparator1;
@@ -6699,12 +6782,10 @@ private void checkStatus(){
     private javax.swing.JTextField jTextFieldGCodeFile;
     private javax.swing.JTextField jTextFieldGCodeFile1;
     private javax.swing.JTextField jTextFieldGCodeFile2;
-    private javax.swing.JTextPane jTextPane1;
-    private javax.swing.JTextPane jTextPane2;
-    private javax.swing.JTextPane jTextPane3;
     // End of variables declaration//GEN-END:variables
     boolean tutorial=true;
     int level;
+    int indexonglets;
 
    
 }
