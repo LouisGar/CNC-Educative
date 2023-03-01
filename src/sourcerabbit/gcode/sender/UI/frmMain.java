@@ -36,8 +36,7 @@ import sourcerabbit.gcode.sender.Core.Threading.ManualResetEvent;
 import sourcerabbit.gcode.sender.Core.CNCController.Position.Position2D;
 import sourcerabbit.gcode.sender.Core.Settings.SettingsManager;
 import sourcerabbit.gcode.sender.UI.UITools.UITools;
-import sourcerabbit.gcode.sender.UI.Level;
-import sourcerabbit.gcode.sender.UI.Utilisateurs;
+
 
 /**
  *

@@ -44,11 +44,13 @@ import javax.swing.JButton;
 import javax.swing.JFileChooser;
 import javax.swing.JFormattedTextField;
 import javax.swing.JFrame;
+import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JRootPane;
 import javax.swing.JSpinner;
 import javax.swing.JTextField;
 import javax.swing.JToolTip;
+import javax.swing.MenuElement;
 import javax.swing.SpinnerNumberModel;
 import javax.swing.border.TitledBorder;
 import javax.swing.filechooser.FileNameExtensionFilter;
@@ -977,6 +979,60 @@ public class frmControl extends javax.swing.JFrame
         jButton9 = new javax.swing.JButton();
         jButton10 = new javax.swing.JButton();
         jButton11 = new javax.swing.JButton();
+        jDialogMiseEnPlace = new javax.swing.JDialog();
+        jPanel14 = new javax.swing.JPanel();
+        jPanel15 = new javax.swing.JPanel();
+        jPanel22 = new javax.swing.JPanel();
+        jPanel23 = new javax.swing.JPanel();
+        jLabel38 = new javax.swing.JLabel();
+        jButton12 = new javax.swing.JButton();
+        jButton13 = new javax.swing.JButton();
+        jDialogZeroAxes = new javax.swing.JDialog();
+        jPanel24 = new javax.swing.JPanel();
+        jPanel25 = new javax.swing.JPanel();
+        jPanel27 = new javax.swing.JPanel();
+        jPanelMachineControl1 = new javax.swing.JPanel();
+        jRadioButtonInches1 = new javax.swing.JRadioButton();
+        jRadioButtonMillimeters1 = new javax.swing.JRadioButton();
+        jLabel42 = new javax.swing.JLabel();
+        jSpinnerStep1 = new javax.swing.JSpinner();
+        jPanelJogButtons1 = new javax.swing.JPanel();
+        jButtonYMinus1 = new javax.swing.JButton();
+        jButtonXMinus1 = new javax.swing.JButton();
+        jButtonYPlus1 = new javax.swing.JButton();
+        jButtonXPlus1 = new javax.swing.JButton();
+        jButtonZPlus1 = new javax.swing.JButton();
+        jButtonZMinus1 = new javax.swing.JButton();
+        jCheckBoxEnableKeyboardJogging1 = new javax.swing.JCheckBox();
+        jLabelRemoveFocus1 = new javax.swing.JLabel();
+        jButtonReturnToZero1 = new javax.swing.JButton();
+        jSliderStepSize1 = new javax.swing.JSlider();
+        jLabel39 = new javax.swing.JLabel();
+        jButton14 = new javax.swing.JButton();
+        jButton24 = new javax.swing.JButton();
+        jButton25 = new javax.swing.JButton();
+        jDialogImportGCode = new javax.swing.JDialog();
+        jPanel26 = new javax.swing.JPanel();
+        jPanel28 = new javax.swing.JPanel();
+        jLabel40 = new javax.swing.JLabel();
+        jButton27 = new javax.swing.JButton();
+        jPanel29 = new javax.swing.JPanel();
+        jLabelRowsInFile9 = new javax.swing.JLabel();
+        jLabelRowsInFile10 = new javax.swing.JLabel();
+        jLabelRowsInFile20 = new javax.swing.JLabel();
+        jLabelRowsInFile21 = new javax.swing.JLabel();
+        jLabelSentRows2 = new javax.swing.JLabel();
+        jLabelRemainingRows2 = new javax.swing.JLabel();
+        jPanelGCodeFile2 = new javax.swing.JPanel();
+        jButtonGCodeBrowse2 = new javax.swing.JButton();
+        jTextFieldGCodeFile2 = new javax.swing.JTextField();
+        jLabel41 = new javax.swing.JLabel();
+        jButtonGCodePause2 = new javax.swing.JButton();
+        jButtonGCodeSend2 = new javax.swing.JButton();
+        jButtonGCodeCancel2 = new javax.swing.JButton();
+        jButtonGCodeVisualize2 = new javax.swing.JButton();
+        jButtonBrowse1 = new javax.swing.JButton();
+        jButtonVisualise1 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabelRowsInFile = new javax.swing.JLabel();
         jLabelRowsInFile1 = new javax.swing.JLabel();
@@ -1085,16 +1141,20 @@ public class frmControl extends javax.swing.JFrame
         jMenuItemGRBLSettings = new javax.swing.JMenuItem();
         jMenuItemExit = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuSetWorkPos = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenuItemHoleCenterFinder = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
         jMenuItemStartHomingSequence = new javax.swing.JMenuItem();
         jMenuItemToolChangeSettings = new javax.swing.JMenuItem();
+        jMenu5 = new javax.swing.JMenu();
+        jMenuItem5 = new javax.swing.JMenuItem();
+        jMenuItem9 = new javax.swing.JMenuItem();
+        jMenuItem10 = new javax.swing.JMenuItem();
+        jMenuItem1 = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenuItem4 = new javax.swing.JMenuItem();
-        jMenuItem5 = new javax.swing.JMenuItem();
         jMenu6 = new javax.swing.JMenu();
         jMenuItem6 = new javax.swing.JMenuItem();
         jMenuItem7 = new javax.swing.JMenuItem();
@@ -2652,6 +2712,10 @@ public class frmControl extends javax.swing.JFrame
                 .addContainerGap())
         );
 
+        jFrame1.setMaximumSize(new java.awt.Dimension(930, 805));
+        jFrame1.setMinimumSize(new java.awt.Dimension(930, 805));
+        jFrame1.setResizable(false);
+
         jLabel36.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel36.setText("<html>  <h1> Apprenez le G Code </h1> </html>");
 
@@ -2710,7 +2774,6 @@ public class frmControl extends javax.swing.JFrame
         jTable1.setEditingColumn(0);
         jTable1.setSelectionMode(javax.swing.ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
         jTable1.setShowGrid(true);
-        jTable1.setShowVerticalLines(true);
         jTable1.getTableHeader().setReorderingAllowed(false);
         jScrollPane7.setViewportView(jTable1);
         jTable1.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
@@ -2735,7 +2798,6 @@ public class frmControl extends javax.swing.JFrame
             }
         });
 
-        jButton11.setActionCommand("");
         jButton11.setLabel("+ d'information");
         jButton11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2780,7 +2842,655 @@ public class frmControl extends javax.swing.JFrame
                     .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jDialogMiseEnPlace.setName("jDialogMiseEnPlace"); // NOI18N
+
+        jPanel22.setBackground(new java.awt.Color(200, 200, 200));
+
+        javax.swing.GroupLayout jPanel22Layout = new javax.swing.GroupLayout(jPanel22);
+        jPanel22.setLayout(jPanel22Layout);
+        jPanel22Layout.setHorizontalGroup(
+            jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 379, Short.MAX_VALUE)
+        );
+        jPanel22Layout.setVerticalGroup(
+            jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 250, Short.MAX_VALUE)
+        );
+
+        jPanel23.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout jPanel23Layout = new javax.swing.GroupLayout(jPanel23);
+        jPanel23.setLayout(jPanel23Layout);
+        jPanel23Layout.setHorizontalGroup(
+            jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 379, Short.MAX_VALUE)
+        );
+        jPanel23Layout.setVerticalGroup(
+            jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 250, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
+        jPanel15.setLayout(jPanel15Layout);
+        jPanel15Layout.setHorizontalGroup(
+            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel15Layout.createSequentialGroup()
+                .addComponent(jPanel22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                .addComponent(jPanel23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        jPanel15Layout.setVerticalGroup(
+            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel23, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
+        jPanel14.setLayout(jPanel14Layout);
+        jPanel14Layout.setHorizontalGroup(
+            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel14Layout.createSequentialGroup()
+                .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        jPanel14Layout.setVerticalGroup(
+            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        jLabel38.setText("<html>Ce texte explique comment placer le bois avec les 2 pinces pour le tenir et comment indiquer a la CNC ou est la position de travail <br><br>\n\nUne fois que la piece est positionnée, il faut définir la zone de travail pour que la CNC sache ou se positionner. ");
+
+        jButton12.setText("Défnir la zone de travail");
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12ActionPerformed(evt);
+            }
+        });
+
+        jButton13.setText("Suivant");
+        jButton13.setEnabled(false);
+        jButton13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton13ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jDialogMiseEnPlaceLayout = new javax.swing.GroupLayout(jDialogMiseEnPlace.getContentPane());
+        jDialogMiseEnPlace.getContentPane().setLayout(jDialogMiseEnPlaceLayout);
+        jDialogMiseEnPlaceLayout.setHorizontalGroup(
+            jDialogMiseEnPlaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialogMiseEnPlaceLayout.createSequentialGroup()
+                .addGroup(jDialogMiseEnPlaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jDialogMiseEnPlaceLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jDialogMiseEnPlaceLayout.createSequentialGroup()
+                        .addGap(227, 227, 227)
+                        .addComponent(jButton12)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+            .addGroup(jDialogMiseEnPlaceLayout.createSequentialGroup()
+                .addGap(128, 128, 128)
+                .addComponent(jLabel38, javax.swing.GroupLayout.PREFERRED_SIZE, 543, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jDialogMiseEnPlaceLayout.setVerticalGroup(
+            jDialogMiseEnPlaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialogMiseEnPlaceLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(29, 29, 29)
+                .addComponent(jLabel38, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(jDialogMiseEnPlaceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(28, Short.MAX_VALUE))
+        );
+
+        jDialogZeroAxes.setName("jDialogMiseEnPlace"); // NOI18N
+
+        jPanel27.setBackground(new java.awt.Color(255, 255, 255));
+
+        jPanelMachineControl1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Machine Control", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(255, 255, 255))); // NOI18N
+        jPanelMachineControl1.setToolTipText("Ce panneau de controle permets de déplacer la CNC en temps réel. Il est possible d'ajuster le pas avec la glissière.");
+
+        jRadioButtonInches1.setForeground(new java.awt.Color(255, 255, 255));
+        jRadioButtonInches1.setText("inch");
+        jRadioButtonInches1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButtonInches1ActionPerformed(evt);
+            }
+        });
+
+        jRadioButtonMillimeters1.setForeground(new java.awt.Color(255, 255, 255));
+        jRadioButtonMillimeters1.setSelected(true);
+        jRadioButtonMillimeters1.setText("mm");
+        jRadioButtonMillimeters1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButtonMillimeters1ActionPerformed(evt);
+            }
+        });
+
+        jLabel42.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel42.setText("Step Size:");
+
+        jSpinnerStep1.setModel(new javax.swing.SpinnerNumberModel(1.0d, 0.009999999776482582d, null, 0.009999999776482582d));
+        jSpinnerStep1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+
+        jButtonYMinus1.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonYMinus1.setText("Y-");
+        jButtonYMinus1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonYMinus1ActionPerformed(evt);
+            }
+        });
+
+        jButtonXMinus1.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonXMinus1.setText("X-");
+        jButtonXMinus1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonXMinus1ActionPerformed(evt);
+            }
+        });
+
+        jButtonYPlus1.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonYPlus1.setText("Y+");
+        jButtonYPlus1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonYPlus1ActionPerformed(evt);
+            }
+        });
+
+        jButtonXPlus1.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonXPlus1.setText("X+");
+        jButtonXPlus1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonXPlus1ActionPerformed(evt);
+            }
+        });
+
+        jButtonZPlus1.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonZPlus1.setText("Z+");
+        jButtonZPlus1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonZPlus1ActionPerformed(evt);
+            }
+        });
+
+        jButtonZMinus1.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonZMinus1.setText("Z-");
+        jButtonZMinus1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonZMinus1ActionPerformed(evt);
+            }
+        });
+
+        jCheckBoxEnableKeyboardJogging1.setSelected(true);
+        jCheckBoxEnableKeyboardJogging1.setText("Enable Keyboard Jogging");
+        jCheckBoxEnableKeyboardJogging1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBoxEnableKeyboardJogging1ActionPerformed(evt);
+            }
+        });
+
+        jLabelRemoveFocus1.setFont(new java.awt.Font("Tahoma", 0, 9)); // NOI18N
+        jLabelRemoveFocus1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabelRemoveFocus1.setText("[Click To Focus]");
+        jLabelRemoveFocus1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabelRemoveFocus1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabelRemoveFocus1MouseClicked(evt);
+            }
+        });
+
+        jButtonReturnToZero1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jButtonReturnToZero1.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonReturnToZero1.setText("Return to Ø");
+        jButtonReturnToZero1.setToolTipText("Return to initial Work Position (0,0,0)");
+        jButtonReturnToZero1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonReturnToZero1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanelJogButtons1Layout = new javax.swing.GroupLayout(jPanelJogButtons1);
+        jPanelJogButtons1.setLayout(jPanelJogButtons1Layout);
+        jPanelJogButtons1Layout.setHorizontalGroup(
+            jPanelJogButtons1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelJogButtons1Layout.createSequentialGroup()
+                .addComponent(jButtonXMinus1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(6, 6, 6)
+                .addGroup(jPanelJogButtons1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButtonYPlus1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonYMinus1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButtonXPlus1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(jPanelJogButtons1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButtonZPlus1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonZMinus1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(jPanelJogButtons1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanelJogButtons1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelJogButtons1Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jCheckBoxEnableKeyboardJogging1)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabelRemoveFocus1))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelJogButtons1Layout.createSequentialGroup()
+                        .addComponent(jButtonReturnToZero1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap())))
+        );
+        jPanelJogButtons1Layout.setVerticalGroup(
+            jPanelJogButtons1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelJogButtons1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanelJogButtons1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelJogButtons1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelJogButtons1Layout.createSequentialGroup()
+                            .addGap(21, 21, 21)
+                            .addComponent(jButtonXPlus1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(23, 23, 23))
+                        .addGroup(jPanelJogButtons1Layout.createSequentialGroup()
+                            .addComponent(jButtonYPlus1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jButtonYMinus1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanelJogButtons1Layout.createSequentialGroup()
+                        .addGap(21, 21, 21)
+                        .addComponent(jButtonXMinus1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanelJogButtons1Layout.createSequentialGroup()
+                        .addComponent(jButtonZPlus1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButtonZMinus1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 11, Short.MAX_VALUE)
+                .addGroup(jPanelJogButtons1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jCheckBoxEnableKeyboardJogging1)
+                    .addComponent(jLabelRemoveFocus1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButtonReturnToZero1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        jSliderStepSize1.setMaximum(5);
+        jSliderStepSize1.setMinorTickSpacing(1);
+        jSliderStepSize1.setPaintLabels(true);
+        jSliderStepSize1.setPaintTicks(true);
+        jSliderStepSize1.setSnapToTicks(true);
+        jSliderStepSize1.setValue(3);
+        jSliderStepSize1.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                jSliderStepSize1StateChanged(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanelMachineControl1Layout = new javax.swing.GroupLayout(jPanelMachineControl1);
+        jPanelMachineControl1.setLayout(jPanelMachineControl1Layout);
+        jPanelMachineControl1Layout.setHorizontalGroup(
+            jPanelMachineControl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelMachineControl1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanelMachineControl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jSliderStepSize1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanelJogButtons1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jPanelMachineControl1Layout.createSequentialGroup()
+                        .addComponent(jLabel42)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jSpinnerStep1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jRadioButtonInches1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jRadioButtonMillimeters1)
+                        .addGap(0, 1, Short.MAX_VALUE))))
+        );
+        jPanelMachineControl1Layout.setVerticalGroup(
+            jPanelMachineControl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelMachineControl1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanelMachineControl1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel42)
+                    .addComponent(jSpinnerStep1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jRadioButtonInches1)
+                    .addComponent(jRadioButtonMillimeters1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jSliderStepSize1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jPanelJogButtons1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(12, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jPanel27Layout = new javax.swing.GroupLayout(jPanel27);
+        jPanel27.setLayout(jPanel27Layout);
+        jPanel27Layout.setHorizontalGroup(
+            jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 576, Short.MAX_VALUE)
+            .addGroup(jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel27Layout.createSequentialGroup()
+                    .addGap(150, 150, 150)
+                    .addComponent(jPanelMachineControl1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(165, Short.MAX_VALUE)))
+        );
+        jPanel27Layout.setVerticalGroup(
+            jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 284, Short.MAX_VALUE)
+            .addGroup(jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel27Layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(jPanelMachineControl1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+        );
+
+        javax.swing.GroupLayout jPanel25Layout = new javax.swing.GroupLayout(jPanel25);
+        jPanel25.setLayout(jPanel25Layout);
+        jPanel25Layout.setHorizontalGroup(
+            jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel25Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel25Layout.setVerticalGroup(
+            jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel25Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel27, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout jPanel24Layout = new javax.swing.GroupLayout(jPanel24);
+        jPanel24.setLayout(jPanel24Layout);
+        jPanel24Layout.setHorizontalGroup(
+            jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel24Layout.createSequentialGroup()
+                .addComponent(jPanel25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel24Layout.setVerticalGroup(
+            jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        jLabel39.setText("<html>Maintenant, il faut positionner la CNC a son zéro de référence afin qu'elle puisse savoir sa position réelle.  \n<br><br> \nCela est fait en cliquant dans le menu <i>Machine</i> puis <i> Start Homing Sequence </i> ou sur le bouton ci dessous <br>\nApres la mise a zéro des axes X et Y, l'axe Z est référencer avec le bouton suivant ou dans <i>Tools</i> puis <i>Probe CNC </i> ");
+
+        jButton14.setText("Position de Référence");
+        jButton14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton14ActionPerformed(evt);
+            }
+        });
+
+        jButton24.setText("Suivant");
+        jButton24.setEnabled(false);
+        jButton24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton24ActionPerformed(evt);
+            }
+        });
+
+        jButton25.setText("Capteur Référence Z");
+        jButton25.setEnabled(false);
+        jButton25.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton25ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jDialogZeroAxesLayout = new javax.swing.GroupLayout(jDialogZeroAxes.getContentPane());
+        jDialogZeroAxes.getContentPane().setLayout(jDialogZeroAxesLayout);
+        jDialogZeroAxesLayout.setHorizontalGroup(
+            jDialogZeroAxesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialogZeroAxesLayout.createSequentialGroup()
+                .addGroup(jDialogZeroAxesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel24, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jDialogZeroAxesLayout.createSequentialGroup()
+                        .addGap(93, 93, 93)
+                        .addGroup(jDialogZeroAxesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel39, javax.swing.GroupLayout.PREFERRED_SIZE, 543, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jDialogZeroAxesLayout.createSequentialGroup()
+                                .addGap(47, 47, 47)
+                                .addComponent(jButton14)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton25, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton24, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 103, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        jDialogZeroAxesLayout.setVerticalGroup(
+            jDialogZeroAxesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialogZeroAxesLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel39, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jDialogZeroAxesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jDialogZeroAxesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jButton24, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton25, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jDialogImportGCode.setName("jDialogMiseEnPlace"); // NOI18N
+
+        jLabel40.setText("<html> <h3> Sélectionnez le fichier que vous souhaitez  découper dans le pannel ci dessous. </h3> </html>");
+
+        javax.swing.GroupLayout jPanel28Layout = new javax.swing.GroupLayout(jPanel28);
+        jPanel28.setLayout(jPanel28Layout);
+        jPanel28Layout.setHorizontalGroup(
+            jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel28Layout.createSequentialGroup()
+                .addContainerGap(80, Short.MAX_VALUE)
+                .addComponent(jLabel40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(81, Short.MAX_VALUE))
+        );
+        jPanel28Layout.setVerticalGroup(
+            jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel28Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel40, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(32, 32, 32))
+        );
+
+        jLabel40.getAccessibleContext().setAccessibleName("Sélectionnez le fichier que vous souhaitez  découper dans le pannel ci dessous. ");
+
+        javax.swing.GroupLayout jPanel26Layout = new javax.swing.GroupLayout(jPanel26);
+        jPanel26.setLayout(jPanel26Layout);
+        jPanel26Layout.setHorizontalGroup(
+            jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel26Layout.createSequentialGroup()
+                .addComponent(jPanel28, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel26Layout.setVerticalGroup(
+            jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel26Layout.createSequentialGroup()
+                .addComponent(jPanel28, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 31, Short.MAX_VALUE))
+        );
+
+        jButton27.setText("Suivant");
+        jButton27.setEnabled(false);
+        jButton27.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton27ActionPerformed(evt);
+            }
+        });
+
+        jPanel29.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "G-Code File", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(255, 255, 255))); // NOI18N
+        jPanel29.setToolTipText("Ce panneau permets d'importer et visualiser les détails de découpe du fichier. ");
+        jPanel29.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabelRowsInFile9.setText("0");
+        jPanel29.add(jLabelRowsInFile9, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, 54, -1));
+
+        jLabelRowsInFile10.setText("Sent Rows:");
+        jPanel29.add(jLabelRowsInFile10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 80, -1));
+
+        jLabelRowsInFile20.setText("Remaining Rows:");
+        jPanel29.add(jLabelRowsInFile20, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 100, -1));
+
+        jLabelRowsInFile21.setText("Rows in file:");
+        jPanel29.add(jLabelRowsInFile21, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 80, -1));
+
+        jLabelSentRows2.setText("0");
+        jPanel29.add(jLabelSentRows2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 110, 54, -1));
+
+        jLabelRemainingRows2.setText("0");
+        jPanel29.add(jLabelRemainingRows2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 130, 54, -1));
+
+        jButtonGCodeBrowse2.setBackground(new java.awt.Color(255, 0, 255));
+        jButtonGCodeBrowse2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jButtonGCodeBrowse2.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonGCodeBrowse2.setText("Browse");
+        jButtonGCodeBrowse2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonGCodeBrowse2ActionPerformed(evt);
+            }
+        });
+
+        jTextFieldGCodeFile2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldGCodeFile2ActionPerformed(evt);
+            }
+        });
+
+        jLabel41.setText("File:");
+
+        jButtonGCodePause2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jButtonGCodePause2.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonGCodePause2.setText("Pause");
+        jButtonGCodePause2.setEnabled(false);
+        jButtonGCodePause2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonGCodePause2ActionPerformed(evt);
+            }
+        });
+
+        jButtonGCodeSend2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jButtonGCodeSend2.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonGCodeSend2.setText("Send");
+        jButtonGCodeSend2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonGCodeSend2ActionPerformed(evt);
+            }
+        });
+
+        jButtonGCodeCancel2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jButtonGCodeCancel2.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonGCodeCancel2.setText("Cancel");
+        jButtonGCodeCancel2.setEnabled(false);
+        jButtonGCodeCancel2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonGCodeCancel2ActionPerformed(evt);
+            }
+        });
+
+        jButtonGCodeVisualize2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jButtonGCodeVisualize2.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonGCodeVisualize2.setText("Visualize");
+        jButtonGCodeVisualize2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonGCodeVisualize2ActionPerformed(evt);
+            }
+        });
+
+        jButtonBrowse1.setText("Browse");
+        jButtonBrowse1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonBrowse1ActionPerformed(evt);
+            }
+        });
+
+        jButtonVisualise1.setText("Visualize");
+        jButtonVisualise1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonVisualise1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanelGCodeFile2Layout = new javax.swing.GroupLayout(jPanelGCodeFile2);
+        jPanelGCodeFile2.setLayout(jPanelGCodeFile2Layout);
+        jPanelGCodeFile2Layout.setHorizontalGroup(
+            jPanelGCodeFile2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelGCodeFile2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanelGCodeFile2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelGCodeFile2Layout.createSequentialGroup()
+                        .addComponent(jButtonGCodeSend2, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButtonGCodePause2, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButtonGCodeCancel2, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanelGCodeFile2Layout.createSequentialGroup()
+                        .addComponent(jLabel41, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextFieldGCodeFile2)))
+                .addGap(18, 18, 18)
+                .addGroup(jPanelGCodeFile2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelGCodeFile2Layout.createSequentialGroup()
+                        .addComponent(jButtonVisualise1)
+                        .addGap(489, 489, 489)
+                        .addComponent(jButtonGCodeVisualize2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButtonGCodeBrowse2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanelGCodeFile2Layout.createSequentialGroup()
+                        .addComponent(jButtonBrowse1)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        jPanelGCodeFile2Layout.setVerticalGroup(
+            jPanelGCodeFile2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelGCodeFile2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanelGCodeFile2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel41)
+                    .addComponent(jTextFieldGCodeFile2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonBrowse1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanelGCodeFile2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButtonGCodePause2)
+                    .addComponent(jButtonGCodeSend2)
+                    .addComponent(jButtonGCodeCancel2)
+                    .addComponent(jButtonGCodeVisualize2)
+                    .addComponent(jButtonGCodeBrowse2)
+                    .addComponent(jButtonVisualise1))
+                .addContainerGap(14, Short.MAX_VALUE))
+        );
+
+        jPanel29.add(jPanelGCodeFile2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 440, 70));
+
+        javax.swing.GroupLayout jDialogImportGCodeLayout = new javax.swing.GroupLayout(jDialogImportGCode.getContentPane());
+        jDialogImportGCode.getContentPane().setLayout(jDialogImportGCodeLayout);
+        jDialogImportGCodeLayout.setHorizontalGroup(
+            jDialogImportGCodeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialogImportGCodeLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton27, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jDialogImportGCodeLayout.createSequentialGroup()
+                .addComponent(jPanel26, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialogImportGCodeLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel29, javax.swing.GroupLayout.PREFERRED_SIZE, 495, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jDialogImportGCodeLayout.setVerticalGroup(
+            jDialogImportGCodeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialogImportGCodeLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jPanel29, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 95, Short.MAX_VALUE)
+                .addComponent(jButton27, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(37, 37, 37))
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -2934,12 +3644,9 @@ public class frmControl extends javax.swing.JFrame
                     .addComponent(jButtonGCodeSend)
                     .addComponent(jButtonGCodeCancel)
                     .addComponent(jButtonGCodeVisualize)
-
-
                     .addComponent(jButtonGCodeBrowse)
                     .addComponent(jButtonVisualise))
                 .addContainerGap(14, Short.MAX_VALUE))
-
         );
 
         jPanel1.add(jPanelGCodeFile, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 530, 70));
@@ -3673,15 +4380,20 @@ public class frmControl extends javax.swing.JFrame
         jMenuBar1.add(jMenu1);
 
         jMenu2.setText("Tools");
-
-        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sourcerabbit/gcode/sender/UI/Images/WorkArea-24x24.png"))); // NOI18N
-        jMenuItem1.setText("Set Work Position");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        jMenu2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                jMenu2ActionPerformed(evt);
             }
         });
-        jMenu2.add(jMenuItem1);
+
+        jMenuSetWorkPos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sourcerabbit/gcode/sender/UI/Images/WorkArea-24x24.png"))); // NOI18N
+        jMenuSetWorkPos.setText("Set Work Position");
+        jMenuSetWorkPos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuSetWorkPosActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuSetWorkPos);
 
         jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sourcerabbit/gcode/sender/UI/Images/ZTouchProbe/ZAxisTouchProbe-24x24.png"))); // NOI18N
         jMenuItem2.setText("Z Axis Touch Probe");
@@ -3723,6 +4435,44 @@ public class frmControl extends javax.swing.JFrame
 
         jMenuBar1.add(jMenu4);
 
+        jMenu5.setText("Tutoriel");
+
+        jMenuItem5.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_T, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMenuItem5.setLabel("Tutorial");
+        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem5ActionPerformed(evt);
+            }
+        });
+        jMenu5.add(jMenuItem5);
+
+        jMenuItem9.setText("Tutoriel découpe complet");
+        jMenuItem9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem9ActionPerformed(evt);
+            }
+        });
+        jMenu5.add(jMenuItem9);
+
+        jMenuItem10.setText("Guide conversion G Code");
+        jMenuItem10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem10ActionPerformed(evt);
+            }
+        });
+        jMenu5.add(jMenuItem10);
+
+        jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_G, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMenuItem1.setText("Apprendre le G Code");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        jMenu5.add(jMenuItem1);
+
+        jMenuBar1.add(jMenu5);
+
         jMenu3.setText("Help");
 
         jMenuItem3.setText("About");
@@ -3741,19 +4491,21 @@ public class frmControl extends javax.swing.JFrame
         });
         jMenu3.add(jMenuItem4);
 
-        jMenuItem5.setLabel("Tutorial");
-        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem5ActionPerformed(evt);
-            }
-        });
-        jMenu3.add(jMenuItem5);
-
         jMenuBar1.add(jMenu3);
 
         jMenu6.setText("Level");
         jMenu6.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jMenu6.setName("jMenuLevel"); // NOI18N
+        jMenu6.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                jMenu6StateChanged(evt);
+            }
+        });
+        jMenu6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenu6ActionPerformed(evt);
+            }
+        });
 
         jMenuItem6.setText("Débutant");
         jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
@@ -3793,7 +4545,7 @@ public class frmControl extends javax.swing.JFrame
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jTabbedPane1)
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(0, 0, 0)
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -4155,11 +4907,11 @@ public class frmControl extends javax.swing.JFrame
         System.exit(EXIT_ON_CLOSE);
     }//GEN-LAST:event_jMenuItemExitActionPerformed
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jMenuItem1ActionPerformed
-    {//GEN-HEADEREND:event_jMenuItem1ActionPerformed
+    private void jMenuSetWorkPosActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jMenuSetWorkPosActionPerformed
+    {//GEN-HEADEREND:event_jMenuSetWorkPosActionPerformed
         frmSetWorkPosition frm = new frmSetWorkPosition(this, true);
         frm.setVisible(true);
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    }//GEN-LAST:event_jMenuSetWorkPosActionPerformed
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jMenuItem2ActionPerformed
     {//GEN-HEADEREND:event_jMenuItem2ActionPerformed
@@ -4652,10 +5404,6 @@ public class frmControl extends javax.swing.JFrame
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonConnectDisconnect1ActionPerformed
 
-    private void jButtonConnectDisconnect7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonConnectDisconnect7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonConnectDisconnect7ActionPerformed
-
     private void jButtonResetWorkPosition1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonResetWorkPosition1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonResetWorkPosition1ActionPerformed
@@ -4886,36 +5634,29 @@ public class frmControl extends javax.swing.JFrame
     }//GEN-LAST:event_jLevelComboActionPerformed
 
     private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
-        
-        jMenuItem6.addActionListener(new ActionListener(){
-            public void actionPerformed(ActionEvent e){
-                
-            }
-        });
+       jMenu6.setText("Débutant");
+       level=1;
+       checkStatus();
     }//GEN-LAST:event_jMenuItem6ActionPerformed
 
     private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
-       jMenuItem7.addActionListener(new ActionListener(){
-           public void actionPerformed(ActionEvent e){
-               
-           }
-       });
+        jMenu6.setText("Intermédiaire");
+        level=2;
+        checkStatus();
     }//GEN-LAST:event_jMenuItem7ActionPerformed
 
     private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
-        jMenuItem8.addActionListener(new ActionListener(){
-            public void actionPerformed(ActionEvent e){
-            
-            }
-        });
+        jMenu6.setText("Expert");
+        level=3;
+        checkStatus();
     }//GEN-LAST:event_jMenuItem8ActionPerformed
 
 
-       private void checkStatus(){
+private void checkStatus(){
 
     //debutant
     if(level == 1){
-        jMenuItem1.setEnabled(false);
+        jMenuSetWorkPos.setEnabled(false);
         jMenuItemHoleCenterFinder.setEnabled(false);
         jPanel5.setEnabled(false);
         jPanelMacros.setEnabled(false);
@@ -4931,16 +5672,17 @@ public class frmControl extends javax.swing.JFrame
     
     //Expert
     if(level == 3){
-        jMenuItem1.setEnabled(true);
+        jMenuSetWorkPos.setEnabled(true);
         jMenuItemHoleCenterFinder.setEnabled(true);
         jPanel5.setEnabled(true);
         jPanelMacros.setEnabled(true);
         jPanelMachineControl.setEnabled(true);
         jMenuItemToolChangeSettings.setEnabled(true);
+        /* Cacher aide débutants */
+        jPanel6.setVisible(false);
     
-}
-        
     }
+}
     
 
     private void jButtonBrowseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBrowseActionPerformed
@@ -5019,10 +5761,6 @@ public class frmControl extends javax.swing.JFrame
     }//GEN-LAST:event_jButtonVisualiseActionPerformed
 
 
-    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox2ActionPerformed
-
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton9ActionPerformed
@@ -5035,11 +5773,273 @@ public class frmControl extends javax.swing.JFrame
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton11ActionPerformed
 
+    private void jMenu6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu6ActionPerformed
+    
+    }//GEN-LAST:event_jMenu6ActionPerformed
+
+    private void jMenu6StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jMenu6StateChanged
+    
+    }//GEN-LAST:event_jMenu6StateChanged
+
+    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox2ActionPerformed
+
+    private void jButtonConnectDisconnect7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonConnectDisconnect7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonConnectDisconnect7ActionPerformed
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        GCode_Tutorial tuto = new GCode_Tutorial();
+        tuto.setLocationRelativeTo(null);
+        tuto.setVisible(true);
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jMenuItem10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem10ActionPerformed
+        GCode_Conversion conversion = new GCode_Conversion();
+        conversion.setLocationRelativeTo(null);
+        conversion.setVisible(true);
+        
+    }//GEN-LAST:event_jMenuItem10ActionPerformed
+
+    private void jMenuItem9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem9ActionPerformed
+        
+        /******** TUTO COMPLET *********/
+        jDialogMiseEnPlace.pack();
+        jDialogMiseEnPlace.setLocationRelativeTo(null);
+        jDialogMiseEnPlace.setVisible(true);
+    }//GEN-LAST:event_jMenuItem9ActionPerformed
+
+    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+        jDialogZeroAxes.setVisible(true);
+        jDialogZeroAxes.setLocationRelativeTo(null);
+        jDialogMiseEnPlace.dispose();
+    }//GEN-LAST:event_jButton13ActionPerformed
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+        // TODO add your handling code here:
+        frmSetWorkPosition frm = new frmSetWorkPosition(this, true);
+        frm.setVisible(true);
+        frm.setLocationRelativeTo(null);
+        jButton13.setEnabled(true);
+        
+    }//GEN-LAST:event_jButton12ActionPerformed
+
+    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+        // TODO add your handling code here:
+        try
+        {
+            ConnectionHelper.ACTIVE_CONNECTION_HANDLER.SendGCodeCommand(new GCodeCommand("$H"));
+        }
+        catch (Exception ex)
+        {
+
+        }
+        jButton25.setEnabled(true);
+    }//GEN-LAST:event_jButton14ActionPerformed
+
+    private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
+        // TODO add your handling code here:
+        jDialogImportGCode.setVisible(true);
+        jDialogZeroAxes.dispose();
+        
+    }//GEN-LAST:event_jButton24ActionPerformed
+
+    private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
+        // TODO add your handling code here:
+        frmZAxisTouchProbe frm = new frmZAxisTouchProbe(this, true);
+        frm.setVisible(true);
+        jButton24.setEnabled(true);
+    }//GEN-LAST:event_jButton25ActionPerformed
+
+    private void jMenu2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenu2ActionPerformed
+
+    private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
+        // TODO add your handling code here:
+        jDialogImportGCode.dispose();
+    }//GEN-LAST:event_jButton27ActionPerformed
+
+    private void jButtonGCodeBrowse2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGCodeBrowse2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonGCodeBrowse2ActionPerformed
+
+    private void jTextFieldGCodeFile2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldGCodeFile2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldGCodeFile2ActionPerformed
+
+    private void jButtonGCodePause2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGCodePause2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonGCodePause2ActionPerformed
+
+    private void jButtonGCodeSend2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGCodeSend2ActionPerformed
+        // TODO add your handling code here:
+        boolean startCycle = true;
+        if (ConnectionHelper.ACTIVE_CONNECTION_HANDLER.getWorkPosition().getX() != 0
+                || ConnectionHelper.ACTIVE_CONNECTION_HANDLER.getWorkPosition().getY() != 0
+                || ConnectionHelper.ACTIVE_CONNECTION_HANDLER.getWorkPosition().getZ() != 0)
+        {
+            startCycle = false;
+            int answer = JOptionPane.showConfirmDialog(
+                    null,
+                    "La position de travail n'est pas 0,0,0.\nVoulez vous démarrer le cycle G Code?",
+                    "Position de travail n'est pas 0,0,0",
+                    JOptionPane.YES_NO_OPTION);
+
+            startCycle = (answer == JOptionPane.YES_OPTION);
+        }
+
+        if (startCycle)
+        {
+            EnableOrDisableComponentsWhenMachineIsCyclingGCode(true);
+            ConnectionHelper.ACTIVE_CONNECTION_HANDLER.getMyGCodeSender().StartSendingGCode();
+            jButton27.setEnabled(true);
+        }
+        
+    }//GEN-LAST:event_jButtonGCodeSend2ActionPerformed
+
+    private void jButtonGCodeCancel2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGCodeCancel2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonGCodeCancel2ActionPerformed
+
+    private void jButtonGCodeVisualize2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGCodeVisualize2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonGCodeVisualize2ActionPerformed
+
+    private void jButtonBrowse1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBrowse1ActionPerformed
+        // TODO add your handling code here:
+        final String path = SettingsManager.getLastGCodeBrowsedDirectory();
+        JFileChooser fc;
+        try
+        {
+            fc = new JFileChooser(new File(path));
+            FileNameExtensionFilter filter = new FileNameExtensionFilter("GCode Files (.nc, .gcode, .tap, .gc)", "nc", "gcode", "tap", "gc");
+            fc.setFileFilter(filter);
+        }
+        catch (Exception ex)
+        {
+            fc = new JFileChooser();
+        }
+        int returnVal = fc.showOpenDialog(this);
+
+        if (fc.getSelectedFile() != null && returnVal == JFileChooser.APPROVE_OPTION)
+        {
+            File gcodeFile = fc.getSelectedFile();
+            String gcodeFilePath = fc.getSelectedFile().getPath();
+            jTextFieldGCodeFile.setText(gcodeFilePath);
+
+            SettingsManager.setLastGCodeBrowsedDirectory(gcodeFile.getParent());
+
+            // Ask the GCodeSender of the active connection handler to load the GCode File
+            if (ConnectionHelper.ACTIVE_CONNECTION_HANDLER.getMyGCodeSender().LoadGCodeFile(gcodeFile))
+            {
+                jLabelRowsInFile.setText(String.valueOf(ConnectionHelper.ACTIVE_CONNECTION_HANDLER.getMyGCodeSender().getRowsInFile()));
+            }
+        }
+    }//GEN-LAST:event_jButtonBrowse1ActionPerformed
+
+    private void jButtonVisualise1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonVisualise1ActionPerformed
+        // TODO add your handling code here:
+        try
+        {
+            final Chart2D chart = new Chart2D();
+            // Create an ITrace: 
+            ITrace2D trace = new Trace2DSimple();
+            // Add the trace to the chart. This has to be done before adding points (deadlock prevention): 
+            chart.addTrace(trace);
+
+            final Queue<String> gcodeQueue = new ArrayDeque(ConnectionHelper.ACTIVE_CONNECTION_HANDLER.getMyGCodeSender().getGCodeQueue());
+            double x = 0, y = 0, z = 0, maxX = 0, maxY = 0;
+
+            while (gcodeQueue.size() > 0)
+            {
+                final GCodeCommand command = new GCodeCommand(gcodeQueue.remove());
+                x = (command.getCoordinates().getX() != null) ? command.getCoordinates().getX() : x;
+                y = (command.getCoordinates().getY() != null) ? command.getCoordinates().getY() : y;
+                z = (command.getCoordinates().getZ() != null) ? command.getCoordinates().getZ() : z;
+
+                if (z < 0)
+                {
+                    maxX = Math.max(x, maxX);
+                    maxY = Math.max(y, maxY);
+                    trace.addPoint(x, y);
+                }
+            }
+
+            chart.getAxisX().setRangePolicy(new RangePolicyFixedViewport(new Range(0, Math.max(maxY, maxX))));
+            chart.getAxisY().setRangePolicy(new RangePolicyFixedViewport(new Range(0, Math.max(maxY, maxX))));
+
+            // Make it visible:
+            // Create a frame.
+            final JFrame frame = new JFrame(ConnectionHelper.ACTIVE_CONNECTION_HANDLER.getMyGCodeSender().getGCodeFile().getName());
+            // add the chart to the frame: 
+            frame.getContentPane().add(chart);
+            frame.setSize(600, 600);
+            frame.setVisible(true);
+        }
+        catch (Exception ex)
+        {
+
+        }
+    }//GEN-LAST:event_jButtonVisualise1ActionPerformed
+
+    private void jRadioButtonInches1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonInches1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButtonInches1ActionPerformed
+
+    private void jRadioButtonMillimeters1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonMillimeters1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButtonMillimeters1ActionPerformed
+
+    private void jButtonYMinus1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonYMinus1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonYMinus1ActionPerformed
+
+    private void jButtonXMinus1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonXMinus1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonXMinus1ActionPerformed
+
+    private void jButtonYPlus1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonYPlus1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonYPlus1ActionPerformed
+
+    private void jButtonXPlus1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonXPlus1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonXPlus1ActionPerformed
+
+    private void jButtonZPlus1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonZPlus1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonZPlus1ActionPerformed
+
+    private void jButtonZMinus1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonZMinus1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonZMinus1ActionPerformed
+
+    private void jCheckBoxEnableKeyboardJogging1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBoxEnableKeyboardJogging1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBoxEnableKeyboardJogging1ActionPerformed
+
+    private void jLabelRemoveFocus1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelRemoveFocus1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelRemoveFocus1MouseClicked
+
+    private void jButtonReturnToZero1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonReturnToZero1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonReturnToZero1ActionPerformed
+
+    private void jSliderStepSize1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSliderStepSize1StateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jSliderStepSize1StateChanged
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton12;
+    private javax.swing.JButton jButton13;
+    private javax.swing.JButton jButton14;
     private javax.swing.JButton jButton15;
     private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton17;
@@ -5050,6 +6050,9 @@ public class frmControl extends javax.swing.JFrame
     private javax.swing.JButton jButton21;
     private javax.swing.JButton jButton22;
     private javax.swing.JButton jButton23;
+    private javax.swing.JButton jButton24;
+    private javax.swing.JButton jButton25;
+    private javax.swing.JButton jButton27;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
@@ -5058,6 +6061,7 @@ public class frmControl extends javax.swing.JFrame
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JButton jButtonBrowse;
+    private javax.swing.JButton jButtonBrowse1;
     private javax.swing.JButton jButtonCancel;
     private javax.swing.JButton jButtonCancel1;
     private javax.swing.JButton jButtonCancel2;
@@ -5072,14 +6076,19 @@ public class frmControl extends javax.swing.JFrame
     private javax.swing.JButton jButtonConnectDisconnect7;
     private javax.swing.JButton jButtonGCodeBrowse;
     private javax.swing.JButton jButtonGCodeBrowse1;
+    private javax.swing.JButton jButtonGCodeBrowse2;
     private javax.swing.JButton jButtonGCodeCancel;
     private javax.swing.JButton jButtonGCodeCancel1;
+    private javax.swing.JButton jButtonGCodeCancel2;
     private javax.swing.JButton jButtonGCodePause;
     private javax.swing.JButton jButtonGCodePause1;
+    private javax.swing.JButton jButtonGCodePause2;
     private javax.swing.JButton jButtonGCodeSend;
     private javax.swing.JButton jButtonGCodeSend1;
+    private javax.swing.JButton jButtonGCodeSend2;
     private javax.swing.JButton jButtonGCodeVisualize;
     private javax.swing.JButton jButtonGCodeVisualize1;
+    private javax.swing.JButton jButtonGCodeVisualize2;
     private javax.swing.JButton jButtonKillAlarm;
     private javax.swing.JButton jButtonKillAlarm1;
     private javax.swing.JButton jButtonKillAlarm2;
@@ -5096,18 +6105,27 @@ public class frmControl extends javax.swing.JFrame
     private javax.swing.JButton jButtonResetWorkPosition5;
     private javax.swing.JButton jButtonResetWorkPosition6;
     private javax.swing.JButton jButtonReturnToZero;
+    private javax.swing.JButton jButtonReturnToZero1;
     private javax.swing.JButton jButtonSoftReset;
     private javax.swing.JButton jButtonSoftReset1;
     private javax.swing.JButton jButtonSoftReset2;
     private javax.swing.JButton jButtonVisualise;
+    private javax.swing.JButton jButtonVisualise1;
     private javax.swing.JButton jButtonXMinus;
+    private javax.swing.JButton jButtonXMinus1;
     private javax.swing.JButton jButtonXPlus;
+    private javax.swing.JButton jButtonXPlus1;
     private javax.swing.JButton jButtonYMinus;
+    private javax.swing.JButton jButtonYMinus1;
     private javax.swing.JButton jButtonYPlus;
+    private javax.swing.JButton jButtonYPlus1;
     private javax.swing.JButton jButtonZMinus;
+    private javax.swing.JButton jButtonZMinus1;
     private javax.swing.JButton jButtonZPlus;
+    private javax.swing.JButton jButtonZPlus1;
     private javax.swing.JCheckBox jCheckBoxEnableGCodeLog;
     private javax.swing.JCheckBox jCheckBoxEnableKeyboardJogging;
+    private javax.swing.JCheckBox jCheckBoxEnableKeyboardJogging1;
     private javax.swing.JCheckBox jCheckBoxShowVerboseOutput;
     private javax.swing.JCheckBox jCheckBoxShowVerboseOutput1;
     private javax.swing.JComboBox<String> jComboBox1;
@@ -5116,11 +6134,14 @@ public class frmControl extends javax.swing.JFrame
     private javax.swing.JDialog jDialog1;
     private javax.swing.JDialog jDialog2;
     private javax.swing.JDialog jDialogGSender;
+    private javax.swing.JDialog jDialogImportGCode;
     private javax.swing.JDialog jDialogLevel;
+    private javax.swing.JDialog jDialogMiseEnPlace;
     private javax.swing.JDialog jDialogTab1;
     private javax.swing.JDialog jDialogTab2;
     private javax.swing.JDialog jDialogTab3;
     private javax.swing.JDialog jDialogTab4;
+    private javax.swing.JDialog jDialogZeroAxes;
     private javax.swing.JFrame jFrame1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -5153,7 +6174,12 @@ public class frmControl extends javax.swing.JFrame
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel5;
@@ -5237,9 +6263,12 @@ public class frmControl extends javax.swing.JFrame
     private javax.swing.JLabel jLabelRecommendedRPM;
     private javax.swing.JLabel jLabelRemainingRows;
     private javax.swing.JLabel jLabelRemainingRows1;
+    private javax.swing.JLabel jLabelRemainingRows2;
     private javax.swing.JLabel jLabelRemoveFocus;
+    private javax.swing.JLabel jLabelRemoveFocus1;
     private javax.swing.JLabel jLabelRowsInFile;
     private javax.swing.JLabel jLabelRowsInFile1;
+    private javax.swing.JLabel jLabelRowsInFile10;
     private javax.swing.JLabel jLabelRowsInFile11;
     private javax.swing.JLabel jLabelRowsInFile12;
     private javax.swing.JLabel jLabelRowsInFile13;
@@ -5250,12 +6279,15 @@ public class frmControl extends javax.swing.JFrame
     private javax.swing.JLabel jLabelRowsInFile18;
     private javax.swing.JLabel jLabelRowsInFile19;
     private javax.swing.JLabel jLabelRowsInFile2;
+    private javax.swing.JLabel jLabelRowsInFile20;
+    private javax.swing.JLabel jLabelRowsInFile21;
     private javax.swing.JLabel jLabelRowsInFile3;
     private javax.swing.JLabel jLabelRowsInFile4;
     private javax.swing.JLabel jLabelRowsInFile5;
     private javax.swing.JLabel jLabelRowsInFile6;
     private javax.swing.JLabel jLabelRowsInFile7;
     private javax.swing.JLabel jLabelRowsInFile8;
+    private javax.swing.JLabel jLabelRowsInFile9;
     private javax.swing.JLabel jLabelSemiAutoToolChangeStatus;
     private javax.swing.JLabel jLabelSemiAutoToolChangeStatus1;
     private javax.swing.JLabel jLabelSemiAutoToolChangeStatus4;
@@ -5263,6 +6295,7 @@ public class frmControl extends javax.swing.JFrame
     private javax.swing.JLabel jLabelSemiAutoToolChangeStatus6;
     private javax.swing.JLabel jLabelSentRows;
     private javax.swing.JLabel jLabelSentRows1;
+    private javax.swing.JLabel jLabelSentRows2;
     private javax.swing.JLabel jLabelTimeElapsed;
     private javax.swing.JLabel jLabelTimeElapsed1;
     private javax.swing.JLabel jLabelWorkPositionX;
@@ -5286,9 +6319,11 @@ public class frmControl extends javax.swing.JFrame
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenu jMenu5;
     private javax.swing.JMenu jMenu6;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem10;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
@@ -5296,16 +6331,20 @@ public class frmControl extends javax.swing.JFrame
     private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JMenuItem jMenuItem7;
     private javax.swing.JMenuItem jMenuItem8;
+    private javax.swing.JMenuItem jMenuItem9;
     private javax.swing.JMenuItem jMenuItemExit;
     private javax.swing.JMenuItem jMenuItemGRBLSettings;
     private javax.swing.JMenuItem jMenuItemHoleCenterFinder;
     private javax.swing.JMenuItem jMenuItemStartHomingSequence;
     private javax.swing.JMenuItem jMenuItemToolChangeSettings;
+    private javax.swing.JMenuItem jMenuSetWorkPos;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel13;
+    private javax.swing.JPanel jPanel14;
+    private javax.swing.JPanel jPanel15;
     private javax.swing.JPanel jPanel16;
     private javax.swing.JPanel jPanel17;
     private javax.swing.JPanel jPanel18;
@@ -5313,6 +6352,14 @@ public class frmControl extends javax.swing.JFrame
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel20;
     private javax.swing.JPanel jPanel21;
+    private javax.swing.JPanel jPanel22;
+    private javax.swing.JPanel jPanel23;
+    private javax.swing.JPanel jPanel24;
+    private javax.swing.JPanel jPanel25;
+    private javax.swing.JPanel jPanel26;
+    private javax.swing.JPanel jPanel27;
+    private javax.swing.JPanel jPanel28;
+    private javax.swing.JPanel jPanel29;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
@@ -5324,14 +6371,19 @@ public class frmControl extends javax.swing.JFrame
     private javax.swing.JPanel jPanelConnection1;
     private javax.swing.JPanel jPanelGCodeFile;
     private javax.swing.JPanel jPanelGCodeFile1;
+    private javax.swing.JPanel jPanelGCodeFile2;
     private javax.swing.JPanel jPanelJogButtons;
+    private javax.swing.JPanel jPanelJogButtons1;
     private javax.swing.JPanel jPanelMachineControl;
+    private javax.swing.JPanel jPanelMachineControl1;
     private javax.swing.JPanel jPanelMacros;
     private javax.swing.JProgressBar jProgressBarGCodeProgress;
     private javax.swing.JProgressBar jProgressBarGCodeProgress1;
     private javax.swing.JProgressBar jProgressBarGCodeProgress2;
     private javax.swing.JRadioButton jRadioButtonInches;
+    private javax.swing.JRadioButton jRadioButtonInches1;
     private javax.swing.JRadioButton jRadioButtonMillimeters;
+    private javax.swing.JRadioButton jRadioButtonMillimeters1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
@@ -5357,7 +6409,9 @@ public class frmControl extends javax.swing.JFrame
     private javax.swing.JSeparator jSeparator8;
     private javax.swing.JSeparator jSeparator9;
     private javax.swing.JSlider jSliderStepSize;
+    private javax.swing.JSlider jSliderStepSize1;
     private javax.swing.JSpinner jSpinnerStep;
+    private javax.swing.JSpinner jSpinnerStep1;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTableGCodeLog;
@@ -5367,6 +6421,7 @@ public class frmControl extends javax.swing.JFrame
     private javax.swing.JTextField jTextFieldCommand1;
     private javax.swing.JTextField jTextFieldGCodeFile;
     private javax.swing.JTextField jTextFieldGCodeFile1;
+    private javax.swing.JTextField jTextFieldGCodeFile2;
     private javax.swing.JTextPane jTextPane1;
     private javax.swing.JTextPane jTextPane2;
     private javax.swing.JTextPane jTextPane3;
