@@ -25,7 +25,7 @@ import java.awt.Color;
 import java.awt.Component;
 import java.awt.KeyEventDispatcher;
 import java.awt.KeyboardFocusManager;
-
+import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyAdapter;
@@ -76,6 +76,9 @@ import sourcerabbit.gcode.sender.UI.Tools.frmHoleCenterFinder;
 import sourcerabbit.gcode.sender.UI.Tools.frmSetWorkPosition;
 import sourcerabbit.gcode.sender.UI.Tools.frmZAxisTouchProbe;
 import sourcerabbit.gcode.sender.UI.UITools.UITools;
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
+
 
 
 /**
@@ -3593,6 +3596,16 @@ public class frmControl extends javax.swing.JFrame
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("SourceRabbit GCODE Sender");
         setSize(new java.awt.Dimension(1000, 728));
+        addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                formMouseDragged(evt);
+            }
+        });
+        addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentResized(java.awt.event.ComponentEvent evt) {
+                formComponentResized(evt);
+            }
+        });
         addWindowFocusListener(new java.awt.event.WindowFocusListener() {
             public void windowGainedFocus(java.awt.event.WindowEvent evt) {
                 formWindowGainedFocus(evt);
@@ -6285,10 +6298,6 @@ public class frmControl extends javax.swing.JFrame
 
 
 private void checkStatus(){
-
-    
-      
-    
     //debutant
     if(level == 1){
         jMenuSetWorkPos.setEnabled(false);
@@ -6374,6 +6383,8 @@ private void checkStatus(){
     
     }
 }
+    
+
     
 
     private void jButtonBrowseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBrowseActionPerformed
@@ -6803,6 +6814,7 @@ private void checkStatus(){
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         // TODO add your handling code here:
+        
         jDialogLevel.setLocationRelativeTo(null);
         jDialogLevel.setVisible(true);
     }//GEN-LAST:event_formWindowOpened
@@ -6852,6 +6864,16 @@ private void checkStatus(){
         jDialogLevel.dispose();
     }//GEN-LAST:event_jButton26ActionPerformed
 
+    private void formComponentResized(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentResized
+
+    }//GEN-LAST:event_formComponentResized
+
+    private void formMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMouseDragged
+
+    }//GEN-LAST:event_formMouseDragged
+
+    
+  
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;

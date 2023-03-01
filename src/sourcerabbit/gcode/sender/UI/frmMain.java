@@ -393,6 +393,7 @@ public class frmMain extends javax.swing.JFrame
                 new frmMain().setVisible(true);
                 new frmControl().setVisible(true);
                 
+                
             }
         });
     }
