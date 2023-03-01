@@ -266,8 +266,13 @@ public class frmZAxisTouchProbe extends javax.swing.JDialog
         // Check if Z is negative
         if (ConnectionHelper.ACTIVE_CONNECTION_HANDLER.getWorkPosition().getZ() < 0)
         {
-            JOptionPane.showMessageDialog(this, "Your machine's Z axis level is bellow 0.\nSet your Z axis above 0 and try again.", "Error", JOptionPane.ERROR_MESSAGE);
-            return;
+            int dialogResult = JOptionPane.showOptionDialog(this,
+            "Your machine's Z axis level is below 0.\nSet your Z axis above 0 and try again.",
+            "Error", JOptionPane.DEFAULT_OPTION, JOptionPane.ERROR_MESSAGE,
+            null, new Object[]{"Change position", "Still Continue"}, null);
+            if (dialogResult == JOptionPane.YES_OPTION) {
+                return;
+            }   
         }
 
         if (jButtonTouch.getText().equals("Click to Stop!"))
