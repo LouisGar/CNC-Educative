@@ -7688,25 +7688,6 @@ private void checkStatus(){
         
     }//GEN-LAST:event_jLabelActiveStatePropertyChange
 
-   
-
-
-
-
-    private void jButtonConnectDisconnect3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonConnectDisconnect3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonConnectDisconnect3ActionPerformed
-
-    private void jLabelActiveStateInputMethodTextChanged(java.awt.event.InputMethodEvent evt) {//GEN-FIRST:event_jLabelActiveStateInputMethodTextChanged
-        
-    }//GEN-LAST:event_jLabelActiveStateInputMethodTextChanged
-
-    private void jLabelActiveStatePropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jLabelActiveStatePropertyChange
-        // TODO add your handling code here:
-        jLabelActiveState2.setText(jLabelActiveState.getText());
-        jLabelActiveState2.setForeground(jLabelActiveState.getForeground());
-    }//GEN-LAST:event_jLabelActiveStatePropertyChange
-
     private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
         jDialog3.dispose();
         jDialogLevel.dispose();
