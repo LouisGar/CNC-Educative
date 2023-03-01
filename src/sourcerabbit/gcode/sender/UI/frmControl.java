@@ -3301,11 +3301,6 @@ public class frmControl extends javax.swing.JFrame
         jLabelActiveState2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabelActiveState2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabelActiveState2.setText("Restarting...");
-        jLabelActiveState2.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                jLabelActiveState2PropertyChange(evt);
-            }
-        });
         jPanelConnection2.add(jLabelActiveState2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, 120, 20));
 
         jButtonConnectDisconnect3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
