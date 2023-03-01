@@ -3526,7 +3526,7 @@
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="102" max="-2" attributes="0"/>
-                      <Component id="jPanel30" min="-2" max="-2" attributes="0"/>
+                      <Component id="jPanel31" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -3535,7 +3535,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jPanel30" min="-2" max="-2" attributes="0"/>
+                      <Component id="jPanel31" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jPanel25" max="32767" attributes="0"/>
                   </Group>
@@ -3558,7 +3558,7 @@
                 </DimensionLayout>
               </Layout>
             </Container>
-            <Container class="javax.swing.JPanel" name="jPanel30">
+            <Container class="javax.swing.JPanel" name="jPanel31">
 
               <Layout>
                 <DimensionLayout dim="0">
@@ -3609,7 +3609,6 @@
                     <Property name="toolTipText" type="java.lang.String" value="Ce panneau de controle permets de d&#xe9;placer la CNC en temps r&#xe9;el. Il est possible d&apos;ajuster le pas avec la glissi&#xe8;re."/>
                   </Properties>
 
-
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -3651,7 +3650,6 @@
                       </Group>
                     </DimensionLayout>
                   </Layout>
-
                   <SubComponents>
                     <Component class="javax.swing.JRadioButton" name="jRadioButtonInches1">
                       <Properties>
@@ -4015,7 +4013,7 @@
                     <Property name="useNullLayout" type="boolean" value="false"/>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JLabel" name="jLabel1">
+                    <Component class="javax.swing.JLabel" name="jLabel49">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="jLabel1"/>
                       </Properties>
@@ -4882,7 +4880,6 @@
                           <Component id="jButtonGCodeBrowse" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jButtonVisualise" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
