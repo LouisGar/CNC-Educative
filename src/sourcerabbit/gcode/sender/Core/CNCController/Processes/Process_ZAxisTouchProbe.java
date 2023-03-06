@@ -16,6 +16,11 @@ Copyright (C) 2015  Nikos Siatras
  */
 package sourcerabbit.gcode.sender.Core.CNCController.Processes;
 
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.net.Socket;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JDialog;
 import javax.swing.JOptionPane;
 import sourcerabbit.gcode.sender.Core.CNCController.Connection.ConnectionHelper;
@@ -24,6 +29,8 @@ import sourcerabbit.gcode.sender.Core.CNCController.GRBL.GRBLActiveStates;
 import sourcerabbit.gcode.sender.Core.CNCController.GRBL.GRBLCommands;
 import sourcerabbit.gcode.sender.Core.Settings.TouchProbeSettings;
 import sourcerabbit.gcode.sender.Core.Threading.ManualResetEvent;
+import sourcerabbit.gcode.sender.UI.frmControl;
+
 
 /**
  *
@@ -40,12 +47,14 @@ public class Process_ZAxisTouchProbe extends Process
     private boolean fMachineTouchedTheProbe = false;
     private final ManualResetEvent fWaitToTouchTheProbe = new ManualResetEvent(false);
     private final ManualResetEvent fWaitForMachineToBeIdle = new ManualResetEvent(false);
+    
 
     public Process_ZAxisTouchProbe(JDialog parentForm)
     {
         super(parentForm);
+        
     }
-
+    
     @Override
     public void MachineStatusHasChange(int state)
     {
@@ -151,6 +160,18 @@ public class Process_ZAxisTouchProbe extends Process
         fWaitForMachineToBeIdle.Reset();
         fWaitForMachineToBeIdle.WaitOne();
         JOptionPane.showMessageDialog(fMyParentForm, "Machine touched the probe sucessfully!");
+        
+        Socket socket;
+        try {
+            socket = new Socket("localhost", 9999);
+            DataOutputStream dos = new DataOutputStream(socket.getOutputStream());
+            dos.writeBoolean(true); // pass boolean value
+            dos.flush();
+            dos.close();
+            socket.close();
+        } catch (IOException ex) {
+            Logger.getLogger(Process_ZAxisTouchProbe.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     private String SetZAxisPosition(double value)
@@ -171,4 +192,5 @@ public class Process_ZAxisTouchProbe extends Process
         {
         }
     }
+
 }

@@ -901,67 +901,17 @@ public class frmControl extends javax.swing.JFrame
         jLabel56 = new javax.swing.JLabel();
         jSeparator12 = new javax.swing.JSeparator();
         jSeparator13 = new javax.swing.JSeparator();
-        jPanel16 = new javax.swing.JPanel();
-        jButtonResetWorkPosition4 = new javax.swing.JButton();
-        jPanel17 = new javax.swing.JPanel();
-        jLabel57 = new javax.swing.JLabel();
-        jLabelWorkPositionZ4 = new javax.swing.JLabel();
-        jLabelWorkPositionX4 = new javax.swing.JLabel();
-        jLabelWorkPositionY4 = new javax.swing.JLabel();
-        jLabelMachinePositionZ4 = new javax.swing.JLabel();
-        jLabelMachinePositionX4 = new javax.swing.JLabel();
-        jLabelMachinePositionY4 = new javax.swing.JLabel();
-        jLabel58 = new javax.swing.JLabel();
-        jLabel59 = new javax.swing.JLabel();
-        jLabel60 = new javax.swing.JLabel();
-        jButton15 = new javax.swing.JButton();
-        jButton16 = new javax.swing.JButton();
-        jButton17 = new javax.swing.JButton();
-        jLabelRowsInFile11 = new javax.swing.JLabel();
-        jLabelSemiAutoToolChangeStatus4 = new javax.swing.JLabel();
-        jLabel61 = new javax.swing.JLabel();
-        jLabelRealTimeFeedRate7 = new javax.swing.JLabel();
-        jLabel62 = new javax.swing.JLabel();
-        jLabelRealTimeSpindleRPM7 = new javax.swing.JLabel();
-        jLabel63 = new javax.swing.JLabel();
-        jLabelRealTimeFeedRate8 = new javax.swing.JLabel();
-        jLabel64 = new javax.swing.JLabel();
-        jLabelRealTimeSpindleRPM8 = new javax.swing.JLabel();
-        jLabel65 = new javax.swing.JLabel();
         jButtonCancel3 = new javax.swing.JButton();
         jButtonOk3 = new javax.swing.JButton();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTableGCodeLog1 = new javax.swing.JTable();
+        jButtonClearLog1 = new javax.swing.JButton();
+        jCheckBoxEnableGCodeLog1 = new javax.swing.JCheckBox();
         jDialogTab3 = new javax.swing.JDialog();
         jLabel66 = new javax.swing.JLabel();
         jLabel67 = new javax.swing.JLabel();
         jSeparator14 = new javax.swing.JSeparator();
         jSeparator15 = new javax.swing.JSeparator();
-        jPanel18 = new javax.swing.JPanel();
-        jButtonResetWorkPosition5 = new javax.swing.JButton();
-        jPanel19 = new javax.swing.JPanel();
-        jLabel68 = new javax.swing.JLabel();
-        jLabelWorkPositionZ5 = new javax.swing.JLabel();
-        jLabelWorkPositionX5 = new javax.swing.JLabel();
-        jLabelWorkPositionY5 = new javax.swing.JLabel();
-        jLabelMachinePositionZ5 = new javax.swing.JLabel();
-        jLabelMachinePositionX5 = new javax.swing.JLabel();
-        jLabelMachinePositionY5 = new javax.swing.JLabel();
-        jLabel69 = new javax.swing.JLabel();
-        jLabel70 = new javax.swing.JLabel();
-        jLabel71 = new javax.swing.JLabel();
-        jButton18 = new javax.swing.JButton();
-        jButton19 = new javax.swing.JButton();
-        jButton20 = new javax.swing.JButton();
-        jLabelRowsInFile12 = new javax.swing.JLabel();
-        jLabelSemiAutoToolChangeStatus5 = new javax.swing.JLabel();
-        jLabel72 = new javax.swing.JLabel();
-        jLabelRealTimeFeedRate9 = new javax.swing.JLabel();
-        jLabel73 = new javax.swing.JLabel();
-        jLabelRealTimeSpindleRPM9 = new javax.swing.JLabel();
-        jLabel74 = new javax.swing.JLabel();
-        jLabelRealTimeFeedRate10 = new javax.swing.JLabel();
-        jLabel75 = new javax.swing.JLabel();
-        jLabelRealTimeSpindleRPM10 = new javax.swing.JLabel();
-        jLabel76 = new javax.swing.JLabel();
         jButtonCancel4 = new javax.swing.JButton();
         jButtonOk4 = new javax.swing.JButton();
         jDialogTab4 = new javax.swing.JDialog();
@@ -969,33 +919,6 @@ public class frmControl extends javax.swing.JFrame
         jLabel78 = new javax.swing.JLabel();
         jSeparator16 = new javax.swing.JSeparator();
         jSeparator17 = new javax.swing.JSeparator();
-        jPanel20 = new javax.swing.JPanel();
-        jButtonResetWorkPosition6 = new javax.swing.JButton();
-        jPanel21 = new javax.swing.JPanel();
-        jLabel79 = new javax.swing.JLabel();
-        jLabelWorkPositionZ6 = new javax.swing.JLabel();
-        jLabelWorkPositionX6 = new javax.swing.JLabel();
-        jLabelWorkPositionY6 = new javax.swing.JLabel();
-        jLabelMachinePositionZ6 = new javax.swing.JLabel();
-        jLabelMachinePositionX6 = new javax.swing.JLabel();
-        jLabelMachinePositionY6 = new javax.swing.JLabel();
-        jLabel80 = new javax.swing.JLabel();
-        jLabel81 = new javax.swing.JLabel();
-        jLabel82 = new javax.swing.JLabel();
-        jButton21 = new javax.swing.JButton();
-        jButton22 = new javax.swing.JButton();
-        jButton23 = new javax.swing.JButton();
-        jLabelRowsInFile13 = new javax.swing.JLabel();
-        jLabelSemiAutoToolChangeStatus6 = new javax.swing.JLabel();
-        jLabel83 = new javax.swing.JLabel();
-        jLabelRealTimeFeedRate11 = new javax.swing.JLabel();
-        jLabel84 = new javax.swing.JLabel();
-        jLabelRealTimeSpindleRPM11 = new javax.swing.JLabel();
-        jLabel85 = new javax.swing.JLabel();
-        jLabelRealTimeFeedRate12 = new javax.swing.JLabel();
-        jLabel86 = new javax.swing.JLabel();
-        jLabelRealTimeSpindleRPM12 = new javax.swing.JLabel();
-        jLabel87 = new javax.swing.JLabel();
         jButtonCancel5 = new javax.swing.JButton();
         jButtonOk5 = new javax.swing.JButton();
         jFrame1 = new javax.swing.JFrame();
@@ -1185,6 +1108,8 @@ public class frmControl extends javax.swing.JFrame
         jMenuItem9 = new javax.swing.JMenuItem();
         jMenuItem10 = new javax.swing.JMenuItem();
         jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem11 = new javax.swing.JMenuItem();
+        jMenuItem12 = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenuItem4 = new javax.swing.JMenuItem();
@@ -2066,167 +1991,12 @@ public class frmControl extends javax.swing.JFrame
         jDialogTab2.setModalExclusionType(java.awt.Dialog.ModalExclusionType.APPLICATION_EXCLUDE);
 
         jLabel55.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel55.setText("<html> <h3 text-decoration=\"bold\"> Interface de Connection");
+        jLabel55.setText("<html> <h3 text-decoration=\"bold\">Macros");
         jLabel55.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         jLabel56.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel56.setText("<html> <h4 text-align=\"center\">Cette interface permets de voir laposition de la CNC </h4>  \nLa position des axes XYZ est affichée. ( Ne pas oublier de <i color=\"blue\"> Home </i> la CNC) <br>\nØ permets de tare l'axe de la CNC");
+        jLabel56.setText("<html> <h4 text-align=\"center\">Cette interface permets de voir le GCode envoyé a la CNC </h4>   Chaque commande s'affiche ici ainsi que son état. ");
         jLabel56.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-
-        jPanel16.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Machine Status", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(255, 255, 255))); // NOI18N
-        jPanel16.setToolTipText("Les informations de la CNC en temps réel sont affichées ici. En appuyant sur |Ø|, l'axe est remis à 0. ");
-        jPanel16.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jButtonResetWorkPosition4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButtonResetWorkPosition4.setForeground(new java.awt.Color(255, 255, 255));
-        jButtonResetWorkPosition4.setText("Ø  Zero Work Position");
-        jButtonResetWorkPosition4.setToolTipText("Reset the Work Position to 0,0,0");
-        jButtonResetWorkPosition4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonResetWorkPosition4ActionPerformed(evt);
-            }
-        });
-        jPanel16.add(jButtonResetWorkPosition4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 240, 32));
-
-        jPanel17.setLayout(new java.awt.GridLayout(1, 0));
-
-        jLabel57.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel57.setForeground(new java.awt.Color(0, 75, 127));
-        jPanel17.add(jLabel57);
-
-        jPanel16.add(jPanel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 270, -1));
-
-        jLabelWorkPositionZ4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabelWorkPositionZ4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabelWorkPositionZ4.setText("Z0");
-        jLabelWorkPositionZ4.setToolTipText("Z Work Position");
-        jLabelWorkPositionZ4.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabelWorkPositionZ4MouseClicked(evt);
-            }
-        });
-        jPanel16.add(jLabelWorkPositionZ4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 90, 100, 20));
-
-        jLabelWorkPositionX4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabelWorkPositionX4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabelWorkPositionX4.setText("X0");
-        jLabelWorkPositionX4.setToolTipText("X Work Position");
-        jLabelWorkPositionX4.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabelWorkPositionX4MouseClicked(evt);
-            }
-        });
-        jPanel16.add(jLabelWorkPositionX4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 30, 100, 20));
-
-        jLabelWorkPositionY4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabelWorkPositionY4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabelWorkPositionY4.setText("Y0");
-        jLabelWorkPositionY4.setToolTipText("Y Work Position");
-        jLabelWorkPositionY4.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabelWorkPositionY4MouseClicked(evt);
-            }
-        });
-        jPanel16.add(jLabelWorkPositionY4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 60, 100, 20));
-
-        jLabelMachinePositionZ4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabelMachinePositionZ4.setText("Z0");
-        jLabelMachinePositionZ4.setToolTipText("Z Machine Position");
-        jPanel16.add(jLabelMachinePositionZ4, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 90, 60, 20));
-
-        jLabelMachinePositionX4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabelMachinePositionX4.setText("X0");
-        jLabelMachinePositionX4.setToolTipText("X Machine Position");
-        jPanel16.add(jLabelMachinePositionX4, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 30, 60, 20));
-
-        jLabelMachinePositionY4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabelMachinePositionY4.setText("Y0");
-        jLabelMachinePositionY4.setToolTipText("Y Machine Position");
-        jPanel16.add(jLabelMachinePositionY4, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 60, 60, 20));
-
-        jLabel58.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel58.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel58.setText("Z:");
-        jPanel16.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 90, 20, 20));
-
-        jLabel59.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel59.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel59.setText("X:");
-        jPanel16.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, 20, 20));
-
-        jLabel60.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel60.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel60.setText("Y:");
-        jPanel16.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, 20, 20));
-
-        jButton15.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton15.setText("Ø");
-        jButton15.setToolTipText("Click to Zero Z Work Position");
-        jButton15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton15ActionPerformed(evt);
-            }
-        });
-        jPanel16.add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 30, 28));
-
-        jButton16.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton16.setText("Ø");
-        jButton16.setToolTipText("Click to Zero X Work Position");
-        jButton16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton16ActionPerformed(evt);
-            }
-        });
-        jPanel16.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 30, 28));
-
-        jButton17.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton17.setText("Ø");
-        jButton17.setToolTipText("Click to Zero Y Work Position");
-        jButton17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton17ActionPerformed(evt);
-            }
-        });
-        jPanel16.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 30, 28));
-
-        jLabelRowsInFile11.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabelRowsInFile11.setText("Semi Auto Tool Change:");
-        jPanel16.add(jLabelRowsInFile11, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, 150, 20));
-
-        jLabelSemiAutoToolChangeStatus4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabelSemiAutoToolChangeStatus4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabelSemiAutoToolChangeStatus4.setText("Off");
-        jPanel16.add(jLabelSemiAutoToolChangeStatus4, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 210, 80, 20));
-
-        jLabel61.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel61.setText("Feedrate:");
-        jPanel16.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 150, 20));
-
-        jLabelRealTimeFeedRate7.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabelRealTimeFeedRate7.setText("0mm/min");
-        jPanel16.add(jLabelRealTimeFeedRate7, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 170, 80, 20));
-
-        jLabel62.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel62.setText("Spindle RPM:");
-        jPanel16.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, 150, 20));
-
-        jLabelRealTimeSpindleRPM7.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabelRealTimeSpindleRPM7.setText("0");
-        jPanel16.add(jLabelRealTimeSpindleRPM7, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 190, 80, 20));
-
-        jLabel63.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel63.setText("Feedrate:");
-
-        jLabelRealTimeFeedRate8.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabelRealTimeFeedRate8.setText("0mm/min");
-
-        jLabel64.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel64.setText("Spindle RPM:");
-
-        jLabelRealTimeSpindleRPM8.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabelRealTimeSpindleRPM8.setText("0");
-
-        jLabel65.setText("<html>\nLa vitesse de découpe et de rotation doivent être ajustées en fonction du matériel de découpe et du fôrêt utilisé.<br>\n</html>\n");
 
         jButtonCancel3.setText("Quitter");
         jButtonCancel3.addActionListener(new java.awt.event.ActionListener() {
@@ -2242,45 +2012,82 @@ public class frmControl extends javax.swing.JFrame
             }
         });
 
+        jTableGCodeLog1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Row", "Command", "TX", "RX", "Error"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Object.class, java.lang.Object.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Object.class
+            };
+            boolean[] canEdit = new boolean [] {
+                true, true, false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane3.setViewportView(jTableGCodeLog1);
+        if (jTableGCodeLog1.getColumnModel().getColumnCount() > 0) {
+            jTableGCodeLog1.getColumnModel().getColumn(0).setMinWidth(20);
+            jTableGCodeLog1.getColumnModel().getColumn(0).setPreferredWidth(20);
+            jTableGCodeLog1.getColumnModel().getColumn(2).setMinWidth(50);
+            jTableGCodeLog1.getColumnModel().getColumn(2).setPreferredWidth(50);
+            jTableGCodeLog1.getColumnModel().getColumn(2).setMaxWidth(50);
+            jTableGCodeLog1.getColumnModel().getColumn(3).setMinWidth(50);
+            jTableGCodeLog1.getColumnModel().getColumn(3).setPreferredWidth(50);
+            jTableGCodeLog1.getColumnModel().getColumn(3).setMaxWidth(50);
+        }
+
+        jButtonClearLog1.setText("Clear Log");
+        jButtonClearLog1.setToolTipText("Clear the GCode Log");
+        jButtonClearLog1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonClearLog1ActionPerformed(evt);
+            }
+        });
+
+        jCheckBoxEnableGCodeLog1.setText("Enable GCode Log");
+        jCheckBoxEnableGCodeLog1.setToolTipText("You may uncheck it on slower computers");
+        jCheckBoxEnableGCodeLog1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBoxEnableGCodeLog1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jDialogTab2Layout = new javax.swing.GroupLayout(jDialogTab2.getContentPane());
         jDialogTab2.getContentPane().setLayout(jDialogTab2Layout);
         jDialogTab2Layout.setHorizontalGroup(
             jDialogTab2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jSeparator12)
             .addGroup(jDialogTab2Layout.createSequentialGroup()
+                .addGap(155, 155, 155)
+                .addComponent(jButtonOk3, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(32, 32, 32)
+                .addComponent(jButtonCancel3, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jDialogTab2Layout.createSequentialGroup()
                 .addGroup(jDialogTab2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jSeparator13)
                     .addGroup(jDialogTab2Layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(jDialogTab2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel65, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                             .addComponent(jLabel55, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel56))))
+                            .addComponent(jLabel56, javax.swing.GroupLayout.DEFAULT_SIZE, 525, Short.MAX_VALUE)
+                            .addGroup(jDialogTab2Layout.createSequentialGroup()
+                                .addComponent(jButtonClearLog1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jCheckBoxEnableGCodeLog1))
+                            .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 525, Short.MAX_VALUE))))
                 .addContainerGap())
-            .addGroup(jDialogTab2Layout.createSequentialGroup()
-                .addGroup(jDialogTab2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jDialogTab2Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jDialogTab2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jDialogTab2Layout.createSequentialGroup()
-                                .addComponent(jLabel63, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(10, 10, 10)
-                                .addComponent(jLabelRealTimeFeedRate8, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jDialogTab2Layout.createSequentialGroup()
-                                .addComponent(jLabel64, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(10, 10, 10)
-                                .addComponent(jLabelRealTimeSpindleRPM8, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(jDialogTab2Layout.createSequentialGroup()
-                        .addGap(56, 56, 56)
-                        .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(62, 62, 62))
-            .addGroup(jDialogTab2Layout.createSequentialGroup()
-                .addGap(102, 102, 102)
-                .addComponent(jButtonOk3, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(32, 32, 32)
-                .addComponent(jButtonCancel3, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(102, 102, 102))
         );
         jDialogTab2Layout.setVerticalGroup(
             jDialogTab2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2289,193 +2096,33 @@ public class frmControl extends javax.swing.JFrame
                 .addComponent(jLabel55, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(5, 5, 5)
                 .addComponent(jSeparator12, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(22, 22, 22)
+                .addGroup(jDialogTab2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButtonClearLog1)
+                    .addComponent(jCheckBoxEnableGCodeLog1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator13, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(2, 2, 2)
                 .addComponent(jLabel56, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30)
-                .addGroup(jDialogTab2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel63, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabelRealTimeFeedRate8, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(jDialogTab2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel64, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabelRealTimeSpindleRPM8, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel65, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(39, 39, 39)
                 .addGroup(jDialogTab2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButtonOk3)
                     .addComponent(jButtonCancel3))
-                .addContainerGap())
+                .addContainerGap(37, Short.MAX_VALUE))
         );
 
         jDialogTab3.setModal(true);
         jDialogTab3.setModalExclusionType(java.awt.Dialog.ModalExclusionType.APPLICATION_EXCLUDE);
 
         jLabel66.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel66.setText("<html> <h3 text-decoration=\"bold\"> Interface de Connection");
+        jLabel66.setText("<html> <h3 text-decoration=\"bold\"> Macros");
         jLabel66.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         jLabel67.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel67.setText("<html> <h4 text-align=\"center\">Cette interface permets de voir laposition de la CNC </h4>  \nLa position des axes XYZ est affichée. ( Ne pas oublier de <i color=\"blue\"> Home </i> la CNC) <br>\nØ permets de tare l'axe de la CNC");
+        jLabel67.setText("<html> <h4 text-align=\"center\">Cette interface permets de voir rapidement envoyer une commande a la CNC </h4>   Il suffit de définir une commande pour chaque bouton, puis de cliquer le bouton popur lancer la commande. <br> Nous recommandons de mettre des commandes telle que ");
         jLabel67.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-
-        jPanel18.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Machine Status", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(255, 255, 255))); // NOI18N
-        jPanel18.setToolTipText("Les informations de la CNC en temps réel sont affichées ici. En appuyant sur |Ø|, l'axe est remis à 0. ");
-        jPanel18.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jButtonResetWorkPosition5.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButtonResetWorkPosition5.setForeground(new java.awt.Color(255, 255, 255));
-        jButtonResetWorkPosition5.setText("Ø  Zero Work Position");
-        jButtonResetWorkPosition5.setToolTipText("Reset the Work Position to 0,0,0");
-        jButtonResetWorkPosition5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonResetWorkPosition5ActionPerformed(evt);
-            }
-        });
-        jPanel18.add(jButtonResetWorkPosition5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 240, 32));
-
-        jPanel19.setLayout(new java.awt.GridLayout(1, 0));
-
-        jLabel68.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel68.setForeground(new java.awt.Color(0, 75, 127));
-        jPanel19.add(jLabel68);
-
-        jPanel18.add(jPanel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 270, -1));
-
-        jLabelWorkPositionZ5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabelWorkPositionZ5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabelWorkPositionZ5.setText("Z0");
-        jLabelWorkPositionZ5.setToolTipText("Z Work Position");
-        jLabelWorkPositionZ5.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabelWorkPositionZ5MouseClicked(evt);
-            }
-        });
-        jPanel18.add(jLabelWorkPositionZ5, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 90, 100, 20));
-
-        jLabelWorkPositionX5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabelWorkPositionX5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabelWorkPositionX5.setText("X0");
-        jLabelWorkPositionX5.setToolTipText("X Work Position");
-        jLabelWorkPositionX5.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabelWorkPositionX5MouseClicked(evt);
-            }
-        });
-        jPanel18.add(jLabelWorkPositionX5, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 30, 100, 20));
-
-        jLabelWorkPositionY5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabelWorkPositionY5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabelWorkPositionY5.setText("Y0");
-        jLabelWorkPositionY5.setToolTipText("Y Work Position");
-        jLabelWorkPositionY5.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabelWorkPositionY5MouseClicked(evt);
-            }
-        });
-        jPanel18.add(jLabelWorkPositionY5, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 60, 100, 20));
-
-        jLabelMachinePositionZ5.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabelMachinePositionZ5.setText("Z0");
-        jLabelMachinePositionZ5.setToolTipText("Z Machine Position");
-        jPanel18.add(jLabelMachinePositionZ5, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 90, 60, 20));
-
-        jLabelMachinePositionX5.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabelMachinePositionX5.setText("X0");
-        jLabelMachinePositionX5.setToolTipText("X Machine Position");
-        jPanel18.add(jLabelMachinePositionX5, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 30, 60, 20));
-
-        jLabelMachinePositionY5.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabelMachinePositionY5.setText("Y0");
-        jLabelMachinePositionY5.setToolTipText("Y Machine Position");
-        jPanel18.add(jLabelMachinePositionY5, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 60, 60, 20));
-
-        jLabel69.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel69.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel69.setText("Z:");
-        jPanel18.add(jLabel69, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 90, 20, 20));
-
-        jLabel70.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel70.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel70.setText("X:");
-        jPanel18.add(jLabel70, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, 20, 20));
-
-        jLabel71.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel71.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel71.setText("Y:");
-        jPanel18.add(jLabel71, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, 20, 20));
-
-        jButton18.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton18.setText("Ø");
-        jButton18.setToolTipText("Click to Zero Z Work Position");
-        jButton18.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton18ActionPerformed(evt);
-            }
-        });
-        jPanel18.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 30, 28));
-
-        jButton19.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton19.setText("Ø");
-        jButton19.setToolTipText("Click to Zero X Work Position");
-        jButton19.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton19ActionPerformed(evt);
-            }
-        });
-        jPanel18.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 30, 28));
-
-        jButton20.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton20.setText("Ø");
-        jButton20.setToolTipText("Click to Zero Y Work Position");
-        jButton20.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton20ActionPerformed(evt);
-            }
-        });
-        jPanel18.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 30, 28));
-
-        jLabelRowsInFile12.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabelRowsInFile12.setText("Semi Auto Tool Change:");
-        jPanel18.add(jLabelRowsInFile12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, 150, 20));
-
-        jLabelSemiAutoToolChangeStatus5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabelSemiAutoToolChangeStatus5.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabelSemiAutoToolChangeStatus5.setText("Off");
-        jPanel18.add(jLabelSemiAutoToolChangeStatus5, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 210, 80, 20));
-
-        jLabel72.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel72.setText("Feedrate:");
-        jPanel18.add(jLabel72, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 150, 20));
-
-        jLabelRealTimeFeedRate9.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabelRealTimeFeedRate9.setText("0mm/min");
-        jPanel18.add(jLabelRealTimeFeedRate9, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 170, 80, 20));
-
-        jLabel73.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel73.setText("Spindle RPM:");
-        jPanel18.add(jLabel73, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, 150, 20));
-
-        jLabelRealTimeSpindleRPM9.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabelRealTimeSpindleRPM9.setText("0");
-        jPanel18.add(jLabelRealTimeSpindleRPM9, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 190, 80, 20));
-
-        jLabel74.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel74.setText("Feedrate:");
-
-        jLabelRealTimeFeedRate10.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabelRealTimeFeedRate10.setText("0mm/min");
-
-        jLabel75.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel75.setText("Spindle RPM:");
-
-        jLabelRealTimeSpindleRPM10.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabelRealTimeSpindleRPM10.setText("0");
-
-        jLabel76.setText("<html>\nLa vitesse de découpe et de rotation doivent être ajustées en fonction du matériel de découpe et du fôrêt utilisé.<br>\n</html>\n");
 
         jButtonCancel4.setText("Quitter");
         jButtonCancel4.addActionListener(new java.awt.event.ActionListener() {
@@ -2502,34 +2149,15 @@ public class frmControl extends javax.swing.JFrame
                     .addGroup(jDialogTab3Layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(jDialogTab3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel76, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                             .addComponent(jLabel66, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel67))))
+                            .addComponent(jLabel67, javax.swing.GroupLayout.DEFAULT_SIZE, 386, Short.MAX_VALUE))))
                 .addContainerGap())
-            .addGroup(jDialogTab3Layout.createSequentialGroup()
-                .addGroup(jDialogTab3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jDialogTab3Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jDialogTab3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jDialogTab3Layout.createSequentialGroup()
-                                .addComponent(jLabel74, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(10, 10, 10)
-                                .addComponent(jLabelRealTimeFeedRate10, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jDialogTab3Layout.createSequentialGroup()
-                                .addComponent(jLabel75, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(10, 10, 10)
-                                .addComponent(jLabelRealTimeSpindleRPM10, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(jDialogTab3Layout.createSequentialGroup()
-                        .addGap(56, 56, 56)
-                        .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(62, 62, 62))
-            .addGroup(jDialogTab3Layout.createSequentialGroup()
-                .addGap(102, 102, 102)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialogTab3Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(jButtonOk4, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(32, 32, 32)
                 .addComponent(jButtonCancel4, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(102, 102, 102))
+                .addGap(101, 101, 101))
         );
         jDialogTab3Layout.setVerticalGroup(
             jDialogTab3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2538,193 +2166,29 @@ public class frmControl extends javax.swing.JFrame
                 .addComponent(jLabel66, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(5, 5, 5)
                 .addComponent(jSeparator14, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(252, 252, 252)
                 .addComponent(jSeparator15, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(2, 2, 2)
-                .addComponent(jLabel67, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30)
-                .addGroup(jDialogTab3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel74, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabelRealTimeFeedRate10, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(jDialogTab3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel75, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabelRealTimeSpindleRPM10, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel76, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addComponent(jLabel67, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
                 .addGroup(jDialogTab3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButtonOk4)
                     .addComponent(jButtonCancel4))
-                .addContainerGap())
+                .addGap(20, 20, 20))
         );
 
+        jDialogTab4.setMaximumSize(new java.awt.Dimension(458, 657));
+        jDialogTab4.setMinimumSize(new java.awt.Dimension(458, 657));
         jDialogTab4.setModal(true);
         jDialogTab4.setModalExclusionType(java.awt.Dialog.ModalExclusionType.APPLICATION_EXCLUDE);
 
         jLabel77.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel77.setText("<html> <h3 text-decoration=\"bold\"> Interface de Connection");
+        jLabel77.setText("<html> <h3 text-decoration=\"bold\"> Informations");
         jLabel77.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         jLabel78.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel78.setText("<html> <h4 text-align=\"center\">Cette interface permets de voir laposition de la CNC </h4>  \nLa position des axes XYZ est affichée. ( Ne pas oublier de <i color=\"blue\"> Home </i> la CNC) <br>\nØ permets de tare l'axe de la CNC");
+        jLabel78.setText("<html> <h4 text-align=\"center\">Cette interface permets de voir les informations de la CNC </h4>  ");
         jLabel78.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-
-        jPanel20.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Machine Status", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(255, 255, 255))); // NOI18N
-        jPanel20.setToolTipText("Les informations de la CNC en temps réel sont affichées ici. En appuyant sur |Ø|, l'axe est remis à 0. ");
-        jPanel20.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jButtonResetWorkPosition6.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButtonResetWorkPosition6.setForeground(new java.awt.Color(255, 255, 255));
-        jButtonResetWorkPosition6.setText("Ø  Zero Work Position");
-        jButtonResetWorkPosition6.setToolTipText("Reset the Work Position to 0,0,0");
-        jButtonResetWorkPosition6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonResetWorkPosition6ActionPerformed(evt);
-            }
-        });
-        jPanel20.add(jButtonResetWorkPosition6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 240, 32));
-
-        jPanel21.setLayout(new java.awt.GridLayout(1, 0));
-
-        jLabel79.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel79.setForeground(new java.awt.Color(0, 75, 127));
-        jPanel21.add(jLabel79);
-
-        jPanel20.add(jPanel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 270, -1));
-
-        jLabelWorkPositionZ6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabelWorkPositionZ6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabelWorkPositionZ6.setText("Z0");
-        jLabelWorkPositionZ6.setToolTipText("Z Work Position");
-        jLabelWorkPositionZ6.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabelWorkPositionZ6MouseClicked(evt);
-            }
-        });
-        jPanel20.add(jLabelWorkPositionZ6, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 90, 100, 20));
-
-        jLabelWorkPositionX6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabelWorkPositionX6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabelWorkPositionX6.setText("X0");
-        jLabelWorkPositionX6.setToolTipText("X Work Position");
-        jLabelWorkPositionX6.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabelWorkPositionX6MouseClicked(evt);
-            }
-        });
-        jPanel20.add(jLabelWorkPositionX6, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 30, 100, 20));
-
-        jLabelWorkPositionY6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabelWorkPositionY6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabelWorkPositionY6.setText("Y0");
-        jLabelWorkPositionY6.setToolTipText("Y Work Position");
-        jLabelWorkPositionY6.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabelWorkPositionY6MouseClicked(evt);
-            }
-        });
-        jPanel20.add(jLabelWorkPositionY6, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 60, 100, 20));
-
-        jLabelMachinePositionZ6.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabelMachinePositionZ6.setText("Z0");
-        jLabelMachinePositionZ6.setToolTipText("Z Machine Position");
-        jPanel20.add(jLabelMachinePositionZ6, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 90, 60, 20));
-
-        jLabelMachinePositionX6.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabelMachinePositionX6.setText("X0");
-        jLabelMachinePositionX6.setToolTipText("X Machine Position");
-        jPanel20.add(jLabelMachinePositionX6, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 30, 60, 20));
-
-        jLabelMachinePositionY6.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabelMachinePositionY6.setText("Y0");
-        jLabelMachinePositionY6.setToolTipText("Y Machine Position");
-        jPanel20.add(jLabelMachinePositionY6, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 60, 60, 20));
-
-        jLabel80.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel80.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel80.setText("Z:");
-        jPanel20.add(jLabel80, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 90, 20, 20));
-
-        jLabel81.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel81.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel81.setText("X:");
-        jPanel20.add(jLabel81, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, 20, 20));
-
-        jLabel82.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel82.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel82.setText("Y:");
-        jPanel20.add(jLabel82, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, 20, 20));
-
-        jButton21.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton21.setText("Ø");
-        jButton21.setToolTipText("Click to Zero Z Work Position");
-        jButton21.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton21ActionPerformed(evt);
-            }
-        });
-        jPanel20.add(jButton21, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 30, 28));
-
-        jButton22.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton22.setText("Ø");
-        jButton22.setToolTipText("Click to Zero X Work Position");
-        jButton22.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton22ActionPerformed(evt);
-            }
-        });
-        jPanel20.add(jButton22, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 30, 28));
-
-        jButton23.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton23.setText("Ø");
-        jButton23.setToolTipText("Click to Zero Y Work Position");
-        jButton23.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton23ActionPerformed(evt);
-            }
-        });
-        jPanel20.add(jButton23, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 30, 28));
-
-        jLabelRowsInFile13.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabelRowsInFile13.setText("Semi Auto Tool Change:");
-        jPanel20.add(jLabelRowsInFile13, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, 150, 20));
-
-        jLabelSemiAutoToolChangeStatus6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabelSemiAutoToolChangeStatus6.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabelSemiAutoToolChangeStatus6.setText("Off");
-        jPanel20.add(jLabelSemiAutoToolChangeStatus6, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 210, 80, 20));
-
-        jLabel83.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel83.setText("Feedrate:");
-        jPanel20.add(jLabel83, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 150, 20));
-
-        jLabelRealTimeFeedRate11.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabelRealTimeFeedRate11.setText("0mm/min");
-        jPanel20.add(jLabelRealTimeFeedRate11, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 170, 80, 20));
-
-        jLabel84.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel84.setText("Spindle RPM:");
-        jPanel20.add(jLabel84, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, 150, 20));
-
-        jLabelRealTimeSpindleRPM11.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabelRealTimeSpindleRPM11.setText("0");
-        jPanel20.add(jLabelRealTimeSpindleRPM11, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 190, 80, 20));
-
-        jLabel85.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel85.setText("Feedrate:");
-
-        jLabelRealTimeFeedRate12.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabelRealTimeFeedRate12.setText("0mm/min");
-
-        jLabel86.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel86.setText("Spindle RPM:");
-
-        jLabelRealTimeSpindleRPM12.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabelRealTimeSpindleRPM12.setText("0");
-
-        jLabel87.setText("<html>\nLa vitesse de découpe et de rotation doivent être ajustées en fonction du matériel de découpe et du fôrêt utilisé.<br>\n</html>\n");
 
         jButtonCancel5.setText("Quitter");
         jButtonCancel5.addActionListener(new java.awt.event.ActionListener() {
@@ -2751,34 +2215,15 @@ public class frmControl extends javax.swing.JFrame
                     .addGroup(jDialogTab4Layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(jDialogTab4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel87, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                             .addComponent(jLabel77, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel78))))
+                            .addComponent(jLabel78, javax.swing.GroupLayout.DEFAULT_SIZE, 386, Short.MAX_VALUE))))
                 .addContainerGap())
             .addGroup(jDialogTab4Layout.createSequentialGroup()
-                .addGroup(jDialogTab4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jDialogTab4Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jDialogTab4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jDialogTab4Layout.createSequentialGroup()
-                                .addComponent(jLabel85, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(10, 10, 10)
-                                .addComponent(jLabelRealTimeFeedRate12, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jDialogTab4Layout.createSequentialGroup()
-                                .addComponent(jLabel86, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(10, 10, 10)
-                                .addComponent(jLabelRealTimeSpindleRPM12, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(jDialogTab4Layout.createSequentialGroup()
-                        .addGap(56, 56, 56)
-                        .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(62, 62, 62))
-            .addGroup(jDialogTab4Layout.createSequentialGroup()
-                .addGap(102, 102, 102)
+                .addGap(101, 101, 101)
                 .addComponent(jButtonOk5, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(32, 32, 32)
                 .addComponent(jButtonCancel5, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(102, 102, 102))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jDialogTab4Layout.setVerticalGroup(
             jDialogTab4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2787,26 +2232,15 @@ public class frmControl extends javax.swing.JFrame
                 .addComponent(jLabel77, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(5, 5, 5)
                 .addComponent(jSeparator16, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(252, 252, 252)
                 .addComponent(jSeparator17, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(2, 2, 2)
                 .addComponent(jLabel78, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30)
-                .addGroup(jDialogTab4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel85, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabelRealTimeFeedRate12, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(jDialogTab4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel86, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabelRealTimeSpindleRPM12, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel87, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 120, Short.MAX_VALUE)
                 .addGroup(jDialogTab4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButtonOk5)
                     .addComponent(jButtonCancel5))
-                .addContainerGap())
+                .addGap(33, 33, 33))
         );
 
         jFrame1.setMinimumSize(new java.awt.Dimension(930, 805));
@@ -4663,7 +4097,7 @@ public class frmControl extends javax.swing.JFrame
         jMenu5.setText("Tutoriel");
 
         jMenuItem5.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_T, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMenuItem5.setLabel("Tutorial");
+        jMenuItem5.setLabel("Tutoriel");
         jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem5ActionPerformed(evt);
@@ -4671,6 +4105,7 @@ public class frmControl extends javax.swing.JFrame
         });
         jMenu5.add(jMenuItem5);
 
+        jMenuItem9.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_D, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMenuItem9.setText("Tutoriel découpe complet");
         jMenuItem9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4695,6 +4130,12 @@ public class frmControl extends javax.swing.JFrame
             }
         });
         jMenu5.add(jMenuItem1);
+
+        jMenuItem11.setText("Sécuritées de la CNC");
+        jMenu5.add(jMenuItem11);
+
+        jMenuItem12.setText("Limitations de la découpe CNC");
+        jMenu5.add(jMenuItem12);
 
         jMenuBar1.add(jMenu5);
 
@@ -5343,6 +4784,12 @@ public class frmControl extends javax.swing.JFrame
         jDialogLevel.setLocationRelativeTo(null); 
         jDialogLevel.setVisible(true);
         verified_level = jLevelCombo.getSelectedIndex() + 1;
+        jButton7.requestFocus();
+        jButtonOk.requestFocus();  
+        jButtonOk1.requestFocus();  
+        jButtonOk2.requestFocus();  
+        jButtonOk3.requestFocus();  
+        jButtonOk4.requestFocus();  
    
         }
         else{
@@ -5360,7 +4807,6 @@ public class frmControl extends javax.swing.JFrame
                     break;
             }
         }
-               
             switch (verified_level) {
                 case 1:
                     // Vider tous les Panels sauf CONNECTION
@@ -5437,6 +4883,28 @@ public class frmControl extends javax.swing.JFrame
                     jDialog1.pack();
                     jDialog1.setLocationRelativeTo(null);
                     jDialog1.setVisible(true);
+                    if(tutorial){
+                        
+                    /***** FIN DU TUTO *******/
+                    /*Element Connection*/
+                    jButtonKillAlarm.setVisible(true); jButtonSoftReset.setVisible(true); jLabelMachineX1.setVisible(true); jLabelActiveState.setVisible(true); jButtonConnectDisconnect1.setVisible(true);
+                    /* Elements Statut*/
+                    jLabelMachinePositionX.setVisible(true); jLabelRealTimeFeedRate.setVisible(true); jLabel14.setVisible(true); jLabelWorkPositionZ.setVisible(true); jLabelSemiAutoToolChangeStatus.setVisible(true); jLabelMachinePositionY.setVisible(true); jLabelRowsInFile7.setVisible(true); jLabelWorkPositionX.setVisible(true); jButtonResetWorkPosition.setVisible(true); jLabelMachinePositionZ.setVisible(true); jLabel12.setVisible(true); jLabelRealTimeSpindleRPM.setVisible(true); jLabelWorkPositionY.setVisible(true); jButton3.setVisible(true); jLabel15.setVisible(true); jButton2.setVisible(true); jLabel2.setVisible(true); jLabel3.setVisible(true); jButton1.setVisible(true);
+                    /* Elements de Machine Control */
+                    jRadioButtonMillimeters.setVisible(true); jButtonZMinus.setVisible(true); jCheckBoxEnableKeyboardJogging.setVisible(true); jButtonZPlus.setVisible(true); jButtonXPlus.setVisible(true); jLabel4.setVisible(true); jRadioButtonInches.setVisible(true); jSliderStepSize.setVisible(true); jLabelRemoveFocus.setVisible(true); jButtonXMinus.setVisible(true); jButtonReturnToZero.setVisible(true); jSpinnerStep.setVisible(true); jButtonYPlus.setVisible(true); jButtonYMinus.setVisible(true);
+                    /* Elements de  GCode SENDER */
+                    jButtonGCodePause.setVisible(true); jLabelRowsInFile3.setVisible(true); jLabelRowsInFile2.setVisible(true); jLabelRowsInFile.setVisible(true); jLabelSentRows.setVisible(true); jButtonGCodeSend.setVisible(true); jProgressBarGCodeProgress.setVisible(true); jButtonGCodeCancel.setVisible(true); jLabelRowsInFile1.setVisible(true); jLabelRowsInFile4.setVisible(true); jLabelTimeElapsed.setVisible(true); jLabelRowsInFile5.setVisible(true); jTextFieldGCodeFile.setVisible(true); jLabel5.setVisible(true); jLabelRemainingRows.setVisible(true);
+                    /* Elements de TabbedPane */
+                    /* TAB 1*/
+                    jLabel7.setVisible(true); jTextAreaConsole.setVisible(true); jCheckBoxShowVerboseOutput.setVisible(true); jTextFieldCommand.setVisible(true); jButtonClearConsole.setVisible(true);
+                    /* TAB 2*/
+                    jTableGCodeLog.setVisible(true); jButtonClearLog.setVisible(true); jCheckBoxEnableGCodeLog.setVisible(true);
+                     /* TAB 3*/
+                    jLabel9.setVisible(true); jLabel10.setVisible(true);
+                     /* TAB 4*/
+                    jLabel16.setVisible(true); jLabelMachineHomePosition.setVisible(true); jLabelLastStatusUpdate.setVisible(true); jLabel17.setVisible(true);
+                                                                   
+                    }else{
                     /* Elements de Connection Invisible*/
                     jButtonSoftReset.setVisible(false);
                     jLabelMachineX1.setVisible(false);
@@ -5630,7 +5098,7 @@ public class frmControl extends javax.swing.JFrame
                                             jLabel9.setVisible(false); jLabel10.setVisible(false);
                                             /* TAB 4*/
                                             jLabel16.setVisible(true); jLabelMachineHomePosition.setVisible(true); jLabelLastStatusUpdate.setVisible(true); jLabel17.setVisible(true);
-                                            jDialogTab1.pack();
+                                            
                                             jDialogTab4.setLocationRelativeTo(null);
                                             jDialogTab4.setVisible(true);
                                             if(tutorial){
@@ -5684,6 +5152,7 @@ public class frmControl extends javax.swing.JFrame
                             }
                         }
                     }
+                  }
                     break;
                 case 2:
                     // Vider tous les Panels sauf CONNECTION
@@ -5952,7 +5421,7 @@ public class frmControl extends javax.swing.JFrame
                                             jLabel9.setVisible(false); jLabel10.setVisible(false);
                                             /* TAB 4*/
                                             jLabel16.setVisible(true); jLabelMachineHomePosition.setVisible(true); jLabelLastStatusUpdate.setVisible(true); jLabel17.setVisible(true);
-                                            jDialogTab1.pack();
+                                            
                                             jDialogTab4.setLocationRelativeTo(null);
                                             jDialogTab4.setVisible(true);
                                             if(tutorial){
@@ -6158,113 +5627,25 @@ public class frmControl extends javax.swing.JFrame
         jDialogGSender.dispose();
     }//GEN-LAST:event_jButtonOk1ActionPerformed
 
-    private void jButtonResetWorkPosition4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonResetWorkPosition4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonResetWorkPosition4ActionPerformed
-
-    private void jLabelWorkPositionZ4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelWorkPositionZ4MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabelWorkPositionZ4MouseClicked
-
-    private void jLabelWorkPositionX4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelWorkPositionX4MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabelWorkPositionX4MouseClicked
-
-    private void jLabelWorkPositionY4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelWorkPositionY4MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabelWorkPositionY4MouseClicked
-
-    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton15ActionPerformed
-
-    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton16ActionPerformed
-
-    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton17ActionPerformed
-
-    private void jButtonCancel3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCancel3ActionPerformed
-        tutorial=true;
-        jDialogTab2.dispose();
-    }//GEN-LAST:event_jButtonCancel3ActionPerformed
-
-    private void jButtonOk3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonOk3ActionPerformed
-        jDialogTab2.dispose();
-    }//GEN-LAST:event_jButtonOk3ActionPerformed
-
-    private void jButtonResetWorkPosition5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonResetWorkPosition5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonResetWorkPosition5ActionPerformed
-
-    private void jLabelWorkPositionZ5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelWorkPositionZ5MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabelWorkPositionZ5MouseClicked
-
-    private void jLabelWorkPositionX5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelWorkPositionX5MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabelWorkPositionX5MouseClicked
-
-    private void jLabelWorkPositionY5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelWorkPositionY5MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabelWorkPositionY5MouseClicked
-
-    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton18ActionPerformed
-
-    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton19ActionPerformed
-
-    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton20ActionPerformed
-
     private void jButtonCancel4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCancel4ActionPerformed
         // TODO add your handling code here:
+        tutorial=true;
+        jDialogTab3.dispose();
     }//GEN-LAST:event_jButtonCancel4ActionPerformed
 
     private void jButtonOk4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonOk4ActionPerformed
-        // TODO add your handling code here:
+        jDialogTab3.dispose();
     }//GEN-LAST:event_jButtonOk4ActionPerformed
-
-    private void jButtonResetWorkPosition6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonResetWorkPosition6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonResetWorkPosition6ActionPerformed
-
-    private void jLabelWorkPositionZ6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelWorkPositionZ6MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabelWorkPositionZ6MouseClicked
-
-    private void jLabelWorkPositionX6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelWorkPositionX6MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabelWorkPositionX6MouseClicked
-
-    private void jLabelWorkPositionY6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelWorkPositionY6MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabelWorkPositionY6MouseClicked
-
-    private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton21ActionPerformed
-
-    private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton22ActionPerformed
-
-    private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton23ActionPerformed
 
     private void jButtonCancel5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCancel5ActionPerformed
         // TODO add your handling code here:
+        tutorial=true;
+        jDialogTab4.dispose();
     }//GEN-LAST:event_jButtonCancel5ActionPerformed
 
     private void jButtonOk5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonOk5ActionPerformed
         // TODO add your handling code here:
+        jDialogTab4.dispose();
     }//GEN-LAST:event_jButtonOk5ActionPerformed
 
     private void jTextFieldGCodeFile1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldGCodeFile1ActionPerformed
@@ -7692,14 +7073,25 @@ private void checkStatus(){
 
     private void formComponentResized(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentResized
 
-    }//GEN-LAST:event_formComponentResized
 
-    private void formMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMouseDragged
+    private void jCheckBoxEnableGCodeLog1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBoxEnableGCodeLog1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBoxEnableGCodeLog1ActionPerformed
 
-    }//GEN-LAST:event_formMouseDragged
+    private void jButtonClearLog1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonClearLog1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonClearLog1ActionPerformed
 
-    
-  
+    private void jButtonOk3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonOk3ActionPerformed
+        jDialogTab2.dispose();
+    }//GEN-LAST:event_jButtonOk3ActionPerformed
+
+    private void jButtonCancel3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCancel3ActionPerformed
+        tutorial=true;
+        jDialogTab2.dispose();
+    }//GEN-LAST:event_jButtonCancel3ActionPerformed
+
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
@@ -7708,16 +7100,7 @@ private void checkStatus(){
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton16;
-    private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton18;
-    private javax.swing.JButton jButton19;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton20;
-    private javax.swing.JButton jButton21;
-    private javax.swing.JButton jButton22;
-    private javax.swing.JButton jButton23;
     private javax.swing.JButton jButton24;
     private javax.swing.JButton jButton25;
     private javax.swing.JButton jButton26;
@@ -7740,6 +7123,7 @@ private void checkStatus(){
     private javax.swing.JButton jButtonClearConsole;
     private javax.swing.JButton jButtonClearConsole1;
     private javax.swing.JButton jButtonClearLog;
+    private javax.swing.JButton jButtonClearLog1;
     private javax.swing.JButton jButtonConnectDisconnect1;
     private javax.swing.JButton jButtonConnectDisconnect2;
     private javax.swing.JButton jButtonConnectDisconnect3;
@@ -7772,9 +7156,6 @@ private void checkStatus(){
     private javax.swing.JButton jButtonOk5;
     private javax.swing.JButton jButtonResetWorkPosition;
     private javax.swing.JButton jButtonResetWorkPosition1;
-    private javax.swing.JButton jButtonResetWorkPosition4;
-    private javax.swing.JButton jButtonResetWorkPosition5;
-    private javax.swing.JButton jButtonResetWorkPosition6;
     private javax.swing.JButton jButtonReturnToZero;
     private javax.swing.JButton jButtonReturnToZero1;
     private javax.swing.JButton jButtonSoftReset;
@@ -7796,6 +7177,7 @@ private void checkStatus(){
     private javax.swing.JButton jButtonZPlus;
     private javax.swing.JButton jButtonZPlus1;
     private javax.swing.JCheckBox jCheckBoxEnableGCodeLog;
+    private javax.swing.JCheckBox jCheckBoxEnableGCodeLog1;
     private javax.swing.JCheckBox jCheckBoxEnableKeyboardJogging;
     private javax.swing.JCheckBox jCheckBoxEnableKeyboardJogging1;
     private javax.swing.JCheckBox jCheckBoxShowVerboseOutput;
@@ -7863,40 +7245,13 @@ private void checkStatus(){
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel55;
     private javax.swing.JLabel jLabel56;
-    private javax.swing.JLabel jLabel57;
-    private javax.swing.JLabel jLabel58;
-    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel60;
-    private javax.swing.JLabel jLabel61;
-    private javax.swing.JLabel jLabel62;
-    private javax.swing.JLabel jLabel63;
-    private javax.swing.JLabel jLabel64;
-    private javax.swing.JLabel jLabel65;
     private javax.swing.JLabel jLabel66;
     private javax.swing.JLabel jLabel67;
-    private javax.swing.JLabel jLabel68;
-    private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel70;
-    private javax.swing.JLabel jLabel71;
-    private javax.swing.JLabel jLabel72;
-    private javax.swing.JLabel jLabel73;
-    private javax.swing.JLabel jLabel74;
-    private javax.swing.JLabel jLabel75;
-    private javax.swing.JLabel jLabel76;
     private javax.swing.JLabel jLabel77;
     private javax.swing.JLabel jLabel78;
-    private javax.swing.JLabel jLabel79;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel80;
-    private javax.swing.JLabel jLabel81;
-    private javax.swing.JLabel jLabel82;
-    private javax.swing.JLabel jLabel83;
-    private javax.swing.JLabel jLabel84;
-    private javax.swing.JLabel jLabel85;
-    private javax.swing.JLabel jLabel86;
-    private javax.swing.JLabel jLabel87;
     private javax.swing.JLabel jLabel88;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel jLabelActiveState;
@@ -7906,40 +7261,19 @@ private void checkStatus(){
     private javax.swing.JLabel jLabelMachineHomePosition;
     private javax.swing.JLabel jLabelMachinePositionX;
     private javax.swing.JLabel jLabelMachinePositionX1;
-    private javax.swing.JLabel jLabelMachinePositionX4;
-    private javax.swing.JLabel jLabelMachinePositionX5;
-    private javax.swing.JLabel jLabelMachinePositionX6;
     private javax.swing.JLabel jLabelMachinePositionY;
     private javax.swing.JLabel jLabelMachinePositionY1;
-    private javax.swing.JLabel jLabelMachinePositionY4;
-    private javax.swing.JLabel jLabelMachinePositionY5;
-    private javax.swing.JLabel jLabelMachinePositionY6;
     private javax.swing.JLabel jLabelMachinePositionZ;
     private javax.swing.JLabel jLabelMachinePositionZ1;
-    private javax.swing.JLabel jLabelMachinePositionZ4;
-    private javax.swing.JLabel jLabelMachinePositionZ5;
-    private javax.swing.JLabel jLabelMachinePositionZ6;
     private javax.swing.JLabel jLabelMachineX1;
     private javax.swing.JLabel jLabelMachineX2;
     private javax.swing.JLabel jLabelMachineX3;
     private javax.swing.JLabel jLabelRealTimeFeedRate;
     private javax.swing.JLabel jLabelRealTimeFeedRate1;
-    private javax.swing.JLabel jLabelRealTimeFeedRate10;
-    private javax.swing.JLabel jLabelRealTimeFeedRate11;
-    private javax.swing.JLabel jLabelRealTimeFeedRate12;
     private javax.swing.JLabel jLabelRealTimeFeedRate2;
-    private javax.swing.JLabel jLabelRealTimeFeedRate7;
-    private javax.swing.JLabel jLabelRealTimeFeedRate8;
-    private javax.swing.JLabel jLabelRealTimeFeedRate9;
     private javax.swing.JLabel jLabelRealTimeSpindleRPM;
     private javax.swing.JLabel jLabelRealTimeSpindleRPM1;
-    private javax.swing.JLabel jLabelRealTimeSpindleRPM10;
-    private javax.swing.JLabel jLabelRealTimeSpindleRPM11;
-    private javax.swing.JLabel jLabelRealTimeSpindleRPM12;
     private javax.swing.JLabel jLabelRealTimeSpindleRPM2;
-    private javax.swing.JLabel jLabelRealTimeSpindleRPM7;
-    private javax.swing.JLabel jLabelRealTimeSpindleRPM8;
-    private javax.swing.JLabel jLabelRealTimeSpindleRPM9;
     private javax.swing.JLabel jLabelRecommendedRPM;
     private javax.swing.JLabel jLabelRecommendedRPM1;
     private javax.swing.JLabel jLabelRemainingRows;
@@ -7950,9 +7284,6 @@ private void checkStatus(){
     private javax.swing.JLabel jLabelRowsInFile;
     private javax.swing.JLabel jLabelRowsInFile1;
     private javax.swing.JLabel jLabelRowsInFile10;
-    private javax.swing.JLabel jLabelRowsInFile11;
-    private javax.swing.JLabel jLabelRowsInFile12;
-    private javax.swing.JLabel jLabelRowsInFile13;
     private javax.swing.JLabel jLabelRowsInFile14;
     private javax.swing.JLabel jLabelRowsInFile15;
     private javax.swing.JLabel jLabelRowsInFile16;
@@ -7971,9 +7302,6 @@ private void checkStatus(){
     private javax.swing.JLabel jLabelRowsInFile9;
     private javax.swing.JLabel jLabelSemiAutoToolChangeStatus;
     private javax.swing.JLabel jLabelSemiAutoToolChangeStatus1;
-    private javax.swing.JLabel jLabelSemiAutoToolChangeStatus4;
-    private javax.swing.JLabel jLabelSemiAutoToolChangeStatus5;
-    private javax.swing.JLabel jLabelSemiAutoToolChangeStatus6;
     private javax.swing.JLabel jLabelSentRows;
     private javax.swing.JLabel jLabelSentRows1;
     private javax.swing.JLabel jLabelSentRows2;
@@ -7981,19 +7309,10 @@ private void checkStatus(){
     private javax.swing.JLabel jLabelTimeElapsed1;
     private javax.swing.JLabel jLabelWorkPositionX;
     private javax.swing.JLabel jLabelWorkPositionX1;
-    private javax.swing.JLabel jLabelWorkPositionX4;
-    private javax.swing.JLabel jLabelWorkPositionX5;
-    private javax.swing.JLabel jLabelWorkPositionX6;
     private javax.swing.JLabel jLabelWorkPositionY;
     private javax.swing.JLabel jLabelWorkPositionY1;
-    private javax.swing.JLabel jLabelWorkPositionY4;
-    private javax.swing.JLabel jLabelWorkPositionY5;
-    private javax.swing.JLabel jLabelWorkPositionY6;
     private javax.swing.JLabel jLabelWorkPositionZ;
     private javax.swing.JLabel jLabelWorkPositionZ1;
-    private javax.swing.JLabel jLabelWorkPositionZ4;
-    private javax.swing.JLabel jLabelWorkPositionZ5;
-    private javax.swing.JLabel jLabelWorkPositionZ6;
     private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JComboBox<String> jLevelCombo;
     private javax.swing.JMenu jMenu1;
@@ -8005,6 +7324,8 @@ private void checkStatus(){
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem10;
+    private javax.swing.JMenuItem jMenuItem11;
+    private javax.swing.JMenuItem jMenuItem12;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
@@ -8026,13 +7347,7 @@ private void checkStatus(){
     private javax.swing.JPanel jPanel13;
     private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel15;
-    private javax.swing.JPanel jPanel16;
-    private javax.swing.JPanel jPanel17;
-    private javax.swing.JPanel jPanel18;
-    private javax.swing.JPanel jPanel19;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel20;
-    private javax.swing.JPanel jPanel21;
     private javax.swing.JPanel jPanel22;
     private javax.swing.JPanel jPanel23;
     private javax.swing.JPanel jPanel24;
@@ -8070,6 +7385,7 @@ private void checkStatus(){
     private javax.swing.JRadioButton jRadioButtonMillimeters1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JSeparator jSeparator1;
@@ -8096,6 +7412,7 @@ private void checkStatus(){
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTableGCodeLog;
+    private javax.swing.JTable jTableGCodeLog1;
     private javax.swing.JTextArea jTextAreaConsole;
     private javax.swing.JTextArea jTextAreaConsole1;
     private javax.swing.JTextField jTextFieldCommand;
