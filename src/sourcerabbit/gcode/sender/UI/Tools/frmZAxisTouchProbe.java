@@ -38,6 +38,7 @@ public class frmZAxisTouchProbe extends javax.swing.JDialog
     private final frmControl fMyMain;
     private IMachineStatusEventListener fIMachineStatusEventListener;
     private Process_ZAxisTouchProbe fMyProcess;
+    
 
     public frmZAxisTouchProbe(frmControl parent, boolean modal)
     {
