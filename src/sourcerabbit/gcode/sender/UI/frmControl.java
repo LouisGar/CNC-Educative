@@ -872,6 +872,8 @@ public class frmControl extends javax.swing.JFrame
         jButtonGCodeSend1 = new javax.swing.JButton();
         jButtonGCodeCancel1 = new javax.swing.JButton();
         jButtonGCodeVisualize1 = new javax.swing.JButton();
+        jButtonBrowse2 = new javax.swing.JButton();
+        jButtonVisualise2 = new javax.swing.JButton();
         jProgressBarGCodeProgress2 = new javax.swing.JProgressBar();
         jLabelRowsInFile19 = new javax.swing.JLabel();
         jDialogTab1 = new javax.swing.JDialog();
@@ -992,6 +994,41 @@ public class frmControl extends javax.swing.JFrame
         jButton15 = new javax.swing.JButton();
         jButton16 = new javax.swing.JButton();
         JDialogSecuriter = new javax.swing.JDialog();
+        jLabel54 = new javax.swing.JLabel();
+        jTableGCodeLog2 = new javax.swing.JTable();
+        jButtonOk7 = new javax.swing.JButton();
+        jButtonCancel7 = new javax.swing.JButton();
+        jLabel58 = new javax.swing.JLabel();
+        jDialogMachineAxis = new javax.swing.JDialog();
+        jLabel52 = new javax.swing.JLabel();
+        jLabel53 = new javax.swing.JLabel();
+        jSeparator20 = new javax.swing.JSeparator();
+        jSeparator21 = new javax.swing.JSeparator();
+        jButtonCancel6 = new javax.swing.JButton();
+        jButtonOk6 = new javax.swing.JButton();
+        jPanelMachineControl2 = new javax.swing.JPanel();
+        jRadioButtonInches2 = new javax.swing.JRadioButton();
+        jRadioButtonMillimeters2 = new javax.swing.JRadioButton();
+        jLabel65 = new javax.swing.JLabel();
+        jSpinnerStep2 = new javax.swing.JSpinner();
+        jPanelJogButtons2 = new javax.swing.JPanel();
+        jButtonYMinus2 = new javax.swing.JButton();
+        jButtonXMinus2 = new javax.swing.JButton();
+        jButtonYPlus2 = new javax.swing.JButton();
+        jButtonXPlus2 = new javax.swing.JButton();
+        jButtonZPlus2 = new javax.swing.JButton();
+        jButtonZMinus2 = new javax.swing.JButton();
+        jCheckBoxEnableKeyboardJogging2 = new javax.swing.JCheckBox();
+        jLabelRemoveFocus2 = new javax.swing.JLabel();
+        jButtonReturnToZero2 = new javax.swing.JButton();
+        jSliderStepSize2 = new javax.swing.JSlider();
+        jPanel20 = new javax.swing.JPanel();
+        JDialogLimitations = new javax.swing.JDialog();
+        jLabel57 = new javax.swing.JLabel();
+        jTableGCodeLog3 = new javax.swing.JTable();
+        jButtonOk8 = new javax.swing.JButton();
+        jButtonCancel8 = new javax.swing.JButton();
+        jLabel59 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabelRowsInFile = new javax.swing.JLabel();
         jLabelRowsInFile1 = new javax.swing.JLabel();
@@ -1109,6 +1146,7 @@ public class frmControl extends javax.swing.JFrame
         jMenu5 = new javax.swing.JMenu();
         jMenuItem5 = new javax.swing.JMenuItem();
         jMenuItem9 = new javax.swing.JMenuItem();
+        jSeparator19 = new javax.swing.JPopupMenu.Separator();
         jMenuItem10 = new javax.swing.JMenuItem();
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenuItem11 = new javax.swing.JMenuItem();
@@ -1187,8 +1225,8 @@ public class frmControl extends javax.swing.JFrame
                 .addGap(16, 16, 16))
         );
 
-        jDialog1.setMaximumSize(new java.awt.Dimension(612, 512));
-        jDialog1.setMinimumSize(new java.awt.Dimension(612, 512));
+        jDialog1.setMaximumSize(new java.awt.Dimension(612, 552));
+        jDialog1.setMinimumSize(new java.awt.Dimension(612, 552));
         jDialog1.setModal(true);
         jDialog1.setModalExclusionType(java.awt.Dialog.ModalExclusionType.APPLICATION_EXCLUDE);
         jDialog1.setPreferredSize(new java.awt.Dimension(612, 512));
@@ -1203,7 +1241,7 @@ public class frmControl extends javax.swing.JFrame
 
         jLabelActiveState1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabelActiveState1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabelActiveState1.setText("Restarting...");
+        jLabelActiveState1.setText("Idle...");
         jPanelConnection1.add(jLabelActiveState1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, 120, 20));
 
         jButtonConnectDisconnect2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -1338,8 +1376,8 @@ public class frmControl extends javax.swing.JFrame
                 .addGap(29, 29, 29))
         );
 
-        jDialog2.setMaximumSize(new java.awt.Dimension(612, 512));
-        jDialog2.setMinimumSize(new java.awt.Dimension(612, 512));
+        jDialog2.setMaximumSize(new java.awt.Dimension(612, 600));
+        jDialog2.setMinimumSize(new java.awt.Dimension(612, 600));
         jDialog2.setModalExclusionType(java.awt.Dialog.ModalExclusionType.APPLICATION_EXCLUDE);
         jDialog2.setModalityType(java.awt.Dialog.ModalityType.APPLICATION_MODAL);
         jDialog2.setPreferredSize(new java.awt.Dimension(612, 512));
@@ -1505,7 +1543,7 @@ public class frmControl extends javax.swing.JFrame
         jLabelRealTimeSpindleRPM2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabelRealTimeSpindleRPM2.setText("0");
 
-        jLabel24.setText("<html>\nLa vitesse de découpe et de rotation doivent être ajustées en fonction du matériel de découpe et du fôrêt utilisé.<br>\n</html>\n");
+        jLabel24.setText("<html> La vitesse de Rotation et d'Avancement peuvent être l'origine des dangers de la CNC.  Ce tutoriel vous apprendras par la suite comment régler ces valeurs pour une découpe sans accros.</html> ");
 
         jButtonCancel.setText("Quitter");
         jButtonCancel.addActionListener(new java.awt.event.ActionListener() {
@@ -1585,11 +1623,11 @@ public class frmControl extends javax.swing.JFrame
                 .addGroup(jDialog2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButtonOk)
                     .addComponent(jButtonCancel))
-                .addContainerGap())
+                .addContainerGap(29, Short.MAX_VALUE))
         );
 
-        jDialogGSender.setMaximumSize(new java.awt.Dimension(612, 512));
-        jDialogGSender.setMinimumSize(new java.awt.Dimension(612, 512));
+        jDialogGSender.setMaximumSize(new java.awt.Dimension(612, 515));
+        jDialogGSender.setMinimumSize(new java.awt.Dimension(612, 552));
         jDialogGSender.setModal(true);
         jDialogGSender.setModalExclusionType(java.awt.Dialog.ModalExclusionType.APPLICATION_EXCLUDE);
         jDialogGSender.setPreferredSize(new java.awt.Dimension(612, 512));
@@ -1599,7 +1637,7 @@ public class frmControl extends javax.swing.JFrame
         jLabel25.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         jLabel26.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel26.setText("<html> <h2><center>Importer l'adresse du fichier a découper </center> </h2>   Il est possible de mettre en pause ou annuler la découpe ici cependant l'installation d'un bouton d'URGENCE est recommandé !<br><br> L'avancée de l'impression s'affiche sur la barre de progrès </html> ");
+        jLabel26.setText("<html> <h2><center>Importer l'adresse du fichier a découper </center> </h2>   Il est possible de mettre en pause ou annuler la découpe ici cependant l'installation d'un bouton d'URGENCE est recommandé !<br><br> Le bouton <i> Sélectionner</i> permets d'importer un fichier gcode depuis son ordinateur et <i>Visualiser</i> permets de voir un apercu des chemins de prendra la CNC. <br> L'avancée de l'impression s'affiche sur la barre de progrès </html> ");
         jLabel26.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jLabel26.setVerifyInputWhenFocusTarget(false);
 
@@ -1706,6 +1744,30 @@ public class frmControl extends javax.swing.JFrame
             }
         });
 
+        jButtonBrowse2.setText("Sélectionner");
+        jButtonBrowse2.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                jButtonBrowse2MouseMoved(evt);
+            }
+        });
+        jButtonBrowse2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonBrowse2ActionPerformed(evt);
+            }
+        });
+
+        jButtonVisualise2.setText("Visualiser");
+        jButtonVisualise2.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                jButtonVisualise2MouseMoved(evt);
+            }
+        });
+        jButtonVisualise2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonVisualise2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanelGCodeFile1Layout = new javax.swing.GroupLayout(jPanelGCodeFile1);
         jPanelGCodeFile1.setLayout(jPanelGCodeFile1Layout);
         jPanelGCodeFile1Layout.setHorizontalGroup(
@@ -1723,7 +1785,11 @@ public class frmControl extends javax.swing.JFrame
                         .addComponent(jLabel88, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTextFieldGCodeFile1)))
-                .addGap(582, 582, 582)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanelGCodeFile1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButtonVisualise2)
+                    .addComponent(jButtonBrowse2))
+                .addGap(500, 500, 500)
                 .addComponent(jButtonGCodeVisualize1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButtonGCodeBrowse1, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1733,17 +1799,23 @@ public class frmControl extends javax.swing.JFrame
             jPanelGCodeFile1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelGCodeFile1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanelGCodeFile1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel88)
-                    .addComponent(jTextFieldGCodeFile1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanelGCodeFile1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButtonGCodePause1)
-                    .addComponent(jButtonGCodeSend1)
-                    .addComponent(jButtonGCodeCancel1)
-                    .addComponent(jButtonGCodeVisualize1)
-                    .addComponent(jButtonGCodeBrowse1))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jPanelGCodeFile1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelGCodeFile1Layout.createSequentialGroup()
+                        .addComponent(jButtonBrowse2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButtonVisualise2))
+                    .addGroup(jPanelGCodeFile1Layout.createSequentialGroup()
+                        .addGroup(jPanelGCodeFile1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel88)
+                            .addComponent(jTextFieldGCodeFile1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanelGCodeFile1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jButtonGCodePause1)
+                            .addComponent(jButtonGCodeSend1)
+                            .addComponent(jButtonGCodeCancel1)
+                            .addComponent(jButtonGCodeVisualize1)
+                            .addComponent(jButtonGCodeBrowse1))))
+                .addContainerGap(14, Short.MAX_VALUE))
         );
 
         jPanel9.add(jPanelGCodeFile1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 530, 70));
@@ -1765,20 +1837,20 @@ public class frmControl extends javax.swing.JFrame
                         .addContainerGap()
                         .addGroup(jDialogGSenderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel25, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(jDialogGSenderLayout.createSequentialGroup()
-                        .addGap(179, 179, 179)
-                        .addComponent(jButtonOk1, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(32, 32, 32)
-                        .addComponent(jButtonCancel1, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
+                            .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, 600, Short.MAX_VALUE)))
                     .addComponent(jLabel26, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addContainerGap())
             .addGroup(jDialogGSenderLayout.createSequentialGroup()
                 .addGap(103, 103, 103)
                 .addComponent(jLabelRowsInFile19, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(14, 14, 14)
-                .addComponent(jProgressBarGCodeProgress2, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jDialogGSenderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jProgressBarGCodeProgress2, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jDialogGSenderLayout.createSequentialGroup()
+                        .addGap(14, 14, 14)
+                        .addComponent(jButtonOk1, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(32, 32, 32)
+                        .addComponent(jButtonCancel1, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jDialogGSenderLayout.setVerticalGroup(
@@ -1792,17 +1864,17 @@ public class frmControl extends javax.swing.JFrame
                 .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator9, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
                 .addGroup(jDialogGSenderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabelRowsInFile19)
                     .addComponent(jProgressBarGCodeProgress2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(56, 56, 56)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
                 .addGroup(jDialogGSenderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButtonOk1)
                     .addComponent(jButtonCancel1))
-                .addContainerGap())
+                .addContainerGap(21, Short.MAX_VALUE))
         );
 
         jDialogTab1.setMaximumSize(new java.awt.Dimension(612, 512));
@@ -1815,7 +1887,7 @@ public class frmControl extends javax.swing.JFrame
         jLabel44.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         jLabel45.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel45.setText("<html> <h4><center>Cette interface envoie des commandes GCODE</center></h4>  \nIl est possible de controler les paramètres de la CNC, sa configuration et ses déplacements via des commandes G Code.<br>\n<br>\nUn tutoriel plus complet est accessible dans le menu <i> Aide</i> puis <i> Tutoriel G-Code </i>");
+        jLabel45.setText("<html> <h4><center>Cette interface envoie des commandes GCODE</center></h4>   Il est possible de controler les paramètres de la CNC, sa configuration et ses déplacements via des commandes G Code.<br> <br> Un tutoriel plus complet est accessible dans le menu <i>Tutoriel</i> puis <i> GCode Apprendre les bases </i>");
         jLabel45.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         jButtonCancel2.setText("Quitter");
@@ -3103,16 +3175,499 @@ public class frmControl extends javax.swing.JFrame
                 .addContainerGap(22, Short.MAX_VALUE))
         );
 
+        JDialogSecuriter.setMaximumSize(new java.awt.Dimension(620, 620));
+        JDialogSecuriter.setMinimumSize(new java.awt.Dimension(620, 620));
+
+        jLabel54.setText("<html> <h2 center> Les dangers de la CNC </h2>  <br><br> La CNC est un outil puissant mais potentiellement dangereux. Des vitesses d'avance trop rapides ou des RPM trop faibles peuvent entraîner des accidents graves.   <br><br>Il est important de suivre les procédures de sécurité et de respecter les limites de vitesse et de puissance recommandées.   <br><br> Il est recommandé de porter des équipements de protection tels que des lunettes de protection, et des habits épais ( pas de short ) pour réduire les risques d'accidents.");
+
+        jTableGCodeLog2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"Matériel", "Vitesse D'Avance", "Vitesse de Rotation"},
+                {null, null, null},
+                {"Bois", "2 000-5 000 mm/min", "8 000-240 00 tr/min"},
+                {"Plexiglass", "500-1500 mm/min", "15000-24 000 tr/min"},
+                {"Cuivre", "200-400 mm/min", "1 000-3 000 tr/min"},
+                {"Acier Doux", "200-400 mm/min", "800-1 200 tr/min"},
+                {"Aluminium", "1 000-3 000 mm/min", "5 000-15 000 tr/min"}
+            },
+            new String [] {
+                "Matériel", "Vitesse d'Avancement", "Vitesse génériques minimum"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.String.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
+        jTableGCodeLog2.getTableHeader().setReorderingAllowed(false);
+        jTableGCodeLog2.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                jTableGCodeLog2MouseMoved(evt);
+            }
+        });
+        jTableGCodeLog2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jTableGCodeLog2MouseEntered(evt);
+            }
+        });
+
+        jButtonOk7.setText("Suivant");
+        jButtonOk7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonOk7ActionPerformed(evt);
+            }
+        });
+
+        jButtonCancel7.setText("Quitter");
+        jButtonCancel7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonCancel7ActionPerformed(evt);
+            }
+        });
+
+        jLabel58.setText("<html> <h1 center> Attention </h1> il est important de noter que ces vitesses peuvent varier en fonction de nombreux facteurs, tels que la géométrie de l'outil de coupe, la profondeur de coupe, la qualité de la surface désirée, etc. Par conséquent, il est recommandé de consulter les spécifications du fabricant de la machine-outil et/ou de l'outil de coupe pour des informations plus précises.</html>");
+
         javax.swing.GroupLayout JDialogSecuriterLayout = new javax.swing.GroupLayout(JDialogSecuriter.getContentPane());
         JDialogSecuriter.getContentPane().setLayout(JDialogSecuriterLayout);
         JDialogSecuriterLayout.setHorizontalGroup(
             JDialogSecuriterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JDialogSecuriterLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jButtonOk7, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(32, 32, 32)
+                .addComponent(jButtonCancel7, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(JDialogSecuriterLayout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addGroup(JDialogSecuriterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel58, javax.swing.GroupLayout.PREFERRED_SIZE, 582, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTableGCodeLog2, javax.swing.GroupLayout.PREFERRED_SIZE, 591, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel54, javax.swing.GroupLayout.PREFERRED_SIZE, 585, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(22, Short.MAX_VALUE))
         );
         JDialogSecuriterLayout.setVerticalGroup(
             JDialogSecuriterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(JDialogSecuriterLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel54, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTableGCodeLog2, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel58, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
+                .addGroup(JDialogSecuriterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButtonOk7)
+                    .addComponent(jButtonCancel7))
+                .addGap(23, 23, 23))
         );
+
+        if (jTableGCodeLog2.getColumnModel().getColumnCount() > 0) {
+            jTableGCodeLog2.getColumnModel().getColumn(0).setResizable(false);
+        }
+
+        jDialogMachineAxis.setMaximumSize(new java.awt.Dimension(612, 650));
+        jDialogMachineAxis.setMinimumSize(new java.awt.Dimension(612, 650));
+        jDialogMachineAxis.setModalExclusionType(java.awt.Dialog.ModalExclusionType.APPLICATION_EXCLUDE);
+        jDialogMachineAxis.setModalityType(java.awt.Dialog.ModalityType.APPLICATION_MODAL);
+        jDialogMachineAxis.setPreferredSize(new java.awt.Dimension(612, 512));
+
+        jLabel52.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel52.setText("<html> <h3 text-decoration=\"bold\"> Interface de Connection");
+        jLabel52.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        jLabel53.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel53.setText("<html> <h4><center>Cette interface permets de controler  laposition de la CNC </center></h4>   Entrez un pas manuellement, ou sélectionnez le avec le slider. En appuyant sur un des bouttons, la CNC se déplaceras de cette quantité.  Vous avez la possibilité d'activer le jogging par clabier pour controler la CNC avec les fleches de votre clavier. Cette option n'est pas recomandée au débutants");
+        jLabel53.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        jButtonCancel6.setText("Quitter");
+        jButtonCancel6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonCancel6ActionPerformed(evt);
+            }
+        });
+
+        jButtonOk6.setText("Suivant");
+        jButtonOk6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonOk6ActionPerformed(evt);
+            }
+        });
+
+        jPanelMachineControl2.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Machine Control", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(255, 255, 255))); // NOI18N
+        jPanelMachineControl2.setToolTipText("");
+        jPanelMachineControl2.setMinimumSize(new java.awt.Dimension(280, 272));
+        jPanelMachineControl2.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                jPanelMachineControl2MouseMoved(evt);
+            }
+        });
+
+        jRadioButtonInches2.setForeground(new java.awt.Color(255, 255, 255));
+        jRadioButtonInches2.setText("inch");
+        jRadioButtonInches2.setToolTipText("Définir l'unitée de mesure en inch");
+        jRadioButtonInches2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButtonInches2ActionPerformed(evt);
+            }
+        });
+
+        jRadioButtonMillimeters2.setForeground(new java.awt.Color(255, 255, 255));
+        jRadioButtonMillimeters2.setSelected(true);
+        jRadioButtonMillimeters2.setText("mm");
+        jRadioButtonMillimeters2.setToolTipText("Définir l'unitée de mesure en mm");
+        jRadioButtonMillimeters2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButtonMillimeters2ActionPerformed(evt);
+            }
+        });
+
+        jLabel65.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel65.setText("Step Size:");
+
+        jSpinnerStep2.setModel(new javax.swing.SpinnerNumberModel(1.0d, 0.009999999776482582d, null, 0.009999999776482582d));
+        jSpinnerStep2.setToolTipText("Pas d'avancement");
+        jSpinnerStep2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+
+        jButtonYMinus2.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonYMinus2.setText("Y-");
+        jButtonYMinus2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonYMinus2ActionPerformed(evt);
+            }
+        });
+
+        jButtonXMinus2.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonXMinus2.setText("X-");
+        jButtonXMinus2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonXMinus2ActionPerformed(evt);
+            }
+        });
+
+        jButtonYPlus2.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonYPlus2.setText("Y+");
+        jButtonYPlus2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonYPlus2ActionPerformed(evt);
+            }
+        });
+
+        jButtonXPlus2.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonXPlus2.setText("X+");
+        jButtonXPlus2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonXPlus2ActionPerformed(evt);
+            }
+        });
+
+        jButtonZPlus2.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonZPlus2.setText("Z+");
+        jButtonZPlus2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonZPlus2ActionPerformed(evt);
+            }
+        });
+
+        jButtonZMinus2.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonZMinus2.setText("Z-");
+        jButtonZMinus2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonZMinus2ActionPerformed(evt);
+            }
+        });
+
+        jCheckBoxEnableKeyboardJogging2.setSelected(true);
+        jCheckBoxEnableKeyboardJogging2.setText("Activer le jogging par clavier");
+        jCheckBoxEnableKeyboardJogging2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBoxEnableKeyboardJogging2ActionPerformed(evt);
+            }
+        });
+
+        jLabelRemoveFocus2.setFont(new java.awt.Font("Tahoma", 0, 9)); // NOI18N
+        jLabelRemoveFocus2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabelRemoveFocus2.setText("[Click To Focus]");
+        jLabelRemoveFocus2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabelRemoveFocus2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabelRemoveFocus2MouseClicked(evt);
+            }
+        });
+
+        jButtonReturnToZero2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jButtonReturnToZero2.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonReturnToZero2.setText("Return to Ø");
+        jButtonReturnToZero2.setToolTipText("Return to initial Work Position (0,0,0)");
+        jButtonReturnToZero2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonReturnToZero2ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanelJogButtons2Layout = new javax.swing.GroupLayout(jPanelJogButtons2);
+        jPanelJogButtons2.setLayout(jPanelJogButtons2Layout);
+        jPanelJogButtons2Layout.setHorizontalGroup(
+            jPanelJogButtons2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelJogButtons2Layout.createSequentialGroup()
+                .addComponent(jButtonXMinus2, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(6, 6, 6)
+                .addGroup(jPanelJogButtons2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButtonYPlus2, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonYMinus2, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButtonXPlus2, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(jPanelJogButtons2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButtonZPlus2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonZMinus2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(jPanelJogButtons2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanelJogButtons2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelJogButtons2Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jCheckBoxEnableKeyboardJogging2)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabelRemoveFocus2))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelJogButtons2Layout.createSequentialGroup()
+                        .addComponent(jButtonReturnToZero2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap())))
+        );
+        jPanelJogButtons2Layout.setVerticalGroup(
+            jPanelJogButtons2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelJogButtons2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanelJogButtons2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelJogButtons2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelJogButtons2Layout.createSequentialGroup()
+                            .addGap(21, 21, 21)
+                            .addComponent(jButtonXPlus2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(23, 23, 23))
+                        .addGroup(jPanelJogButtons2Layout.createSequentialGroup()
+                            .addComponent(jButtonYPlus2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jButtonYMinus2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanelJogButtons2Layout.createSequentialGroup()
+                        .addGap(21, 21, 21)
+                        .addComponent(jButtonXMinus2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanelJogButtons2Layout.createSequentialGroup()
+                        .addComponent(jButtonZPlus2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButtonZMinus2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 11, Short.MAX_VALUE)
+                .addGroup(jPanelJogButtons2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jCheckBoxEnableKeyboardJogging2)
+                    .addComponent(jLabelRemoveFocus2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButtonReturnToZero2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        jSliderStepSize2.setMaximum(5);
+        jSliderStepSize2.setMinorTickSpacing(1);
+        jSliderStepSize2.setPaintLabels(true);
+        jSliderStepSize2.setPaintTicks(true);
+        jSliderStepSize2.setSnapToTicks(true);
+        jSliderStepSize2.setToolTipText("");
+        jSliderStepSize2.setValue(3);
+        jSliderStepSize2.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                jSliderStepSize2StateChanged(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel20Layout = new javax.swing.GroupLayout(jPanel20);
+        jPanel20.setLayout(jPanel20Layout);
+        jPanel20Layout.setHorizontalGroup(
+            jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 256, Short.MAX_VALUE)
+        );
+        jPanel20Layout.setVerticalGroup(
+            jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 16, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout jPanelMachineControl2Layout = new javax.swing.GroupLayout(jPanelMachineControl2);
+        jPanelMachineControl2.setLayout(jPanelMachineControl2Layout);
+        jPanelMachineControl2Layout.setHorizontalGroup(
+            jPanelMachineControl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelMachineControl2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanelMachineControl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jSliderStepSize2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanelJogButtons2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jPanelMachineControl2Layout.createSequentialGroup()
+                        .addGroup(jPanelMachineControl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanelMachineControl2Layout.createSequentialGroup()
+                                .addComponent(jLabel65)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jSpinnerStep2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jRadioButtonInches2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jRadioButtonMillimeters2)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        jPanelMachineControl2Layout.setVerticalGroup(
+            jPanelMachineControl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelMachineControl2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanelMachineControl2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel65)
+                    .addComponent(jSpinnerStep2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jRadioButtonInches2)
+                    .addComponent(jRadioButtonMillimeters2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jSliderStepSize2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jPanelJogButtons2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(49, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jDialogMachineAxisLayout = new javax.swing.GroupLayout(jDialogMachineAxis.getContentPane());
+        jDialogMachineAxis.getContentPane().setLayout(jDialogMachineAxisLayout);
+        jDialogMachineAxisLayout.setHorizontalGroup(
+            jDialogMachineAxisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jSeparator20)
+            .addGroup(jDialogMachineAxisLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jDialogMachineAxisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel52, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jSeparator21)
+                    .addGroup(jDialogMachineAxisLayout.createSequentialGroup()
+                        .addGap(15, 15, 15)
+                        .addComponent(jLabel53, javax.swing.GroupLayout.DEFAULT_SIZE, 585, Short.MAX_VALUE)))
+                .addContainerGap())
+            .addGroup(jDialogMachineAxisLayout.createSequentialGroup()
+                .addGroup(jDialogMachineAxisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jDialogMachineAxisLayout.createSequentialGroup()
+                        .addGap(206, 206, 206)
+                        .addComponent(jButtonOk6, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(32, 32, 32)
+                        .addComponent(jButtonCancel6, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jDialogMachineAxisLayout.createSequentialGroup()
+                        .addGap(166, 166, 166)
+                        .addComponent(jPanelMachineControl2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        jDialogMachineAxisLayout.setVerticalGroup(
+            jDialogMachineAxisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialogMachineAxisLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel52, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(5, 5, 5)
+                .addComponent(jSeparator20, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jPanelMachineControl2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(15, 15, 15)
+                .addComponent(jSeparator21, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel53, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 28, Short.MAX_VALUE)
+                .addGroup(jDialogMachineAxisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButtonOk6)
+                    .addComponent(jButtonCancel6))
+                .addContainerGap(17, Short.MAX_VALUE))
+        );
+
+        JDialogLimitations.setMaximumSize(new java.awt.Dimension(620, 620));
+        JDialogLimitations.setMinimumSize(new java.awt.Dimension(620, 620));
+
+        jLabel57.setText("<html> <h2 center> Les dangers de la CNC </h2>  <br><br> La CNC est un outil puissant mais potentiellement dangereux. Des vitesses d'avance trop rapides ou des RPM trop faibles peuvent entraîner des accidents graves.   <br><br>Il est important de suivre les procédures de sécurité et de respecter les limites de vitesse et de puissance recommandées.   <br><br> Il est recommandé de porter des équipements de protection tels que des lunettes de protection, et des habits épais ( pas de short ) pour réduire les risques d'accidents.");
+
+        jTableGCodeLog3.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"Matériel", "Vitesse D'Avance", "Vitesse de Rotation"},
+                {null, null, null},
+                {"Bois", "2 000-5 000 mm/min", "8 000-240 00 tr/min"},
+                {"Plexiglass", "500-1500 mm/min", "15000-24 000 tr/min"},
+                {"Cuivre", "200-400 mm/min", "1 000-3 000 tr/min"},
+                {"Acier Doux", "200-400 mm/min", "800-1 200 tr/min"},
+                {"Aluminium", "1 000-3 000 mm/min", "5 000-15 000 tr/min"}
+            },
+            new String [] {
+                "Matériel", "Vitesse d'Avancement", "Vitesse génériques minimum"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.String.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
+        jTableGCodeLog3.getTableHeader().setReorderingAllowed(false);
+        jTableGCodeLog3.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                jTableGCodeLog3MouseMoved(evt);
+            }
+        });
+        jTableGCodeLog3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jTableGCodeLog3MouseEntered(evt);
+            }
+        });
+
+        jButtonOk8.setText("Suivant");
+        jButtonOk8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonOk8ActionPerformed(evt);
+            }
+        });
+
+        jButtonCancel8.setText("Quitter");
+        jButtonCancel8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonCancel8ActionPerformed(evt);
+            }
+        });
+
+        jLabel59.setText("<html> <h1 center> Attention </h1> il est important de noter que ces vitesses peuvent varier en fonction de nombreux facteurs, tels que la géométrie de l'outil de coupe, la profondeur de coupe, la qualité de la surface désirée, etc. Par conséquent, il est recommandé de consulter les spécifications du fabricant de la machine-outil et/ou de l'outil de coupe pour des informations plus précises.</html>");
+
+        javax.swing.GroupLayout JDialogLimitationsLayout = new javax.swing.GroupLayout(JDialogLimitations.getContentPane());
+        JDialogLimitations.getContentPane().setLayout(JDialogLimitationsLayout);
+        JDialogLimitationsLayout.setHorizontalGroup(
+            JDialogLimitationsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JDialogLimitationsLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jButtonOk8, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(32, 32, 32)
+                .addComponent(jButtonCancel8, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(JDialogLimitationsLayout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addGroup(JDialogLimitationsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel59, javax.swing.GroupLayout.PREFERRED_SIZE, 582, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTableGCodeLog3, javax.swing.GroupLayout.PREFERRED_SIZE, 591, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel57, javax.swing.GroupLayout.PREFERRED_SIZE, 585, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(22, Short.MAX_VALUE))
+        );
+        JDialogLimitationsLayout.setVerticalGroup(
+            JDialogLimitationsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(JDialogLimitationsLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel57, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTableGCodeLog3, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel59, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
+                .addGroup(JDialogLimitationsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButtonOk8)
+                    .addComponent(jButtonCancel8))
+                .addGap(23, 23, 23))
+        );
+
+        if (jTableGCodeLog3.getColumnModel().getColumnCount() > 0) {
+            jTableGCodeLog3.getColumnModel().getColumn(0).setResizable(false);
+        }
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("SourceRabbit GCODE Sender");
@@ -3243,7 +3798,7 @@ public class frmControl extends javax.swing.JFrame
             }
         });
 
-        jButtonBrowse.setText("Browse");
+        jButtonBrowse.setText("Sélectionner");
         jButtonBrowse.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 jButtonBrowseMouseMoved(evt);
@@ -3255,7 +3810,7 @@ public class frmControl extends javax.swing.JFrame
             }
         });
 
-        jButtonVisualise.setText("Visualize");
+        jButtonVisualise.setText("Visualiser");
         jButtonVisualise.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 jButtonVisualiseMouseMoved(evt);
@@ -3437,12 +3992,18 @@ public class frmControl extends javax.swing.JFrame
         if (jTableGCodeLog.getColumnModel().getColumnCount() > 0) {
             jTableGCodeLog.getColumnModel().getColumn(0).setMinWidth(20);
             jTableGCodeLog.getColumnModel().getColumn(0).setPreferredWidth(20);
+            jTableGCodeLog.getColumnModel().getColumn(0).setHeaderValue("Row");
+            jTableGCodeLog.getColumnModel().getColumn(1).setHeaderValue("Command");
             jTableGCodeLog.getColumnModel().getColumn(2).setMinWidth(50);
             jTableGCodeLog.getColumnModel().getColumn(2).setPreferredWidth(50);
             jTableGCodeLog.getColumnModel().getColumn(2).setMaxWidth(50);
+            jTableGCodeLog.getColumnModel().getColumn(2).setHeaderValue("TX");
             jTableGCodeLog.getColumnModel().getColumn(3).setMinWidth(50);
             jTableGCodeLog.getColumnModel().getColumn(3).setPreferredWidth(50);
             jTableGCodeLog.getColumnModel().getColumn(3).setMaxWidth(50);
+            jTableGCodeLog.getColumnModel().getColumn(3).setHeaderValue("RX");
+            jTableGCodeLog.getColumnModel().getColumn(4).setResizable(false);
+            jTableGCodeLog.getColumnModel().getColumn(4).setHeaderValue("Error");
         }
 
         jButtonClearLog.setText("Clear Log");
@@ -4257,7 +4818,7 @@ public class frmControl extends javax.swing.JFrame
         jMenu5.setText("Tutoriel");
 
         jMenuItem5.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_T, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMenuItem5.setLabel("Tutoriel");
+        jMenuItem5.setText("Tutoriel Logiciel");
         jMenuItem5.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 jMenuItem5MouseMoved(evt);
@@ -4278,8 +4839,9 @@ public class frmControl extends javax.swing.JFrame
             }
         });
         jMenu5.add(jMenuItem9);
+        jMenu5.add(jSeparator19);
 
-        jMenuItem10.setText("Guide conversion G Code");
+        jMenuItem10.setText("GCode : Guide de conversion");
         jMenuItem10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem10ActionPerformed(evt);
@@ -4288,7 +4850,7 @@ public class frmControl extends javax.swing.JFrame
         jMenu5.add(jMenuItem10);
 
         jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_G, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMenuItem1.setText("Apprendre le G Code");
+        jMenuItem1.setText("GCode : Apprendre les bases");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem1ActionPerformed(evt);
@@ -4296,10 +4858,10 @@ public class frmControl extends javax.swing.JFrame
         });
         jMenu5.add(jMenuItem1);
 
-        jMenuItem11.setText("Sécuritées de la CNC");
+        jMenuItem11.setText("CNC : Les Sécuritées ");
         jMenu5.add(jMenuItem11);
 
-        jMenuItem12.setText("Limitations de la découpe CNC");
+        jMenuItem12.setText("CNC :  Les Limitations");
         jMenu5.add(jMenuItem12);
 
         jMenuBar1.add(jMenu5);
@@ -4991,8 +5553,7 @@ public class frmControl extends javax.swing.JFrame
                     break;
             }
         }
-            switch (verified_level) {
-                case 1:
+           
                     // Vider tous les Panels sauf CONNECTION
                     /* Elements de Machine Status */
                     jButtonVisualise.setVisible(false);
@@ -5152,9 +5713,9 @@ public class frmControl extends javax.swing.JFrame
                         /* Elements Status Inivisble */
                         jLabelMachinePositionX.setVisible(false); jLabelRealTimeFeedRate.setVisible(false); jLabel14.setVisible(false); jLabelWorkPositionZ.setVisible(false); jLabelSemiAutoToolChangeStatus.setVisible(false); jLabelMachinePositionY.setVisible(false); jLabelRowsInFile7.setVisible(false); jLabelWorkPositionX.setVisible(false); jButtonResetWorkPosition.setVisible(false); jLabelMachinePositionZ.setVisible(false); jLabel12.setVisible(false); jLabelRealTimeSpindleRPM.setVisible(false); jLabelWorkPositionY.setVisible(false); jButton3.setVisible(false); jLabel15.setVisible(false); jButton2.setVisible(false); jLabel2.setVisible(false); jLabel3.setVisible(false); jButton1.setVisible(false);
                         
-                        jDialogGSender.pack();
-                        jDialogGSender.setLocationRelativeTo(null);
-                        jDialogGSender.setVisible(true);
+                        jDialogMachineAxis.pack();
+                        jDialogMachineAxis.setLocationRelativeTo(null);
+                        jDialogMachineAxis.setVisible(true);
                         if (tutorial) {
                             /****** FIN TUTO *****/
                             jButtonGCodeVisualize.setVisible(true);
@@ -5354,416 +5915,11 @@ public class frmControl extends javax.swing.JFrame
                     }
                   }
                     tutorial=true;
-                    break;
-                case 2:
-                    jDialogAskTuto.setLocationRelativeTo(null);
-                    jDialogAskTuto.setVisible(true);
-                    if(tutorial==false){
-                        
-                    }
-                    else{
-                    // Vider tous les Panels sauf CONNECTION
-                    /* Elements de Machine Status */
-                    jLabelMachinePositionX.setVisible(false);
-                    jLabelRealTimeFeedRate.setVisible(false);
-                    jLabel14.setVisible(false);
-                    jLabelWorkPositionZ.setVisible(false);
-                    jLabelSemiAutoToolChangeStatus.setVisible(false);
-                    jLabelMachinePositionY.setVisible(false);
-                    jLabelRowsInFile7.setVisible(false);
-                    jLabelWorkPositionX.setVisible(false);
-                    jButtonResetWorkPosition.setVisible(false);
-                    jLabelMachinePositionZ.setVisible(false);
-                    jLabel12.setVisible(false);
-                    jLabelRealTimeSpindleRPM.setVisible(false);
-                    jLabelWorkPositionY.setVisible(false);
-                    jButton3.setVisible(false);
-                    jLabel15.setVisible(false);
-                    jButton2.setVisible(false);
-                    jLabel2.setVisible(false);
-                    jLabel3.setVisible(false);
-                    jButton1.setVisible(false);
-                    /* Elements de Machine Control */
-                    jRadioButtonMillimeters.setVisible(false);
-                    jButtonZMinus.setVisible(false);
-                    jCheckBoxEnableKeyboardJogging.setVisible(false);
-                    jButtonZPlus.setVisible(false);
-                    jButtonXPlus.setVisible(false);
-                    jLabel4.setVisible(false);
-                    jRadioButtonInches.setVisible(false);
-                    jSliderStepSize.setVisible(false);
-                    jLabelRemoveFocus.setVisible(false);
-                    jButtonXMinus.setVisible(false);
-                    jButtonReturnToZero.setVisible(false);
-                    jSpinnerStep.setVisible(false);
-                    jButtonYPlus.setVisible(false);
-                    jButtonYMinus.setVisible(false);
-                    /* Elements de  GCode SENDER */
-                    jButtonGCodePause.setVisible(false);
-                    jLabelRowsInFile3.setVisible(false);
-                    jLabelRowsInFile2.setVisible(false);
-                    jLabelRowsInFile.setVisible(false);
-                    jLabelSentRows.setVisible(false);
-                    jButtonGCodeSend.setVisible(false);
-                    jProgressBarGCodeProgress.setVisible(false);
-                    jButtonGCodeCancel.setVisible(false);
-                    jLabelRowsInFile1.setVisible(false);
-                    jLabelRowsInFile4.setVisible(false);
-                    jLabelTimeElapsed.setVisible(false);
-                    jLabelRowsInFile5.setVisible(false);
-                    jTextFieldGCodeFile.setVisible(false);
-                    jLabel5.setVisible(false);
-                    jLabelRemainingRows.setVisible(false);
-                    /* Elements de TabbedPane */
-                    /* TAB 1*/
-                    jLabel7.setVisible(false);
-                    jTextAreaConsole.setVisible(false);
-                    jCheckBoxShowVerboseOutput.setVisible(false);
-                    jTextFieldCommand.setVisible(false);
-                    jButtonClearConsole.setVisible(false);
-                    /* TAB 2*/
-                    jTableGCodeLog.setVisible(false);
-                    jButtonClearLog.setVisible(false);
-                    jCheckBoxEnableGCodeLog.setVisible(false);
-                    /* TAB 3*/
-                    jLabel9.setVisible(false);
-                    jLabel10.setVisible(false);
-                    /* TAB 4*/
-                    jLabel16.setVisible(false);
-                    jLabelMachineHomePosition.setVisible(false);
-                    jLabelLastStatusUpdate.setVisible(false);
-                    jLabel17.setVisible(false);
-                    jDialog1.pack();
-                    jDialog1.setLocationRelativeTo(null);
-                    jDialog1.setVisible(true);
-                    /* Elements de Connection Invisible*/
-                    jButtonSoftReset.setVisible(false);
-                    jLabelMachineX1.setVisible(false);
-                    jButtonKillAlarm.setVisible(false);
-                    jButtonConnectDisconnect1.setVisible(false);
-                    jLabelActiveState.setVisible(false);
-                    /* Elements de Machine Statuts Visible */
-                    jLabelMachinePositionX.setVisible(true);
-                    jLabelRealTimeFeedRate.setVisible(true);
-                    jLabel14.setVisible(true);
-                    jLabelWorkPositionZ.setVisible(true);
-                    jLabelSemiAutoToolChangeStatus.setVisible(true);
-                    jLabelMachinePositionY.setVisible(true);
-                    jLabelRowsInFile7.setVisible(true);
-                    jLabelWorkPositionX.setVisible(true);
-                    jButtonResetWorkPosition.setVisible(true);
-                    jLabelMachinePositionZ.setVisible(true);
-                    jLabel12.setVisible(true);
-                    jLabelRealTimeSpindleRPM.setVisible(true);
-                    jLabelWorkPositionY.setVisible(true);
-                    jButton3.setVisible(true);
-                    jLabel15.setVisible(true);
-                    jButton2.setVisible(true);
-                    jLabel2.setVisible(true);
-                    jLabel3.setVisible(true);
-                    jButton1.setVisible(true);
-                    jDialog2.pack();
-                    jDialog2.setLocationRelativeTo(null);
-                    jDialog2.setVisible(true);
-                    if (tutorial) {
-                        /****** FIN TUTO *****/
-                        jButtonKillAlarm.setVisible(true); jButtonSoftReset.setVisible(true); jLabelMachineX1.setVisible(true); jLabelActiveState.setVisible(true); jButtonConnectDisconnect1.setVisible(true);
-                        /* Elements Statut*/
-                        jLabelMachinePositionX.setVisible(true); jLabelRealTimeFeedRate.setVisible(true); jLabel14.setVisible(true); jLabelWorkPositionZ.setVisible(true); jLabelSemiAutoToolChangeStatus.setVisible(true); jLabelMachinePositionY.setVisible(true); jLabelRowsInFile7.setVisible(true); jLabelWorkPositionX.setVisible(true); jButtonResetWorkPosition.setVisible(true); jLabelMachinePositionZ.setVisible(true); jLabel12.setVisible(true); jLabelRealTimeSpindleRPM.setVisible(true); jLabelWorkPositionY.setVisible(true); jButton3.setVisible(true); jLabel15.setVisible(true); jButton2.setVisible(true); jLabel2.setVisible(true); jLabel3.setVisible(true); jButton1.setVisible(true);
-                        /* Elements de Machine Control */
-                        jRadioButtonMillimeters.setVisible(true); jButtonZMinus.setVisible(true); jCheckBoxEnableKeyboardJogging.setVisible(true); jButtonZPlus.setVisible(true); jButtonXPlus.setVisible(true); jLabel4.setVisible(true); jRadioButtonInches.setVisible(true); jSliderStepSize.setVisible(true); jLabelRemoveFocus.setVisible(true); jButtonXMinus.setVisible(true); jButtonReturnToZero.setVisible(true); jSpinnerStep.setVisible(true); jButtonYPlus.setVisible(true); jButtonYMinus.setVisible(true);      
-                        /* Elements de  GCode SENDER */
-                        jButtonGCodePause.setVisible(true); jLabelRowsInFile3.setVisible(true); jLabelRowsInFile2.setVisible(true); jLabelRowsInFile.setVisible(true); jLabelSentRows.setVisible(true); jButtonGCodeSend.setVisible(true); jProgressBarGCodeProgress.setVisible(true); jButtonGCodeCancel.setVisible(true); jLabelRowsInFile1.setVisible(true); jLabelRowsInFile4.setVisible(true); jLabelTimeElapsed.setVisible(true); jLabelRowsInFile5.setVisible(true); jTextFieldGCodeFile.setVisible(true); jLabel5.setVisible(true); jLabelRemainingRows.setVisible(true);
-                        /* Elements de TabbedPane */
-                        /* TAB 1*/
-                        jLabel7.setVisible(true); jTextAreaConsole.setVisible(true); jCheckBoxShowVerboseOutput.setVisible(true); jTextFieldCommand.setVisible(true); jButtonClearConsole.setVisible(true);
-                        /* TAB 2*/
-                        jTableGCodeLog.setVisible(true); jButtonClearLog.setVisible(true); jCheckBoxEnableGCodeLog.setVisible(true);
-                        /* TAB 3*/
-                        jLabel9.setVisible(true); jLabel10.setVisible(true);
-                        /* TAB 4*/
-                        jLabel16.setVisible(true); jLabelMachineHomePosition.setVisible(true); jLabelLastStatusUpdate.setVisible(true); jLabel17.setVisible(true);
-                        
-                    }
-                    else{
-                        /* Elements de Machine Control Visible*/
-                        jRadioButtonMillimeters.setVisible(true); jButtonZMinus.setVisible(true); jCheckBoxEnableKeyboardJogging.setVisible(true); jButtonZPlus.setVisible(true); jButtonXPlus.setVisible(true); jLabel4.setVisible(true); jRadioButtonInches.setVisible(true); jSliderStepSize.setVisible(true); jLabelRemoveFocus.setVisible(true); jButtonXMinus.setVisible(true); jButtonReturnToZero.setVisible(true); jSpinnerStep.setVisible(true); jButtonYPlus.setVisible(true); jButtonYMinus.setVisible(true);
-                        /* Elements Status Inivisble */
-                        jLabelMachinePositionX.setVisible(false); jLabelRealTimeFeedRate.setVisible(false); jLabel14.setVisible(false); jLabelWorkPositionZ.setVisible(false); jLabelSemiAutoToolChangeStatus.setVisible(false); jLabelMachinePositionY.setVisible(false); jLabelRowsInFile7.setVisible(false); jLabelWorkPositionX.setVisible(false); jButtonResetWorkPosition.setVisible(false); jLabelMachinePositionZ.setVisible(false); jLabel12.setVisible(false); jLabelRealTimeSpindleRPM.setVisible(false); jLabelWorkPositionY.setVisible(false); jButton3.setVisible(false); jLabel15.setVisible(false); jButton2.setVisible(false); jLabel2.setVisible(false); jLabel3.setVisible(false); jButton1.setVisible(false);
-                        
-                        jDialogGSender.pack();
-                        jDialogGSender.setLocationRelativeTo(null);
-                        jDialogGSender.setVisible(true);
-                        if (tutorial) {
-                            /****** FIN TUTO *****/
-                            jButtonKillAlarm.setVisible(true); jButtonSoftReset.setVisible(true); jLabelMachineX1.setVisible(true); jLabelActiveState.setVisible(true); jButtonConnectDisconnect1.setVisible(true);
-                            /* Elements Statut*/
-                            jLabelMachinePositionX.setVisible(true); jLabelRealTimeFeedRate.setVisible(true); jLabel14.setVisible(true); jLabelWorkPositionZ.setVisible(true); jLabelSemiAutoToolChangeStatus.setVisible(true); jLabelMachinePositionY.setVisible(true); jLabelRowsInFile7.setVisible(true); jLabelWorkPositionX.setVisible(true); jButtonResetWorkPosition.setVisible(true); jLabelMachinePositionZ.setVisible(true); jLabel12.setVisible(true); jLabelRealTimeSpindleRPM.setVisible(true); jLabelWorkPositionY.setVisible(true); jButton3.setVisible(true); jLabel15.setVisible(true); jButton2.setVisible(true); jLabel2.setVisible(true); jLabel3.setVisible(true); jButton1.setVisible(true);
-                            /* Elements de Machine Control */
-                            jRadioButtonMillimeters.setVisible(true); jButtonZMinus.setVisible(true); jCheckBoxEnableKeyboardJogging.setVisible(true); jButtonZPlus.setVisible(true); jButtonXPlus.setVisible(true); jLabel4.setVisible(true); jRadioButtonInches.setVisible(true); jSliderStepSize.setVisible(true); jLabelRemoveFocus.setVisible(true); jButtonXMinus.setVisible(true); jButtonReturnToZero.setVisible(true); jSpinnerStep.setVisible(true); jButtonYPlus.setVisible(true); jButtonYMinus.setVisible(true);
-                            /* Elements de  GCode SENDER */
-                            jButtonGCodePause.setVisible(true); jLabelRowsInFile3.setVisible(true); jLabelRowsInFile2.setVisible(true); jLabelRowsInFile.setVisible(true); jLabelSentRows.setVisible(true); jButtonGCodeSend.setVisible(true); jProgressBarGCodeProgress.setVisible(true); jButtonGCodeCancel.setVisible(true); jLabelRowsInFile1.setVisible(true); jLabelRowsInFile4.setVisible(true); jLabelTimeElapsed.setVisible(true); jLabelRowsInFile5.setVisible(true); jTextFieldGCodeFile.setVisible(true); jLabel5.setVisible(true); jLabelRemainingRows.setVisible(true);
-                            /* Elements de TabbedPane */
-                            /* TAB 1*/
-                            jLabel7.setVisible(true); jTextAreaConsole.setVisible(true); jCheckBoxShowVerboseOutput.setVisible(true); jTextFieldCommand.setVisible(true); jButtonClearConsole.setVisible(true);
-                            /* TAB 2*/
-                            jTableGCodeLog.setVisible(true); jButtonClearLog.setVisible(true); jCheckBoxEnableGCodeLog.setVisible(true);
-                            /* TAB 3*/
-                            jLabel9.setVisible(true); jLabel10.setVisible(true);
-                            /* TAB 4*/
-                            jLabel16.setVisible(true); jLabelMachineHomePosition.setVisible(true); jLabelLastStatusUpdate.setVisible(true); jLabel17.setVisible(true);
-                        }
-                        else{
-                            /* Elements de Machine Control Invisible*/
-                            jRadioButtonMillimeters.setVisible(false); jButtonZMinus.setVisible(false); jCheckBoxEnableKeyboardJogging.setVisible(false); jButtonZPlus.setVisible(false); jButtonXPlus.setVisible(false); jLabel4.setVisible(false); jRadioButtonInches.setVisible(false); jSliderStepSize.setVisible(false); jLabelRemoveFocus.setVisible(false); jButtonXMinus.setVisible(false); jButtonReturnToZero.setVisible(false); jSpinnerStep.setVisible(false); jButtonYPlus.setVisible(false); jButtonYMinus.setVisible(false);      
-                            /* Elements de  GCode SENDER VISIBLE*/
-                            jButtonGCodePause.setVisible(true); jLabelRowsInFile3.setVisible(true); jLabelRowsInFile2.setVisible(true); jLabelRowsInFile.setVisible(true); jLabelSentRows.setVisible(true); jButtonGCodeSend.setVisible(true); jProgressBarGCodeProgress.setVisible(true); jButtonGCodeCancel.setVisible(true); jLabelRowsInFile1.setVisible(true); jLabelRowsInFile4.setVisible(true); jLabelTimeElapsed.setVisible(true); jLabelRowsInFile5.setVisible(true); jTextFieldGCodeFile.setVisible(true); jLabel5.setVisible(true); jLabelRemainingRows.setVisible(true);
-                            jDialogGSender.pack();
-                            jDialogGSender.setLocationRelativeTo(null);
-                            jDialogGSender.setVisible(true);
-                            if(tutorial){
-                                /****** FIN TUTO *****/
-                                jButtonKillAlarm.setVisible(true); jButtonSoftReset.setVisible(true); jLabelMachineX1.setVisible(true); jLabelActiveState.setVisible(true); jButtonConnectDisconnect1.setVisible(true);
-                                /* Elements Statut*/
-                                jLabelMachinePositionX.setVisible(true); jLabelRealTimeFeedRate.setVisible(true); jLabel14.setVisible(true); jLabelWorkPositionZ.setVisible(true); jLabelSemiAutoToolChangeStatus.setVisible(true); jLabelMachinePositionY.setVisible(true); jLabelRowsInFile7.setVisible(true); jLabelWorkPositionX.setVisible(true); jButtonResetWorkPosition.setVisible(true); jLabelMachinePositionZ.setVisible(true); jLabel12.setVisible(true); jLabelRealTimeSpindleRPM.setVisible(true); jLabelWorkPositionY.setVisible(true); jButton3.setVisible(true); jLabel15.setVisible(true); jButton2.setVisible(true); jLabel2.setVisible(true); jLabel3.setVisible(true); jButton1.setVisible(true);
-                                /* Elements de Machine Control */
-                                jRadioButtonMillimeters.setVisible(true); jButtonZMinus.setVisible(true); jCheckBoxEnableKeyboardJogging.setVisible(true); jButtonZPlus.setVisible(true); jButtonXPlus.setVisible(true); jLabel4.setVisible(true); jRadioButtonInches.setVisible(true); jSliderStepSize.setVisible(true); jLabelRemoveFocus.setVisible(true); jButtonXMinus.setVisible(true); jButtonReturnToZero.setVisible(true); jSpinnerStep.setVisible(true); jButtonYPlus.setVisible(true); jButtonYMinus.setVisible(true);      
-                                /* Elements de  GCode SENDER */
-                                jButtonGCodePause.setVisible(true); jLabelRowsInFile3.setVisible(true); jLabelRowsInFile2.setVisible(true); jLabelRowsInFile.setVisible(true); jLabelSentRows.setVisible(true); jButtonGCodeSend.setVisible(true); jProgressBarGCodeProgress.setVisible(true); jButtonGCodeCancel.setVisible(true); jLabelRowsInFile1.setVisible(true); jLabelRowsInFile4.setVisible(true); jLabelTimeElapsed.setVisible(true); jLabelRowsInFile5.setVisible(true); jTextFieldGCodeFile.setVisible(true); jLabel5.setVisible(true); jLabelRemainingRows.setVisible(true);
-                                /* Elements de TabbedPane */
-                                /* TAB 1*/
-                                jLabel7.setVisible(true); jTextAreaConsole.setVisible(true); jCheckBoxShowVerboseOutput.setVisible(true); jTextFieldCommand.setVisible(true); jButtonClearConsole.setVisible(true);
-                                /* TAB 2*/
-                                jTableGCodeLog.setVisible(true); jButtonClearLog.setVisible(true); jCheckBoxEnableGCodeLog.setVisible(true);
-                                /* TAB 3*/
-                                jLabel9.setVisible(true); jLabel10.setVisible(true);
-                                /* TAB 4*/
-                                jLabel16.setVisible(true); jLabelMachineHomePosition.setVisible(true); jLabelLastStatusUpdate.setVisible(true); jLabel17.setVisible(true);   
-                            }
-                            else{
-
-                                /*Elements de  GCode SENDER INVISIBLE */
-                                jButtonGCodePause.setVisible(false); jLabelRowsInFile3.setVisible(false); jLabelRowsInFile2.setVisible(false); jLabelRowsInFile.setVisible(false); jLabelSentRows.setVisible(false); jButtonGCodeSend.setVisible(false); jProgressBarGCodeProgress.setVisible(false); jButtonGCodeCancel.setVisible(false); jLabelRowsInFile1.setVisible(false); jLabelRowsInFile4.setVisible(false); jLabelTimeElapsed.setVisible(false); jLabelRowsInFile5.setVisible(false); jTextFieldGCodeFile.setVisible(false); jLabel5.setVisible(false); jLabelRemainingRows.setVisible(false);
-                                /* Elements de TabbedPane */
-                                /* TAB 1*/
-                                jLabel7.setVisible(true); jTextAreaConsole.setVisible(true); jCheckBoxShowVerboseOutput.setVisible(true); jTextFieldCommand.setVisible(true); jButtonClearConsole.setVisible(true);
-                                jDialogTab1.pack();
-                                jDialogTab1.setLocationRelativeTo(null);
-                                jDialogTab1.setVisible(true);
-                                if(tutorial){
-                                    /****** FIN TUTO *****/
-                                    jButtonKillAlarm.setVisible(true); jButtonSoftReset.setVisible(true); jLabelMachineX1.setVisible(true); jLabelActiveState.setVisible(true); jButtonConnectDisconnect1.setVisible(true);
-                                    /* Elements Statut*/
-                                    jLabelMachinePositionX.setVisible(true); jLabelRealTimeFeedRate.setVisible(true); jLabel14.setVisible(true); jLabelWorkPositionZ.setVisible(true); jLabelSemiAutoToolChangeStatus.setVisible(true); jLabelMachinePositionY.setVisible(true); jLabelRowsInFile7.setVisible(true); jLabelWorkPositionX.setVisible(true); jButtonResetWorkPosition.setVisible(true); jLabelMachinePositionZ.setVisible(true); jLabel12.setVisible(true); jLabelRealTimeSpindleRPM.setVisible(true); jLabelWorkPositionY.setVisible(true); jButton3.setVisible(true); jLabel15.setVisible(true); jButton2.setVisible(true); jLabel2.setVisible(true); jLabel3.setVisible(true); jButton1.setVisible(true);
-                                    /* Elements de Machine Control */
-                                    jRadioButtonMillimeters.setVisible(true); jButtonZMinus.setVisible(true); jCheckBoxEnableKeyboardJogging.setVisible(true); jButtonZPlus.setVisible(true); jButtonXPlus.setVisible(true); jLabel4.setVisible(true); jRadioButtonInches.setVisible(true); jSliderStepSize.setVisible(true); jLabelRemoveFocus.setVisible(true); jButtonXMinus.setVisible(true); jButtonReturnToZero.setVisible(true); jSpinnerStep.setVisible(true); jButtonYPlus.setVisible(true); jButtonYMinus.setVisible(true);
-                                    /* Elements de  GCode SENDER */
-                                    jButtonGCodePause.setVisible(true); jLabelRowsInFile3.setVisible(true); jLabelRowsInFile2.setVisible(true); jLabelRowsInFile.setVisible(true); jLabelSentRows.setVisible(true); jButtonGCodeSend.setVisible(true); jProgressBarGCodeProgress.setVisible(true); jButtonGCodeCancel.setVisible(true); jLabelRowsInFile1.setVisible(true); jLabelRowsInFile4.setVisible(true); jLabelTimeElapsed.setVisible(true); jLabelRowsInFile5.setVisible(true); jTextFieldGCodeFile.setVisible(true); jLabel5.setVisible(true); jLabelRemainingRows.setVisible(true);
-                                    /* Elements de TabbedPane */
-                                    /* TAB 1*/
-                                    jLabel7.setVisible(true); jTextAreaConsole.setVisible(true); jCheckBoxShowVerboseOutput.setVisible(true); jTextFieldCommand.setVisible(true); jButtonClearConsole.setVisible(true);
-                                    /* TAB 2*/
-                                    jTableGCodeLog.setVisible(true); jButtonClearLog.setVisible(true); jCheckBoxEnableGCodeLog.setVisible(true);
-                                    /* TAB 3*/
-                                    jLabel9.setVisible(true); jLabel10.setVisible(true);
-                                    /* TAB 4*/
-                                    jLabel16.setVisible(true); jLabelMachineHomePosition.setVisible(true); jLabelLastStatusUpdate.setVisible(true); jLabel17.setVisible(true);
-                                }
-                                else{
-                                    /* Elements de TabbedPane */
-                                    /* TAB 1 INVISIBLE*/
-                                    jLabel7.setVisible(false); jTextAreaConsole.setVisible(false); jCheckBoxShowVerboseOutput.setVisible(false); jTextFieldCommand.setVisible(false); jButtonClearConsole.setVisible(false);
-                                    /* TAB 2*/
-                                    jTableGCodeLog.setVisible(true); jButtonClearLog.setVisible(true); jCheckBoxEnableGCodeLog.setVisible(true);
-                                    jDialogTab2.pack();
-                                    jDialogTab2.setLocationRelativeTo(null);
-                                    jDialogTab2.setVisible(true);
-                                    if(tutorial){
-                                        /****** FIN TUTO *****/
-                                        jButtonKillAlarm.setVisible(true); jButtonSoftReset.setVisible(true); jLabelMachineX1.setVisible(true); jLabelActiveState.setVisible(true); jButtonConnectDisconnect1.setVisible(true);
-                                        /* Elements Statut*/
-                                        jLabelMachinePositionX.setVisible(true); jLabelRealTimeFeedRate.setVisible(true); jLabel14.setVisible(true); jLabelWorkPositionZ.setVisible(true); jLabelSemiAutoToolChangeStatus.setVisible(true); jLabelMachinePositionY.setVisible(true); jLabelRowsInFile7.setVisible(true); jLabelWorkPositionX.setVisible(true); jButtonResetWorkPosition.setVisible(true); jLabelMachinePositionZ.setVisible(true); jLabel12.setVisible(true); jLabelRealTimeSpindleRPM.setVisible(true); jLabelWorkPositionY.setVisible(true); jButton3.setVisible(true); jLabel15.setVisible(true); jButton2.setVisible(true); jLabel2.setVisible(true); jLabel3.setVisible(true); jButton1.setVisible(true);
-                                        /* Elements de Machine Control */
-                                        jRadioButtonMillimeters.setVisible(true); jButtonZMinus.setVisible(true); jCheckBoxEnableKeyboardJogging.setVisible(true); jButtonZPlus.setVisible(true); jButtonXPlus.setVisible(true); jLabel4.setVisible(true); jRadioButtonInches.setVisible(true); jSliderStepSize.setVisible(true); jLabelRemoveFocus.setVisible(true); jButtonXMinus.setVisible(true); jButtonReturnToZero.setVisible(true); jSpinnerStep.setVisible(true); jButtonYPlus.setVisible(true); jButtonYMinus.setVisible(true);
-                                        /* Elements de  GCode SENDER */
-                                        jButtonGCodePause.setVisible(true); jLabelRowsInFile3.setVisible(true); jLabelRowsInFile2.setVisible(true); jLabelRowsInFile.setVisible(true); jLabelSentRows.setVisible(true); jButtonGCodeSend.setVisible(true); jProgressBarGCodeProgress.setVisible(true); jButtonGCodeCancel.setVisible(true); jLabelRowsInFile1.setVisible(true); jLabelRowsInFile4.setVisible(true); jLabelTimeElapsed.setVisible(true); jLabelRowsInFile5.setVisible(true); jTextFieldGCodeFile.setVisible(true); jLabel5.setVisible(true); jLabelRemainingRows.setVisible(true);
-                                        /* Elements de TabbedPane */
-                                        /* TAB 1*/
-                                        jLabel7.setVisible(true); jTextAreaConsole.setVisible(true); jCheckBoxShowVerboseOutput.setVisible(true); jTextFieldCommand.setVisible(true); jButtonClearConsole.setVisible(true);
-                                        /* TAB 2*/
-                                        jTableGCodeLog.setVisible(true); jButtonClearLog.setVisible(true); jCheckBoxEnableGCodeLog.setVisible(true);
-                                        /* TAB 3*/
-                                        jLabel9.setVisible(true); jLabel10.setVisible(true);
-                                        /* TAB 4*/
-                                        jLabel16.setVisible(true); jLabelMachineHomePosition.setVisible(true); jLabelLastStatusUpdate.setVisible(true); jLabel17.setVisible(true);
-                                    }
-                                    else{
-                                        /* TAB 2 INVISIBLE */
-                                        jTableGCodeLog.setVisible(false); jButtonClearLog.setVisible(false); jCheckBoxEnableGCodeLog.setVisible(false);
-                                        /* TAB 3*/
-                                        jLabel9.setVisible(true); jLabel10.setVisible(true);
-                                        jDialogTab3.pack();
-                                        jDialogTab3.setLocationRelativeTo(null);
-                                        jDialogTab3.setVisible(true);
-                                        if(tutorial){
-                                            /****** FIN TUTO *****/
-                                            jButtonKillAlarm.setVisible(true); jButtonSoftReset.setVisible(true); jLabelMachineX1.setVisible(true); jLabelActiveState.setVisible(true); jButtonConnectDisconnect1.setVisible(true);
-                                            /* Elements Statut*/
-                                            jLabelMachinePositionX.setVisible(true); jLabelRealTimeFeedRate.setVisible(true); jLabel14.setVisible(true); jLabelWorkPositionZ.setVisible(true); jLabelSemiAutoToolChangeStatus.setVisible(true); jLabelMachinePositionY.setVisible(true); jLabelRowsInFile7.setVisible(true); jLabelWorkPositionX.setVisible(true); jButtonResetWorkPosition.setVisible(true); jLabelMachinePositionZ.setVisible(true); jLabel12.setVisible(true); jLabelRealTimeSpindleRPM.setVisible(true); jLabelWorkPositionY.setVisible(true); jButton3.setVisible(true); jLabel15.setVisible(true); jButton2.setVisible(true); jLabel2.setVisible(true); jLabel3.setVisible(true); jButton1.setVisible(true);
-                                            /* Elements de Machine Control */
-                                            jRadioButtonMillimeters.setVisible(true); jButtonZMinus.setVisible(true); jCheckBoxEnableKeyboardJogging.setVisible(true); jButtonZPlus.setVisible(true); jButtonXPlus.setVisible(true); jLabel4.setVisible(true); jRadioButtonInches.setVisible(true); jSliderStepSize.setVisible(true); jLabelRemoveFocus.setVisible(true); jButtonXMinus.setVisible(true); jButtonReturnToZero.setVisible(true); jSpinnerStep.setVisible(true); jButtonYPlus.setVisible(true); jButtonYMinus.setVisible(true);      
-                                            /* Elements de  GCode SENDER */
-                                            jButtonGCodePause.setVisible(true); jLabelRowsInFile3.setVisible(true); jLabelRowsInFile2.setVisible(true); jLabelRowsInFile.setVisible(true); jLabelSentRows.setVisible(true); jButtonGCodeSend.setVisible(true); jProgressBarGCodeProgress.setVisible(true); jButtonGCodeCancel.setVisible(true); jLabelRowsInFile1.setVisible(true); jLabelRowsInFile4.setVisible(true); jLabelTimeElapsed.setVisible(true); jLabelRowsInFile5.setVisible(true); jTextFieldGCodeFile.setVisible(true); jLabel5.setVisible(true); jLabelRemainingRows.setVisible(true);
-                                            /* Elements de TabbedPane */
-                                            /* TAB 1*/
-                                            jLabel7.setVisible(true); jTextAreaConsole.setVisible(true); jCheckBoxShowVerboseOutput.setVisible(true); jTextFieldCommand.setVisible(true); jButtonClearConsole.setVisible(true);
-                                            /* TAB 2*/
-                                            jTableGCodeLog.setVisible(true); jButtonClearLog.setVisible(true); jCheckBoxEnableGCodeLog.setVisible(true);
-                                            /* TAB 3*/
-                                            jLabel9.setVisible(true); jLabel10.setVisible(true);
-                                            /* TAB 4*/
-                                            jLabel16.setVisible(true); jLabelMachineHomePosition.setVisible(true); jLabelLastStatusUpdate.setVisible(true); jLabel17.setVisible(true);   
-                                        }
-                                        else{
-                                            /* TAB 3 INVISIBLE */
-                                            jLabel9.setVisible(false); jLabel10.setVisible(false);
-                                            /* TAB 4*/
-                                            jLabel16.setVisible(true); jLabelMachineHomePosition.setVisible(true); jLabelLastStatusUpdate.setVisible(true); jLabel17.setVisible(true);
-                                            
-                                            jDialogTab4.setLocationRelativeTo(null);
-                                            jDialogTab4.setVisible(true);
-                                            level=3;
-                                            UpdateLevel();
-                                                /****** FIN TUTO *****/
-                                                jButtonKillAlarm.setVisible(true); jButtonSoftReset.setVisible(true); jLabelMachineX1.setVisible(true); jLabelActiveState.setVisible(true); jButtonConnectDisconnect1.setVisible(true);
-                                                /* Elements Statut*/
-                                                jLabelMachinePositionX.setVisible(true); jLabelRealTimeFeedRate.setVisible(true); jLabel14.setVisible(true); jLabelWorkPositionZ.setVisible(true); jLabelSemiAutoToolChangeStatus.setVisible(true); jLabelMachinePositionY.setVisible(true); jLabelRowsInFile7.setVisible(true); jLabelWorkPositionX.setVisible(true); jButtonResetWorkPosition.setVisible(true); jLabelMachinePositionZ.setVisible(true); jLabel12.setVisible(true); jLabelRealTimeSpindleRPM.setVisible(true); jLabelWorkPositionY.setVisible(true); jButton3.setVisible(true); jLabel15.setVisible(true); jButton2.setVisible(true); jLabel2.setVisible(true); jLabel3.setVisible(true); jButton1.setVisible(true);
-                                                /* Elements de Machine Control */
-                                                jRadioButtonMillimeters.setVisible(true); jButtonZMinus.setVisible(true); jCheckBoxEnableKeyboardJogging.setVisible(true); jButtonZPlus.setVisible(true); jButtonXPlus.setVisible(true); jLabel4.setVisible(true); jRadioButtonInches.setVisible(true); jSliderStepSize.setVisible(true); jLabelRemoveFocus.setVisible(true); jButtonXMinus.setVisible(true); jButtonReturnToZero.setVisible(true); jSpinnerStep.setVisible(true); jButtonYPlus.setVisible(true); jButtonYMinus.setVisible(true);
-                                                /* Elements de  GCode SENDER */
-                                                jButtonGCodePause.setVisible(true); jLabelRowsInFile3.setVisible(true); jLabelRowsInFile2.setVisible(true); jLabelRowsInFile.setVisible(true); jLabelSentRows.setVisible(true); jButtonGCodeSend.setVisible(true); jProgressBarGCodeProgress.setVisible(true); jButtonGCodeCancel.setVisible(true); jLabelRowsInFile1.setVisible(true); jLabelRowsInFile4.setVisible(true); jLabelTimeElapsed.setVisible(true); jLabelRowsInFile5.setVisible(true); jTextFieldGCodeFile.setVisible(true); jLabel5.setVisible(true); jLabelRemainingRows.setVisible(true);
-                                                /* Elements de TabbedPane */
-                                                /* TAB 1*/
-                                                jLabel7.setVisible(true); jTextAreaConsole.setVisible(true); jCheckBoxShowVerboseOutput.setVisible(true); jTextFieldCommand.setVisible(true); jButtonClearConsole.setVisible(true);
-                                                /* TAB 2*/
-                                                jTableGCodeLog.setVisible(true); jButtonClearLog.setVisible(true); jCheckBoxEnableGCodeLog.setVisible(true);
-                                                /* TAB 3*/
-                                                jLabel9.setVisible(true); jLabel10.setVisible(true);
-                                                /* TAB 4*/
-                                                jLabel16.setVisible(true); jLabelMachineHomePosition.setVisible(true); jLabelLastStatusUpdate.setVisible(true); jLabel17.setVisible(true);
-                                               
-                                        }
-
-                                        
-                                    }
-
-                                }
-                                
-                            }
-                            
-                        }
-
-                    }
-                    }
-                    JDialogSecuriter.setLocationRelativeTo(null);
-                    JDialogSecuriter.setVisible(true);
                     
-                    
-                    tutorial=true;
-                    break;
-                case 3:
-                    /***** FIN DU TUTO *******/
-                    /*Element Connection*/
-                    jButtonKillAlarm.setVisible(true);
-                    jButtonSoftReset.setVisible(true);
-                    jLabelMachineX1.setVisible(true);
-                    jLabelActiveState.setVisible(true);
-                    jButtonConnectDisconnect1.setVisible(true);
-                    /* Elements Statut*/
-                    jLabelMachinePositionX.setVisible(true);
-                    jLabelRealTimeFeedRate.setVisible(true);
-                    jLabel14.setVisible(true);
-                    jLabelWorkPositionZ.setVisible(true);
-                    jLabelSemiAutoToolChangeStatus.setVisible(true);
-                    jLabelMachinePositionY.setVisible(true);
-                    jLabelRowsInFile7.setVisible(true);
-                    jLabelWorkPositionX.setVisible(true);
-                    jButtonResetWorkPosition.setVisible(true);
-                    jLabelMachinePositionZ.setVisible(true);
-                    jLabel12.setVisible(true);
-                    jLabelRealTimeSpindleRPM.setVisible(true);
-                    jLabelWorkPositionY.setVisible(true);
-                    jButton3.setVisible(true);
-                    jLabel15.setVisible(true);
-                    jButton2.setVisible(true);
-                    jLabel2.setVisible(true);
-                    jLabel3.setVisible(true);
-                    jButton1.setVisible(true);
-                    /* Elements de Machine Control */
-                    jRadioButtonMillimeters.setVisible(true);
-                    jButtonZMinus.setVisible(true);
-                    jCheckBoxEnableKeyboardJogging.setVisible(true);
-                    jButtonZPlus.setVisible(true);
-                    jButtonXPlus.setVisible(true);
-                    jLabel4.setVisible(true);
-                    jRadioButtonInches.setVisible(true);
-                    jSliderStepSize.setVisible(true);
-                    jLabelRemoveFocus.setVisible(true);
-                    jButtonXMinus.setVisible(true);
-                    jButtonReturnToZero.setVisible(true);
-                    jSpinnerStep.setVisible(true);
-                    jButtonYPlus.setVisible(true);
-                    jButtonYMinus.setVisible(true);
-                    /* Elements de  GCode SENDER */
-                    jButtonGCodePause.setVisible(true);
-                    jLabelRowsInFile3.setVisible(true);
-                    jLabelRowsInFile2.setVisible(true);
-                    jLabelRowsInFile.setVisible(true);
-                    jLabelSentRows.setVisible(true);
-                    jButtonGCodeSend.setVisible(true);
-                    jProgressBarGCodeProgress.setVisible(true);
-                    jButtonGCodeCancel.setVisible(true);
-                    jLabelRowsInFile1.setVisible(true);
-                    jLabelRowsInFile4.setVisible(true);
-                    jLabelTimeElapsed.setVisible(true);
-                    jLabelRowsInFile5.setVisible(true);
-                    jTextFieldGCodeFile.setVisible(true);
-                    jLabel5.setVisible(true);
-                    jLabelRemainingRows.setVisible(true);
-                    /* Elements de TabbedPane */
-                    /* TAB 1*/
-                    jLabel7.setVisible(true);
-                    jTextAreaConsole.setVisible(true);
-                    jCheckBoxShowVerboseOutput.setVisible(true);
-                    jTextFieldCommand.setVisible(true);
-                    jButtonClearConsole.setVisible(true);
-                    /* TAB 2*/
-                    jTableGCodeLog.setVisible(true);
-                    jButtonClearLog.setVisible(true);
-                    jCheckBoxEnableGCodeLog.setVisible(true);
-                    /* TAB 3*/
-                    jLabel9.setVisible(true);
-                    jLabel10.setVisible(true);
-                    /* TAB 4*/
-                    jLabel16.setVisible(true);
-                    jLabelMachineHomePosition.setVisible(true);
-                    jLabelLastStatusUpdate.setVisible(true);
-                    jLabel17.setVisible(true);
-                    level=3;
-                    UpdateLevel();
-                    tutorial=true;
-                    
-                    break;
-                default:
-                    tutorial=true;
-                    break;
-            }
-            
-
-        }
+                
         
         
-        
+        } 
     }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     private void jButtonConnectDisconnect1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonConnectDisconnect1ActionPerformed
@@ -6458,6 +6614,13 @@ private void checkStatus(){
         jDialogLevel.setLocationRelativeTo(null); 
         jDialogLevel.setVisible(true);
         verified_level = jLevelCombo.getSelectedIndex() + 1;
+        UpdateLevel();
+        jButton7.requestFocus();
+        jButtonOk.requestFocus();  
+        jButtonOk1.requestFocus();  
+        jButtonOk2.requestFocus();  
+        jButtonOk3.requestFocus();  
+        jButtonOk4.requestFocus();  
    
         }
         else{
@@ -6475,11 +6638,12 @@ private void checkStatus(){
                     break;
             }
         }
-               
             switch (verified_level) {
                 case 1:
                     // Vider tous les Panels sauf CONNECTION
                     /* Elements de Machine Status */
+                    jButtonVisualise.setVisible(false);
+                    jButtonBrowse.setVisible(false);
                     jLabelMachinePositionX.setVisible(false);
                     jLabelRealTimeFeedRate.setVisible(false);
                     jLabel14.setVisible(false);
@@ -6549,9 +6713,34 @@ private void checkStatus(){
                     jLabelMachineHomePosition.setVisible(false);
                     jLabelLastStatusUpdate.setVisible(false);
                     jLabel17.setVisible(false);
+                    jButtonGCodeVisualize.setVisible(false);
+                    jButtonGCodeBrowse.setVisible(false);
                     jDialog1.pack();
                     jDialog1.setLocationRelativeTo(null);
                     jDialog1.setVisible(true);
+                    if(tutorial){
+                        
+                    /***** FIN DU TUTO *******/
+                    /*Element Connection*/
+                    jButtonGCodeVisualize.setVisible(true);jButtonGCodeBrowse.setVisible(true);jButtonVisualise.setVisible(true);jButtonBrowse.setVisible(true);
+                    jButtonKillAlarm.setVisible(true); jButtonSoftReset.setVisible(true); jLabelMachineX1.setVisible(true); jLabelActiveState.setVisible(true); jButtonConnectDisconnect1.setVisible(true);
+                    /* Elements Statut*/
+                    jLabelMachinePositionX.setVisible(true); jLabelRealTimeFeedRate.setVisible(true); jLabel14.setVisible(true); jLabelWorkPositionZ.setVisible(true); jLabelSemiAutoToolChangeStatus.setVisible(true); jLabelMachinePositionY.setVisible(true); jLabelRowsInFile7.setVisible(true); jLabelWorkPositionX.setVisible(true); jButtonResetWorkPosition.setVisible(true); jLabelMachinePositionZ.setVisible(true); jLabel12.setVisible(true); jLabelRealTimeSpindleRPM.setVisible(true); jLabelWorkPositionY.setVisible(true); jButton3.setVisible(true); jLabel15.setVisible(true); jButton2.setVisible(true); jLabel2.setVisible(true); jLabel3.setVisible(true); jButton1.setVisible(true);
+                    /* Elements de Machine Control */
+                    jRadioButtonMillimeters.setVisible(true); jButtonZMinus.setVisible(true); jCheckBoxEnableKeyboardJogging.setVisible(true); jButtonZPlus.setVisible(true); jButtonXPlus.setVisible(true); jLabel4.setVisible(true); jRadioButtonInches.setVisible(true); jSliderStepSize.setVisible(true); jLabelRemoveFocus.setVisible(true); jButtonXMinus.setVisible(true); jButtonReturnToZero.setVisible(true); jSpinnerStep.setVisible(true); jButtonYPlus.setVisible(true); jButtonYMinus.setVisible(true);
+                    /* Elements de  GCode SENDER */
+                    jButtonGCodePause.setVisible(true); jLabelRowsInFile3.setVisible(true); jLabelRowsInFile2.setVisible(true); jLabelRowsInFile.setVisible(true); jLabelSentRows.setVisible(true); jButtonGCodeSend.setVisible(true); jProgressBarGCodeProgress.setVisible(true); jButtonGCodeCancel.setVisible(true); jLabelRowsInFile1.setVisible(true); jLabelRowsInFile4.setVisible(true); jLabelTimeElapsed.setVisible(true); jLabelRowsInFile5.setVisible(true); jTextFieldGCodeFile.setVisible(true); jLabel5.setVisible(true); jLabelRemainingRows.setVisible(true);
+                    /* Elements de TabbedPane */
+                    /* TAB 1*/
+                    jLabel7.setVisible(true); jTextAreaConsole.setVisible(true); jCheckBoxShowVerboseOutput.setVisible(true); jTextFieldCommand.setVisible(true); jButtonClearConsole.setVisible(true);
+                    /* TAB 2*/
+                    jTableGCodeLog.setVisible(true); jButtonClearLog.setVisible(true); jCheckBoxEnableGCodeLog.setVisible(true);
+                     /* TAB 3*/
+                    jLabel9.setVisible(true); jLabel10.setVisible(true);
+                     /* TAB 4*/
+                    jLabel16.setVisible(true); jLabelMachineHomePosition.setVisible(true); jLabelLastStatusUpdate.setVisible(true); jLabel17.setVisible(true);
+                                                                   
+                    }else{
                     /* Elements de Connection Invisible*/
                     jButtonSoftReset.setVisible(false);
                     jLabelMachineX1.setVisible(false);
@@ -6583,7 +6772,10 @@ private void checkStatus(){
                     jDialog2.setVisible(true);
                     if (tutorial) {
                         /****** FIN TUTO *****/
-
+                        jButtonGCodeVisualize.setVisible(true);
+                        jButtonGCodeBrowse.setVisible(true);
+                        jButtonVisualise.setVisible(true);
+                        jButtonBrowse.setVisible(true);
                         jButtonKillAlarm.setVisible(true); jButtonSoftReset.setVisible(true); jLabelMachineX1.setVisible(true); jLabelActiveState.setVisible(true); jButtonConnectDisconnect1.setVisible(true);
                         /* Elements Statut*/
                         jLabelMachinePositionX.setVisible(true); jLabelRealTimeFeedRate.setVisible(true); jLabel14.setVisible(true); jLabelWorkPositionZ.setVisible(true); jLabelSemiAutoToolChangeStatus.setVisible(true); jLabelMachinePositionY.setVisible(true); jLabelRowsInFile7.setVisible(true); jLabelWorkPositionX.setVisible(true); jButtonResetWorkPosition.setVisible(true); jLabelMachinePositionZ.setVisible(true); jLabel12.setVisible(true); jLabelRealTimeSpindleRPM.setVisible(true); jLabelWorkPositionY.setVisible(true); jButton3.setVisible(true); jLabel15.setVisible(true); jButton2.setVisible(true); jLabel2.setVisible(true); jLabel3.setVisible(true); jButton1.setVisible(true);
@@ -6607,11 +6799,15 @@ private void checkStatus(){
                         /* Elements Status Inivisble */
                         jLabelMachinePositionX.setVisible(false); jLabelRealTimeFeedRate.setVisible(false); jLabel14.setVisible(false); jLabelWorkPositionZ.setVisible(false); jLabelSemiAutoToolChangeStatus.setVisible(false); jLabelMachinePositionY.setVisible(false); jLabelRowsInFile7.setVisible(false); jLabelWorkPositionX.setVisible(false); jButtonResetWorkPosition.setVisible(false); jLabelMachinePositionZ.setVisible(false); jLabel12.setVisible(false); jLabelRealTimeSpindleRPM.setVisible(false); jLabelWorkPositionY.setVisible(false); jButton3.setVisible(false); jLabel15.setVisible(false); jButton2.setVisible(false); jLabel2.setVisible(false); jLabel3.setVisible(false); jButton1.setVisible(false);
                         
-                        jDialogGSender.pack();
-                        jDialogGSender.setLocationRelativeTo(null);
-                        jDialogGSender.setVisible(true);
+                        jDialogMachineAxis.pack();
+                        jDialogMachineAxis.setLocationRelativeTo(null);
+                        jDialogMachineAxis.setVisible(true);
                         if (tutorial) {
                             /****** FIN TUTO *****/
+                            jButtonGCodeVisualize.setVisible(true);
+                            jButtonGCodeBrowse.setVisible(true);
+                            jButtonVisualise.setVisible(true);
+                            jButtonBrowse.setVisible(true);
                             jButtonKillAlarm.setVisible(true); jButtonSoftReset.setVisible(true); jLabelMachineX1.setVisible(true); jLabelActiveState.setVisible(true); jButtonConnectDisconnect1.setVisible(true);
                             /* Elements Statut*/
                             jLabelMachinePositionX.setVisible(true); jLabelRealTimeFeedRate.setVisible(true); jLabel14.setVisible(true); jLabelWorkPositionZ.setVisible(true); jLabelSemiAutoToolChangeStatus.setVisible(true); jLabelMachinePositionY.setVisible(true); jLabelRowsInFile7.setVisible(true); jLabelWorkPositionX.setVisible(true); jButtonResetWorkPosition.setVisible(true); jLabelMachinePositionZ.setVisible(true); jLabel12.setVisible(true); jLabelRealTimeSpindleRPM.setVisible(true); jLabelWorkPositionY.setVisible(true); jButton3.setVisible(true); jLabel15.setVisible(true); jButton2.setVisible(true); jLabel2.setVisible(true); jLabel3.setVisible(true); jButton1.setVisible(true);
@@ -6634,11 +6830,15 @@ private void checkStatus(){
                             jRadioButtonMillimeters.setVisible(false); jButtonZMinus.setVisible(false); jCheckBoxEnableKeyboardJogging.setVisible(false); jButtonZPlus.setVisible(false); jButtonXPlus.setVisible(false); jLabel4.setVisible(false); jRadioButtonInches.setVisible(false); jSliderStepSize.setVisible(false); jLabelRemoveFocus.setVisible(false); jButtonXMinus.setVisible(false); jButtonReturnToZero.setVisible(false); jSpinnerStep.setVisible(false); jButtonYPlus.setVisible(false); jButtonYMinus.setVisible(false);      
                             /* Elements de  GCode SENDER VISIBLE*/
                             jButtonGCodePause.setVisible(true); jLabelRowsInFile3.setVisible(true); jLabelRowsInFile2.setVisible(true); jLabelRowsInFile.setVisible(true); jLabelSentRows.setVisible(true); jButtonGCodeSend.setVisible(true); jProgressBarGCodeProgress.setVisible(true); jButtonGCodeCancel.setVisible(true); jLabelRowsInFile1.setVisible(true); jLabelRowsInFile4.setVisible(true); jLabelTimeElapsed.setVisible(true); jLabelRowsInFile5.setVisible(true); jTextFieldGCodeFile.setVisible(true); jLabel5.setVisible(true); jLabelRemainingRows.setVisible(true);
+                            jButtonGCodeVisualize.setVisible(true);jButtonGCodeBrowse.setVisible(true);jButtonVisualise.setVisible(true);jButtonBrowse.setVisible(true);
                             jDialogGSender.pack();
                             jDialogGSender.setLocationRelativeTo(null);
                             jDialogGSender.setVisible(true);
+                 
                             if(tutorial){
                                 /****** FIN TUTO *****/
+                                jButtonVisualise.setVisible(true);
+                                jButtonBrowse.setVisible(true);
                                 jButtonKillAlarm.setVisible(true); jButtonSoftReset.setVisible(true); jLabelMachineX1.setVisible(true); jLabelActiveState.setVisible(true); jButtonConnectDisconnect1.setVisible(true);
                                 /* Elements Statut*/
                                 jLabelMachinePositionX.setVisible(true); jLabelRealTimeFeedRate.setVisible(true); jLabel14.setVisible(true); jLabelWorkPositionZ.setVisible(true); jLabelSemiAutoToolChangeStatus.setVisible(true); jLabelMachinePositionY.setVisible(true); jLabelRowsInFile7.setVisible(true); jLabelWorkPositionX.setVisible(true); jButtonResetWorkPosition.setVisible(true); jLabelMachinePositionZ.setVisible(true); jLabel12.setVisible(true); jLabelRealTimeSpindleRPM.setVisible(true); jLabelWorkPositionY.setVisible(true); jButton3.setVisible(true); jLabel15.setVisible(true); jButton2.setVisible(true); jLabel2.setVisible(true); jLabel3.setVisible(true); jButton1.setVisible(true);
@@ -6659,6 +6859,10 @@ private void checkStatus(){
                             else{
 
                                 /*Elements de  GCode SENDER INVISIBLE */
+                                jButtonGCodeVisualize.setVisible(false);
+                                jButtonGCodeBrowse.setVisible(false);
+                                jButtonVisualise.setVisible(false);
+                                jButtonBrowse.setVisible(false);
                                 jButtonGCodePause.setVisible(false); jLabelRowsInFile3.setVisible(false); jLabelRowsInFile2.setVisible(false); jLabelRowsInFile.setVisible(false); jLabelSentRows.setVisible(false); jButtonGCodeSend.setVisible(false); jProgressBarGCodeProgress.setVisible(false); jButtonGCodeCancel.setVisible(false); jLabelRowsInFile1.setVisible(false); jLabelRowsInFile4.setVisible(false); jLabelTimeElapsed.setVisible(false); jLabelRowsInFile5.setVisible(false); jTextFieldGCodeFile.setVisible(false); jLabel5.setVisible(false); jLabelRemainingRows.setVisible(false);
                                 /* Elements de TabbedPane */
                                 /* TAB 1*/
@@ -6667,6 +6871,10 @@ private void checkStatus(){
                                 jDialogTab1.setLocationRelativeTo(null);
                                 jDialogTab1.setVisible(true);
                                 if(tutorial){
+                                    jButtonGCodeVisualize.setVisible(true);
+                                    jButtonGCodeBrowse.setVisible(true);
+                                    jButtonVisualise.setVisible(true);
+                                    jButtonBrowse.setVisible(true);
                                     /****** FIN TUTO *****/
                                     jButtonKillAlarm.setVisible(true); jButtonSoftReset.setVisible(true); jLabelMachineX1.setVisible(true); jLabelActiveState.setVisible(true); jButtonConnectDisconnect1.setVisible(true);
                                     /* Elements Statut*/
@@ -6696,6 +6904,10 @@ private void checkStatus(){
                                     jDialogTab2.setVisible(true);
                                     if(tutorial){
                                         /****** FIN TUTO *****/
+                                        jButtonGCodeVisualize.setVisible(true);
+                                        jButtonGCodeBrowse.setVisible(true);
+                                        jButtonVisualise.setVisible(true);
+                                        jButtonBrowse.setVisible(true);
                                         jButtonKillAlarm.setVisible(true); jButtonSoftReset.setVisible(true); jLabelMachineX1.setVisible(true); jLabelActiveState.setVisible(true); jButtonConnectDisconnect1.setVisible(true);
                                         /* Elements Statut*/
                                         jLabelMachinePositionX.setVisible(true); jLabelRealTimeFeedRate.setVisible(true); jLabel14.setVisible(true); jLabelWorkPositionZ.setVisible(true); jLabelSemiAutoToolChangeStatus.setVisible(true); jLabelMachinePositionY.setVisible(true); jLabelRowsInFile7.setVisible(true); jLabelWorkPositionX.setVisible(true); jButtonResetWorkPosition.setVisible(true); jLabelMachinePositionZ.setVisible(true); jLabel12.setVisible(true); jLabelRealTimeSpindleRPM.setVisible(true); jLabelWorkPositionY.setVisible(true); jButton3.setVisible(true); jLabel15.setVisible(true); jButton2.setVisible(true); jLabel2.setVisible(true); jLabel3.setVisible(true); jButton1.setVisible(true);
@@ -6723,6 +6935,10 @@ private void checkStatus(){
                                         jDialogTab3.setVisible(true);
                                         if(tutorial){
                                             /****** FIN TUTO *****/
+                                            jButtonGCodeVisualize.setVisible(true);
+                                            jButtonGCodeBrowse.setVisible(true);
+                                            jButtonVisualise.setVisible(true);
+                                            jButtonBrowse.setVisible(true);
                                             jButtonKillAlarm.setVisible(true); jButtonSoftReset.setVisible(true); jLabelMachineX1.setVisible(true); jLabelActiveState.setVisible(true); jButtonConnectDisconnect1.setVisible(true);
                                             /* Elements Statut*/
                                             jLabelMachinePositionX.setVisible(true); jLabelRealTimeFeedRate.setVisible(true); jLabel14.setVisible(true); jLabelWorkPositionZ.setVisible(true); jLabelSemiAutoToolChangeStatus.setVisible(true); jLabelMachinePositionY.setVisible(true); jLabelRowsInFile7.setVisible(true); jLabelWorkPositionX.setVisible(true); jButtonResetWorkPosition.setVisible(true); jLabelMachinePositionZ.setVisible(true); jLabel12.setVisible(true); jLabelRealTimeSpindleRPM.setVisible(true); jLabelWorkPositionY.setVisible(true); jButton3.setVisible(true); jLabel15.setVisible(true); jButton2.setVisible(true); jLabel2.setVisible(true); jLabel3.setVisible(true); jButton1.setVisible(true);
@@ -6745,11 +6961,17 @@ private void checkStatus(){
                                             jLabel9.setVisible(false); jLabel10.setVisible(false);
                                             /* TAB 4*/
                                             jLabel16.setVisible(true); jLabelMachineHomePosition.setVisible(true); jLabelLastStatusUpdate.setVisible(true); jLabel17.setVisible(true);
-                                            jDialogTab1.pack();
+                                            
                                             jDialogTab4.setLocationRelativeTo(null);
                                             jDialogTab4.setVisible(true);
-                                            if(tutorial){
+                                            level=2;
+                                            UpdateLevel();
+                                            
                                                 /****** FIN TUTO *****/
+                                                jButtonGCodeVisualize.setVisible(true);
+                                                jButtonGCodeBrowse.setVisible(true);
+                                                jButtonVisualise.setVisible(true);
+                                                jButtonBrowse.setVisible(true);
                                                 jButtonKillAlarm.setVisible(true); jButtonSoftReset.setVisible(true); jLabelMachineX1.setVisible(true); jLabelActiveState.setVisible(true); jButtonConnectDisconnect1.setVisible(true);
                                                 /* Elements Statut*/
                                                 jLabelMachinePositionX.setVisible(true); jLabelRealTimeFeedRate.setVisible(true); jLabel14.setVisible(true); jLabelWorkPositionZ.setVisible(true); jLabelSemiAutoToolChangeStatus.setVisible(true); jLabelMachinePositionY.setVisible(true); jLabelRowsInFile7.setVisible(true); jLabelWorkPositionX.setVisible(true); jButtonResetWorkPosition.setVisible(true); jLabelMachinePositionZ.setVisible(true); jLabel12.setVisible(true); jLabelRealTimeSpindleRPM.setVisible(true); jLabelWorkPositionY.setVisible(true); jButton3.setVisible(true); jLabel15.setVisible(true); jButton2.setVisible(true); jLabel2.setVisible(true); jLabel3.setVisible(true); jButton1.setVisible(true);
@@ -6766,29 +6988,7 @@ private void checkStatus(){
                                                 jLabel9.setVisible(true); jLabel10.setVisible(true);
                                                 /* TAB 4*/
                                                 jLabel16.setVisible(true); jLabelMachineHomePosition.setVisible(true); jLabelLastStatusUpdate.setVisible(true); jLabel17.setVisible(true);
-                                            }
-                                            else{
-                                                /***** FIN DU TUTO *******/
-                                                /*Element Connection*/
-                                                jButtonKillAlarm.setVisible(true); jButtonSoftReset.setVisible(true); jLabelMachineX1.setVisible(true); jLabelActiveState.setVisible(true); jButtonConnectDisconnect1.setVisible(true);
-                                                /* Elements Statut*/
-                                                jLabelMachinePositionX.setVisible(true); jLabelRealTimeFeedRate.setVisible(true); jLabel14.setVisible(true); jLabelWorkPositionZ.setVisible(true); jLabelSemiAutoToolChangeStatus.setVisible(true); jLabelMachinePositionY.setVisible(true); jLabelRowsInFile7.setVisible(true); jLabelWorkPositionX.setVisible(true); jButtonResetWorkPosition.setVisible(true); jLabelMachinePositionZ.setVisible(true); jLabel12.setVisible(true); jLabelRealTimeSpindleRPM.setVisible(true); jLabelWorkPositionY.setVisible(true); jButton3.setVisible(true); jLabel15.setVisible(true); jButton2.setVisible(true); jLabel2.setVisible(true); jLabel3.setVisible(true); jButton1.setVisible(true);
-                                                /* Elements de Machine Control */
-                                                jRadioButtonMillimeters.setVisible(true); jButtonZMinus.setVisible(true); jCheckBoxEnableKeyboardJogging.setVisible(true); jButtonZPlus.setVisible(true); jButtonXPlus.setVisible(true); jLabel4.setVisible(true); jRadioButtonInches.setVisible(true); jSliderStepSize.setVisible(true); jLabelRemoveFocus.setVisible(true); jButtonXMinus.setVisible(true); jButtonReturnToZero.setVisible(true); jSpinnerStep.setVisible(true); jButtonYPlus.setVisible(true); jButtonYMinus.setVisible(true);
-                                                /* Elements de  GCode SENDER */
-                                                jButtonGCodePause.setVisible(true); jLabelRowsInFile3.setVisible(true); jLabelRowsInFile2.setVisible(true); jLabelRowsInFile.setVisible(true); jLabelSentRows.setVisible(true); jButtonGCodeSend.setVisible(true); jProgressBarGCodeProgress.setVisible(true); jButtonGCodeCancel.setVisible(true); jLabelRowsInFile1.setVisible(true); jLabelRowsInFile4.setVisible(true); jLabelTimeElapsed.setVisible(true); jLabelRowsInFile5.setVisible(true); jTextFieldGCodeFile.setVisible(true); jLabel5.setVisible(true); jLabelRemainingRows.setVisible(true);
-                                                /* Elements de TabbedPane */
-                                                /* TAB 1*/
-                                                jLabel7.setVisible(true); jTextAreaConsole.setVisible(true); jCheckBoxShowVerboseOutput.setVisible(true); jTextFieldCommand.setVisible(true); jButtonClearConsole.setVisible(true);
-                                                /* TAB 2*/
-                                                jTableGCodeLog.setVisible(true); jButtonClearLog.setVisible(true); jCheckBoxEnableGCodeLog.setVisible(true);
-                                                /* TAB 3*/
-                                                jLabel9.setVisible(true); jLabel10.setVisible(true);
-                                                /* TAB 4*/
-                                                jLabel16.setVisible(true); jLabelMachineHomePosition.setVisible(true); jLabelLastStatusUpdate.setVisible(true); jLabel17.setVisible(true);
-                                            }
-                                            
-                                            
+                                              
                                         }
 
                                         
@@ -6799,112 +6999,21 @@ private void checkStatus(){
                             }
                         }
                     }
+                  }
+                    tutorial=true;
                     break;
                 case 2:
-                    // Vider tous les Panels sauf CONNECTION
-                    /* Elements de Machine Status */
-                    jLabelMachinePositionX.setVisible(false);
-                    jLabelRealTimeFeedRate.setVisible(false);
-                    jLabel14.setVisible(false);
-                    jLabelWorkPositionZ.setVisible(false);
-                    jLabelSemiAutoToolChangeStatus.setVisible(false);
-                    jLabelMachinePositionY.setVisible(false);
-                    jLabelRowsInFile7.setVisible(false);
-                    jLabelWorkPositionX.setVisible(false);
-                    jButtonResetWorkPosition.setVisible(false);
-                    jLabelMachinePositionZ.setVisible(false);
-                    jLabel12.setVisible(false);
-                    jLabelRealTimeSpindleRPM.setVisible(false);
-                    jLabelWorkPositionY.setVisible(false);
-                    jButton3.setVisible(false);
-                    jLabel15.setVisible(false);
-                    jButton2.setVisible(false);
-                    jLabel2.setVisible(false);
-                    jLabel3.setVisible(false);
-                    jButton1.setVisible(false);
-                    /* Elements de Machine Control */
-                    jRadioButtonMillimeters.setVisible(false);
-                    jButtonZMinus.setVisible(false);
-                    jCheckBoxEnableKeyboardJogging.setVisible(false);
-                    jButtonZPlus.setVisible(false);
-                    jButtonXPlus.setVisible(false);
-                    jLabel4.setVisible(false);
-                    jRadioButtonInches.setVisible(false);
-                    jSliderStepSize.setVisible(false);
-                    jLabelRemoveFocus.setVisible(false);
-                    jButtonXMinus.setVisible(false);
-                    jButtonReturnToZero.setVisible(false);
-                    jSpinnerStep.setVisible(false);
-                    jButtonYPlus.setVisible(false);
-                    jButtonYMinus.setVisible(false);
-                    /* Elements de  GCode SENDER */
-                    jButtonGCodePause.setVisible(false);
-                    jLabelRowsInFile3.setVisible(false);
-                    jLabelRowsInFile2.setVisible(false);
-                    jLabelRowsInFile.setVisible(false);
-                    jLabelSentRows.setVisible(false);
-                    jButtonGCodeSend.setVisible(false);
-                    jProgressBarGCodeProgress.setVisible(false);
-                    jButtonGCodeCancel.setVisible(false);
-                    jLabelRowsInFile1.setVisible(false);
-                    jLabelRowsInFile4.setVisible(false);
-                    jLabelTimeElapsed.setVisible(false);
-                    jLabelRowsInFile5.setVisible(false);
-                    jTextFieldGCodeFile.setVisible(false);
-                    jLabel5.setVisible(false);
-                    jLabelRemainingRows.setVisible(false);
-                    /* Elements de TabbedPane */
-                    /* TAB 1*/
-                    jLabel7.setVisible(false);
-                    jTextAreaConsole.setVisible(false);
-                    jCheckBoxShowVerboseOutput.setVisible(false);
-                    jTextFieldCommand.setVisible(false);
-                    jButtonClearConsole.setVisible(false);
-                    /* TAB 2*/
-                    jTableGCodeLog.setVisible(false);
-                    jButtonClearLog.setVisible(false);
-                    jCheckBoxEnableGCodeLog.setVisible(false);
-                    /* TAB 3*/
-                    jLabel9.setVisible(false);
-                    jLabel10.setVisible(false);
-                    /* TAB 4*/
-                    jLabel16.setVisible(false);
-                    jLabelMachineHomePosition.setVisible(false);
-                    jLabelLastStatusUpdate.setVisible(false);
-                    jLabel17.setVisible(false);
-                    jDialog1.pack();
-                    jDialog1.setLocationRelativeTo(null);
-                    jDialog1.setVisible(true);
-                    /* Elements de Connection Invisible*/
-                    jButtonSoftReset.setVisible(false);
-                    jLabelMachineX1.setVisible(false);
-                    jButtonKillAlarm.setVisible(false);
-                    jButtonConnectDisconnect1.setVisible(false);
-                    jLabelActiveState.setVisible(false);
-                    /* Elements de Machine Statuts Visible */
-                    jLabelMachinePositionX.setVisible(true);
-                    jLabelRealTimeFeedRate.setVisible(true);
-                    jLabel14.setVisible(true);
-                    jLabelWorkPositionZ.setVisible(true);
-                    jLabelSemiAutoToolChangeStatus.setVisible(true);
-                    jLabelMachinePositionY.setVisible(true);
-                    jLabelRowsInFile7.setVisible(true);
-                    jLabelWorkPositionX.setVisible(true);
-                    jButtonResetWorkPosition.setVisible(true);
-                    jLabelMachinePositionZ.setVisible(true);
-                    jLabel12.setVisible(true);
-                    jLabelRealTimeSpindleRPM.setVisible(true);
-                    jLabelWorkPositionY.setVisible(true);
-                    jButton3.setVisible(true);
-                    jLabel15.setVisible(true);
-                    jButton2.setVisible(true);
-                    jLabel2.setVisible(true);
-                    jLabel3.setVisible(true);
-                    jButton1.setVisible(true);
-                    jDialog2.pack();
-                    jDialog2.setLocationRelativeTo(null);
-                    jDialog2.setVisible(true);
-                    if (tutorial) {
+                    jDialogAskTuto.setLocationRelativeTo(null);
+                    jDialogAskTuto.setVisible(true);
+                    if(tutorial==false){
+                         JDialogSecuriter.setLocationRelativeTo(null);
+                         JDialogSecuriter.setVisible(true);
+                        
+                         
+                    }
+                    else{
+                    
+                    
                         /****** FIN TUTO *****/
                         jButtonKillAlarm.setVisible(true); jButtonSoftReset.setVisible(true); jLabelMachineX1.setVisible(true); jLabelActiveState.setVisible(true); jButtonConnectDisconnect1.setVisible(true);
                         /* Elements Statut*/
@@ -6922,7 +7031,26 @@ private void checkStatus(){
                         jLabel9.setVisible(true); jLabel10.setVisible(true);
                         /* TAB 4*/
                         jLabel16.setVisible(true); jLabelMachineHomePosition.setVisible(true); jLabelLastStatusUpdate.setVisible(true); jLabel17.setVisible(true);
-                    }
+                      if (tutorial) {
+                            /****** FIN TUTO *****/
+                            jButtonKillAlarm.setVisible(true); jButtonSoftReset.setVisible(true); jLabelMachineX1.setVisible(true); jLabelActiveState.setVisible(true); jButtonConnectDisconnect1.setVisible(true);
+                            /* Elements Statut*/
+                            jLabelMachinePositionX.setVisible(true); jLabelRealTimeFeedRate.setVisible(true); jLabel14.setVisible(true); jLabelWorkPositionZ.setVisible(true); jLabelSemiAutoToolChangeStatus.setVisible(true); jLabelMachinePositionY.setVisible(true); jLabelRowsInFile7.setVisible(true); jLabelWorkPositionX.setVisible(true); jButtonResetWorkPosition.setVisible(true); jLabelMachinePositionZ.setVisible(true); jLabel12.setVisible(true); jLabelRealTimeSpindleRPM.setVisible(true); jLabelWorkPositionY.setVisible(true); jButton3.setVisible(true); jLabel15.setVisible(true); jButton2.setVisible(true); jLabel2.setVisible(true); jLabel3.setVisible(true); jButton1.setVisible(true);
+                            /* Elements de Machine Control */
+                            jRadioButtonMillimeters.setVisible(true); jButtonZMinus.setVisible(true); jCheckBoxEnableKeyboardJogging.setVisible(true); jButtonZPlus.setVisible(true); jButtonXPlus.setVisible(true); jLabel4.setVisible(true); jRadioButtonInches.setVisible(true); jSliderStepSize.setVisible(true); jLabelRemoveFocus.setVisible(true); jButtonXMinus.setVisible(true); jButtonReturnToZero.setVisible(true); jSpinnerStep.setVisible(true); jButtonYPlus.setVisible(true); jButtonYMinus.setVisible(true);
+                            /* Elements de  GCode SENDER */
+                            jButtonGCodePause.setVisible(true); jLabelRowsInFile3.setVisible(true); jLabelRowsInFile2.setVisible(true); jLabelRowsInFile.setVisible(true); jLabelSentRows.setVisible(true); jButtonGCodeSend.setVisible(true); jProgressBarGCodeProgress.setVisible(true); jButtonGCodeCancel.setVisible(true); jLabelRowsInFile1.setVisible(true); jLabelRowsInFile4.setVisible(true); jLabelTimeElapsed.setVisible(true); jLabelRowsInFile5.setVisible(true); jTextFieldGCodeFile.setVisible(true); jLabel5.setVisible(true); jLabelRemainingRows.setVisible(true);
+                            /* Elements de TabbedPane */
+                            /* TAB 1*/
+                            jLabel7.setVisible(true); jTextAreaConsole.setVisible(true); jCheckBoxShowVerboseOutput.setVisible(true); jTextFieldCommand.setVisible(true); jButtonClearConsole.setVisible(true);
+                            /* TAB 2*/
+                            jTableGCodeLog.setVisible(true); jButtonClearLog.setVisible(true); jCheckBoxEnableGCodeLog.setVisible(true);
+                            /* TAB 3*/
+                            jLabel9.setVisible(true); jLabel10.setVisible(true);
+                            /* TAB 4*/
+                            jLabel16.setVisible(true); jLabelMachineHomePosition.setVisible(true); jLabelLastStatusUpdate.setVisible(true); jLabel17.setVisible(true);
+                        }  
+                    
                     else{
                         /* Elements de Machine Control Visible*/
                         jRadioButtonMillimeters.setVisible(true); jButtonZMinus.setVisible(true); jCheckBoxEnableKeyboardJogging.setVisible(true); jButtonZPlus.setVisible(true); jButtonXPlus.setVisible(true); jLabel4.setVisible(true); jRadioButtonInches.setVisible(true); jSliderStepSize.setVisible(true); jLabelRemoveFocus.setVisible(true); jButtonXMinus.setVisible(true); jButtonReturnToZero.setVisible(true); jSpinnerStep.setVisible(true); jButtonYPlus.setVisible(true); jButtonYMinus.setVisible(true);
@@ -7067,10 +7195,11 @@ private void checkStatus(){
                                             jLabel9.setVisible(false); jLabel10.setVisible(false);
                                             /* TAB 4*/
                                             jLabel16.setVisible(true); jLabelMachineHomePosition.setVisible(true); jLabelLastStatusUpdate.setVisible(true); jLabel17.setVisible(true);
-                                            jDialogTab1.pack();
+                                            
                                             jDialogTab4.setLocationRelativeTo(null);
                                             jDialogTab4.setVisible(true);
-                                            if(tutorial){
+                                            level=3;
+                                            UpdateLevel();
                                                 /****** FIN TUTO *****/
                                                 jButtonKillAlarm.setVisible(true); jButtonSoftReset.setVisible(true); jLabelMachineX1.setVisible(true); jLabelActiveState.setVisible(true); jButtonConnectDisconnect1.setVisible(true);
                                                 /* Elements Statut*/
@@ -7088,29 +7217,7 @@ private void checkStatus(){
                                                 jLabel9.setVisible(true); jLabel10.setVisible(true);
                                                 /* TAB 4*/
                                                 jLabel16.setVisible(true); jLabelMachineHomePosition.setVisible(true); jLabelLastStatusUpdate.setVisible(true); jLabel17.setVisible(true);
-                                            }
-                                            else{
-                                                /***** FIN DU TUTO *******/
-                                                /*Element Connection*/
-                                                jButtonKillAlarm.setVisible(true); jButtonSoftReset.setVisible(true); jLabelMachineX1.setVisible(true); jLabelActiveState.setVisible(true); jButtonConnectDisconnect1.setVisible(true);
-                                                /* Elements Statut*/
-                                                jLabelMachinePositionX.setVisible(true); jLabelRealTimeFeedRate.setVisible(true); jLabel14.setVisible(true); jLabelWorkPositionZ.setVisible(true); jLabelSemiAutoToolChangeStatus.setVisible(true); jLabelMachinePositionY.setVisible(true); jLabelRowsInFile7.setVisible(true); jLabelWorkPositionX.setVisible(true); jButtonResetWorkPosition.setVisible(true); jLabelMachinePositionZ.setVisible(true); jLabel12.setVisible(true); jLabelRealTimeSpindleRPM.setVisible(true); jLabelWorkPositionY.setVisible(true); jButton3.setVisible(true); jLabel15.setVisible(true); jButton2.setVisible(true); jLabel2.setVisible(true); jLabel3.setVisible(true); jButton1.setVisible(true);
-                                                /* Elements de Machine Control */
-                                                jRadioButtonMillimeters.setVisible(true); jButtonZMinus.setVisible(true); jCheckBoxEnableKeyboardJogging.setVisible(true); jButtonZPlus.setVisible(true); jButtonXPlus.setVisible(true); jLabel4.setVisible(true); jRadioButtonInches.setVisible(true); jSliderStepSize.setVisible(true); jLabelRemoveFocus.setVisible(true); jButtonXMinus.setVisible(true); jButtonReturnToZero.setVisible(true); jSpinnerStep.setVisible(true); jButtonYPlus.setVisible(true); jButtonYMinus.setVisible(true);
-                                                /* Elements de  GCode SENDER */
-                                                jButtonGCodePause.setVisible(true); jLabelRowsInFile3.setVisible(true); jLabelRowsInFile2.setVisible(true); jLabelRowsInFile.setVisible(true); jLabelSentRows.setVisible(true); jButtonGCodeSend.setVisible(true); jProgressBarGCodeProgress.setVisible(true); jButtonGCodeCancel.setVisible(true); jLabelRowsInFile1.setVisible(true); jLabelRowsInFile4.setVisible(true); jLabelTimeElapsed.setVisible(true); jLabelRowsInFile5.setVisible(true); jTextFieldGCodeFile.setVisible(true); jLabel5.setVisible(true); jLabelRemainingRows.setVisible(true);
-                                                /* Elements de TabbedPane */
-                                                /* TAB 1*/
-                                                jLabel7.setVisible(true); jTextAreaConsole.setVisible(true); jCheckBoxShowVerboseOutput.setVisible(true); jTextFieldCommand.setVisible(true); jButtonClearConsole.setVisible(true);
-                                                /* TAB 2*/
-                                                jTableGCodeLog.setVisible(true); jButtonClearLog.setVisible(true); jCheckBoxEnableGCodeLog.setVisible(true);
-                                                /* TAB 3*/
-                                                jLabel9.setVisible(true); jLabel10.setVisible(true);
-                                                /* TAB 4*/
-                                                jLabel16.setVisible(true); jLabelMachineHomePosition.setVisible(true); jLabelLastStatusUpdate.setVisible(true); jLabel17.setVisible(true);
-                                            }
-                                            
-                                            
+                                               
                                         }
 
                                         
@@ -7123,6 +7230,12 @@ private void checkStatus(){
                         }
 
                     }
+                    }
+                    JDialogSecuriter.setLocationRelativeTo(null);
+                    JDialogSecuriter.setVisible(true);
+                    
+                    
+                    tutorial=true;
                     break;
                 case 3:
                     /***** FIN DU TUTO *******/
@@ -7202,13 +7315,20 @@ private void checkStatus(){
                     jLabelMachineHomePosition.setVisible(true);
                     jLabelLastStatusUpdate.setVisible(true);
                     jLabel17.setVisible(true);
+                    level=3;
+                    UpdateLevel();
+                    tutorial=true;
+                    
                     break;
                 default:
+                    tutorial=true;
                     break;
             }
             
 
         }
+        
+        
     }//GEN-LAST:event_formWindowOpened
 
     private void jButtonSoftReset3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSoftReset3ActionPerformed
@@ -7486,8 +7606,123 @@ private void checkStatus(){
         jDialogAskTuto.setVisible(false);
     }//GEN-LAST:event_jButton16ActionPerformed
 
+    private void jButtonCancel6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCancel6ActionPerformed
+        // TODO add your handling code here:
+        jDialogMachineAxis.dispose();
+        tutorial=true;
+    }//GEN-LAST:event_jButtonCancel6ActionPerformed
+
+    private void jButtonOk6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonOk6ActionPerformed
+        // TODO add your handling code here:
+        jDialogMachineAxis.dispose();
+    }//GEN-LAST:event_jButtonOk6ActionPerformed
+
+    private void jRadioButtonInches2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonInches2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButtonInches2ActionPerformed
+
+    private void jRadioButtonMillimeters2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonMillimeters2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButtonMillimeters2ActionPerformed
+
+    private void jButtonYMinus2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonYMinus2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonYMinus2ActionPerformed
+
+    private void jButtonXMinus2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonXMinus2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonXMinus2ActionPerformed
+
+    private void jButtonYPlus2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonYPlus2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonYPlus2ActionPerformed
+
+    private void jButtonXPlus2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonXPlus2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonXPlus2ActionPerformed
+
+    private void jButtonZPlus2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonZPlus2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonZPlus2ActionPerformed
+
+    private void jButtonZMinus2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonZMinus2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonZMinus2ActionPerformed
+
+    private void jCheckBoxEnableKeyboardJogging2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBoxEnableKeyboardJogging2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBoxEnableKeyboardJogging2ActionPerformed
+
+    private void jLabelRemoveFocus2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelRemoveFocus2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabelRemoveFocus2MouseClicked
+
+    private void jButtonReturnToZero2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonReturnToZero2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonReturnToZero2ActionPerformed
+
+    private void jSliderStepSize2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSliderStepSize2StateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jSliderStepSize2StateChanged
+
+    private void jPanelMachineControl2MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanelMachineControl2MouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelMachineControl2MouseMoved
+
+    private void jButtonBrowse2MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonBrowse2MouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonBrowse2MouseMoved
+
+    private void jButtonBrowse2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBrowse2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonBrowse2ActionPerformed
+
+    private void jButtonVisualise2MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonVisualise2MouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonVisualise2MouseMoved
+
+    private void jButtonVisualise2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonVisualise2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonVisualise2ActionPerformed
+
+    private void jTableGCodeLog2MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTableGCodeLog2MouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTableGCodeLog2MouseMoved
+
+    private void jTableGCodeLog2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTableGCodeLog2MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTableGCodeLog2MouseEntered
+
+    private void jButtonOk7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonOk7ActionPerformed
+        // TODO add your handling code here:
+        JDialogSecuriter.dispose();
+    }//GEN-LAST:event_jButtonOk7ActionPerformed
+
+    private void jButtonCancel7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCancel7ActionPerformed
+        // TODO add your handling code here:
+        JDialogSecuriter.dispose();
+        
+    }//GEN-LAST:event_jButtonCancel7ActionPerformed
+
+    private void jTableGCodeLog3MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTableGCodeLog3MouseMoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTableGCodeLog3MouseMoved
+
+    private void jTableGCodeLog3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTableGCodeLog3MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTableGCodeLog3MouseEntered
+
+    private void jButtonOk8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonOk8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonOk8ActionPerformed
+
+    private void jButtonCancel8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCancel8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonCancel8ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JDialog JDialogLimitations;
     private javax.swing.JDialog JDialogSecuriter;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
@@ -7510,12 +7745,16 @@ private void checkStatus(){
     private javax.swing.JButton jButton9;
     private javax.swing.JButton jButtonBrowse;
     private javax.swing.JButton jButtonBrowse1;
+    private javax.swing.JButton jButtonBrowse2;
     private javax.swing.JButton jButtonCancel;
     private javax.swing.JButton jButtonCancel1;
     private javax.swing.JButton jButtonCancel2;
     private javax.swing.JButton jButtonCancel3;
     private javax.swing.JButton jButtonCancel4;
     private javax.swing.JButton jButtonCancel5;
+    private javax.swing.JButton jButtonCancel6;
+    private javax.swing.JButton jButtonCancel7;
+    private javax.swing.JButton jButtonCancel8;
     private javax.swing.JButton jButtonClearConsole;
     private javax.swing.JButton jButtonClearConsole1;
     private javax.swing.JButton jButtonClearLog;
@@ -7550,32 +7789,44 @@ private void checkStatus(){
     private javax.swing.JButton jButtonOk3;
     private javax.swing.JButton jButtonOk4;
     private javax.swing.JButton jButtonOk5;
+    private javax.swing.JButton jButtonOk6;
+    private javax.swing.JButton jButtonOk7;
+    private javax.swing.JButton jButtonOk8;
     private javax.swing.JButton jButtonResetWorkPosition;
     private javax.swing.JButton jButtonResetWorkPosition1;
     private javax.swing.JButton jButtonReturnToZero;
     private javax.swing.JButton jButtonReturnToZero1;
+    private javax.swing.JButton jButtonReturnToZero2;
     private javax.swing.JButton jButtonSoftReset;
     private javax.swing.JButton jButtonSoftReset1;
     private javax.swing.JButton jButtonSoftReset2;
     private javax.swing.JButton jButtonSoftReset3;
     private javax.swing.JButton jButtonVisualise;
     private javax.swing.JButton jButtonVisualise1;
+    private javax.swing.JButton jButtonVisualise2;
     private javax.swing.JButton jButtonXMinus;
     private javax.swing.JButton jButtonXMinus1;
+    private javax.swing.JButton jButtonXMinus2;
     private javax.swing.JButton jButtonXPlus;
     private javax.swing.JButton jButtonXPlus1;
+    private javax.swing.JButton jButtonXPlus2;
     private javax.swing.JButton jButtonYMinus;
     private javax.swing.JButton jButtonYMinus1;
+    private javax.swing.JButton jButtonYMinus2;
     private javax.swing.JButton jButtonYPlus;
     private javax.swing.JButton jButtonYPlus1;
+    private javax.swing.JButton jButtonYPlus2;
     private javax.swing.JButton jButtonZMinus;
     private javax.swing.JButton jButtonZMinus1;
+    private javax.swing.JButton jButtonZMinus2;
     private javax.swing.JButton jButtonZPlus;
     private javax.swing.JButton jButtonZPlus1;
+    private javax.swing.JButton jButtonZPlus2;
     private javax.swing.JCheckBox jCheckBoxEnableGCodeLog;
     private javax.swing.JCheckBox jCheckBoxEnableGCodeLog1;
     private javax.swing.JCheckBox jCheckBoxEnableKeyboardJogging;
     private javax.swing.JCheckBox jCheckBoxEnableKeyboardJogging1;
+    private javax.swing.JCheckBox jCheckBoxEnableKeyboardJogging2;
     private javax.swing.JCheckBox jCheckBoxShowVerboseOutput;
     private javax.swing.JCheckBox jCheckBoxShowVerboseOutput1;
     private javax.swing.JComboBox<String> jComboBox1;
@@ -7587,6 +7838,7 @@ private void checkStatus(){
     private javax.swing.JDialog jDialogGSender;
     private javax.swing.JDialog jDialogImportGCode;
     private javax.swing.JDialog jDialogLevel;
+    private javax.swing.JDialog jDialogMachineAxis;
     private javax.swing.JDialog jDialogMiseEnPlace;
     private javax.swing.JDialog jDialogTab1;
     private javax.swing.JDialog jDialogTab2;
@@ -7641,9 +7893,16 @@ private void checkStatus(){
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
     private javax.swing.JLabel jLabel55;
     private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel65;
     private javax.swing.JLabel jLabel66;
     private javax.swing.JLabel jLabel67;
     private javax.swing.JLabel jLabel7;
@@ -7679,6 +7938,7 @@ private void checkStatus(){
     private javax.swing.JLabel jLabelRemainingRows2;
     private javax.swing.JLabel jLabelRemoveFocus;
     private javax.swing.JLabel jLabelRemoveFocus1;
+    private javax.swing.JLabel jLabelRemoveFocus2;
     private javax.swing.JLabel jLabelRowsInFile;
     private javax.swing.JLabel jLabelRowsInFile1;
     private javax.swing.JLabel jLabelRowsInFile10;
@@ -7748,6 +8008,7 @@ private void checkStatus(){
     private javax.swing.JPanel jPanel16;
     private javax.swing.JPanel jPanel17;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel20;
     private javax.swing.JPanel jPanel22;
     private javax.swing.JPanel jPanel23;
     private javax.swing.JPanel jPanel24;
@@ -7772,16 +8033,20 @@ private void checkStatus(){
     private javax.swing.JPanel jPanelGCodeFile2;
     private javax.swing.JPanel jPanelJogButtons;
     private javax.swing.JPanel jPanelJogButtons1;
+    private javax.swing.JPanel jPanelJogButtons2;
     private javax.swing.JPanel jPanelMachineControl;
     private javax.swing.JPanel jPanelMachineControl1;
+    private javax.swing.JPanel jPanelMachineControl2;
     private javax.swing.JPanel jPanelMacros;
     private javax.swing.JProgressBar jProgressBarGCodeProgress;
     private javax.swing.JProgressBar jProgressBarGCodeProgress1;
     private javax.swing.JProgressBar jProgressBarGCodeProgress2;
     private javax.swing.JRadioButton jRadioButtonInches;
     private javax.swing.JRadioButton jRadioButtonInches1;
+    private javax.swing.JRadioButton jRadioButtonInches2;
     private javax.swing.JRadioButton jRadioButtonMillimeters;
     private javax.swing.JRadioButton jRadioButtonMillimeters1;
+    private javax.swing.JRadioButton jRadioButtonMillimeters2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
@@ -7797,7 +8062,10 @@ private void checkStatus(){
     private javax.swing.JSeparator jSeparator16;
     private javax.swing.JSeparator jSeparator17;
     private javax.swing.JSeparator jSeparator18;
+    private javax.swing.JPopupMenu.Separator jSeparator19;
     private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JSeparator jSeparator20;
+    private javax.swing.JSeparator jSeparator21;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
@@ -7807,12 +8075,16 @@ private void checkStatus(){
     private javax.swing.JSeparator jSeparator9;
     private javax.swing.JSlider jSliderStepSize;
     private javax.swing.JSlider jSliderStepSize1;
+    private javax.swing.JSlider jSliderStepSize2;
     private javax.swing.JSpinner jSpinnerStep;
     private javax.swing.JSpinner jSpinnerStep1;
+    private javax.swing.JSpinner jSpinnerStep2;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTableGCodeLog;
     private javax.swing.JTable jTableGCodeLog1;
+    private javax.swing.JTable jTableGCodeLog2;
+    private javax.swing.JTable jTableGCodeLog3;
     private javax.swing.JTextArea jTextAreaConsole;
     private javax.swing.JTextArea jTextAreaConsole1;
     private javax.swing.JTextField jTextFieldCommand;
