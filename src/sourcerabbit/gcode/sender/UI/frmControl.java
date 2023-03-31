@@ -25,7 +25,7 @@ import java.awt.Color;
 import java.awt.Component;
 import java.awt.KeyEventDispatcher;
 import java.awt.KeyboardFocusManager;
-
+import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyAdapter;
@@ -76,6 +76,9 @@ import sourcerabbit.gcode.sender.UI.Tools.frmHoleCenterFinder;
 import sourcerabbit.gcode.sender.UI.Tools.frmSetWorkPosition;
 import sourcerabbit.gcode.sender.UI.Tools.frmZAxisTouchProbe;
 import sourcerabbit.gcode.sender.UI.UITools.UITools;
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
+
 
 
 /**
@@ -793,6 +796,10 @@ public class frmControl extends javax.swing.JFrame
         jLevelCombo = new javax.swing.JComboBox<>();
         jLabel48 = new javax.swing.JLabel();
         jConfirmerBoutton = new javax.swing.JButton();
+        jDialog3 = new javax.swing.JDialog();
+        jPanel30 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jButton26 = new javax.swing.JButton();
         jDialog1 = new javax.swing.JDialog();
         jPanelConnection1 = new javax.swing.JPanel();
         jLabelMachineX2 = new javax.swing.JLabel();
@@ -935,7 +942,7 @@ public class frmControl extends javax.swing.JFrame
         jDialogZeroAxes = new javax.swing.JDialog();
         jPanel24 = new javax.swing.JPanel();
         jPanel25 = new javax.swing.JPanel();
-        jPanel30 = new javax.swing.JPanel();
+        jPanel31 = new javax.swing.JPanel();
         jPanelMachineControl1 = new javax.swing.JPanel();
         jRadioButtonInches1 = new javax.swing.JRadioButton();
         jRadioButtonMillimeters1 = new javax.swing.JRadioButton();
@@ -959,7 +966,7 @@ public class frmControl extends javax.swing.JFrame
         jLabelActiveState2 = new javax.swing.JLabel();
         jButtonConnectDisconnect3 = new javax.swing.JButton();
         jPanelConnection4 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        jLabel49 = new javax.swing.JLabel();
         jLabel39 = new javax.swing.JLabel();
         jButton14 = new javax.swing.JButton();
         jButton24 = new javax.swing.JButton();
@@ -1225,8 +1232,67 @@ public class frmControl extends javax.swing.JFrame
                 .addGap(16, 16, 16))
         );
 
-        jDialog1.setMaximumSize(new java.awt.Dimension(612, 552));
+
+      jDialog1.setMaximumSize(new java.awt.Dimension(612, 552));
         jDialog1.setMinimumSize(new java.awt.Dimension(612, 552));
+
+        jDialog3.setTitle("BIENVENUE");
+        jDialog3.setMinimumSize(new java.awt.Dimension(500, 150));
+        jDialog3.setModalExclusionType(java.awt.Dialog.ModalExclusionType.APPLICATION_EXCLUDE);
+        jDialog3.setModalityType(java.awt.Dialog.ModalityType.APPLICATION_MODAL);
+
+        jPanel30.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "BIENVENUE", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(51, 51, 255))); // NOI18N
+
+        jLabel1.setText("<html>Aides disponibles en haut de l'écran au niveau de l'onglet \"Tutoriel\"<html>");
+
+        javax.swing.GroupLayout jPanel30Layout = new javax.swing.GroupLayout(jPanel30);
+        jPanel30.setLayout(jPanel30Layout);
+        jPanel30Layout.setHorizontalGroup(
+            jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel30Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 397, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel30Layout.setVerticalGroup(
+            jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel30Layout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addComponent(jLabel1)
+                .addContainerGap())
+        );
+
+        jButton26.setText("Ok");
+        jButton26.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton26ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jDialog3Layout = new javax.swing.GroupLayout(jDialog3.getContentPane());
+        jDialog3.getContentPane().setLayout(jDialog3Layout);
+        jDialog3Layout.setHorizontalGroup(
+            jDialog3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialog3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jDialog3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel30, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialog3Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jButton26)))
+                .addContainerGap())
+        );
+        jDialog3Layout.setVerticalGroup(
+            jDialog3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialog3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel30, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton26)
+                .addContainerGap())
+        );
+
+
         jDialog1.setModal(true);
         jDialog1.setModalExclusionType(java.awt.Dialog.ModalExclusionType.APPLICATION_EXCLUDE);
         jDialog1.setPreferredSize(new java.awt.Dimension(612, 512));
@@ -2783,28 +2849,28 @@ public class frmControl extends javax.swing.JFrame
         jPanelConnection4.setVerifyInputWhenFocusTarget(false);
         jPanelConnection4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setText("jLabel1");
-        jPanelConnection4.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 240, 120));
+        jLabel49.setText("jLabel1");
+        jPanelConnection4.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 240, 120));
 
-        javax.swing.GroupLayout jPanel30Layout = new javax.swing.GroupLayout(jPanel30);
-        jPanel30.setLayout(jPanel30Layout);
-        jPanel30Layout.setHorizontalGroup(
-            jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel30Layout.createSequentialGroup()
+        javax.swing.GroupLayout jPanel31Layout = new javax.swing.GroupLayout(jPanel31);
+        jPanel31.setLayout(jPanel31Layout);
+        jPanel31Layout.setHorizontalGroup(
+            jPanel31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel31Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanelMachineControl1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(jPanel31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanelConnection2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanelConnection4, javax.swing.GroupLayout.DEFAULT_SIZE, 264, Short.MAX_VALUE))
                 .addContainerGap())
         );
-        jPanel30Layout.setVerticalGroup(
-            jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel30Layout.createSequentialGroup()
+        jPanel31Layout.setVerticalGroup(
+            jPanel31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel31Layout.createSequentialGroup()
                 .addContainerGap(31, Short.MAX_VALUE)
-                .addGroup(jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel30Layout.createSequentialGroup()
+                .addGroup(jPanel31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel31Layout.createSequentialGroup()
                         .addComponent(jPanelConnection2, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jPanelConnection4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -2821,14 +2887,14 @@ public class frmControl extends javax.swing.JFrame
                 .addContainerGap())
             .addGroup(jPanel24Layout.createSequentialGroup()
                 .addGap(102, 102, 102)
-                .addComponent(jPanel30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel24Layout.setVerticalGroup(
             jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel24Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -3111,6 +3177,7 @@ public class frmControl extends javax.swing.JFrame
                 .addGap(37, 37, 37))
         );
 
+
         jDialogAskTuto.setMaximumSize(new java.awt.Dimension(537, 480));
         jDialogAskTuto.setMinimumSize(new java.awt.Dimension(537, 480));
         jDialogAskTuto.setPreferredSize(new java.awt.Dimension(537, 480));
@@ -3124,6 +3191,26 @@ public class frmControl extends javax.swing.JFrame
         jButton15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton15ActionPerformed(evt);
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("SourceRabbit GCODE Sender");
+        setSize(new java.awt.Dimension(1000, 728));
+        addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                formMouseDragged(evt);
+            }
+        });
+        addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentResized(java.awt.event.ComponentEvent evt) {
+                formComponentResized(evt);
+            }
+        });
+        addWindowFocusListener(new java.awt.event.WindowFocusListener() {
+            public void windowGainedFocus(java.awt.event.WindowEvent evt) {
+                formWindowGainedFocus(evt);
+            }
+            public void windowLostFocus(java.awt.event.WindowEvent evt) {
+
             }
         });
 
@@ -3363,6 +3450,7 @@ public class frmControl extends javax.swing.JFrame
             }
         });
 
+
         jButtonZPlus2.setForeground(new java.awt.Color(255, 255, 255));
         jButtonZPlus2.setText("Z+");
         jButtonZPlus2.addActionListener(new java.awt.event.ActionListener() {
@@ -3370,6 +3458,55 @@ public class frmControl extends javax.swing.JFrame
                 jButtonZPlus2ActionPerformed(evt);
             }
         });
+        javax.swing.GroupLayout jPanelGCodeFileLayout = new javax.swing.GroupLayout(jPanelGCodeFile);
+        jPanelGCodeFile.setLayout(jPanelGCodeFileLayout);
+        jPanelGCodeFileLayout.setHorizontalGroup(
+            jPanelGCodeFileLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelGCodeFileLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanelGCodeFileLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelGCodeFileLayout.createSequentialGroup()
+                        .addComponent(jButtonGCodeSend, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButtonGCodePause, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButtonGCodeCancel, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanelGCodeFileLayout.createSequentialGroup()
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextFieldGCodeFile)))
+                .addGap(18, 18, 18)
+                .addGroup(jPanelGCodeFileLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelGCodeFileLayout.createSequentialGroup()
+                        .addComponent(jButtonVisualise)
+                        .addGap(489, 489, 489)
+                        .addComponent(jButtonGCodeVisualize)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButtonGCodeBrowse, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanelGCodeFileLayout.createSequentialGroup()
+                        .addComponent(jButtonBrowse)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        jPanelGCodeFileLayout.setVerticalGroup(
+            jPanelGCodeFileLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelGCodeFileLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanelGCodeFileLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(jTextFieldGCodeFile, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonBrowse))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanelGCodeFileLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButtonGCodePause)
+                    .addComponent(jButtonGCodeSend)
+                    .addComponent(jButtonGCodeCancel)
+                    .addComponent(jButtonGCodeVisualize)
+                    .addComponent(jButtonGCodeBrowse)
+                    .addComponent(jButtonVisualise))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
 
         jButtonZMinus2.setForeground(new java.awt.Color(255, 255, 255));
         jButtonZMinus2.setText("Z-");
@@ -6051,7 +6188,7 @@ public class frmControl extends javax.swing.JFrame
 //--------------------------Partie NONO--------------------------------
     private void jConfirmerBouttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jConfirmerBouttonActionPerformed
 
-        jDialogLevel.dispose();
+
         checkStatus();
     }//GEN-LAST:event_jConfirmerBouttonActionPerformed
 
@@ -6089,11 +6226,6 @@ public class frmControl extends javax.swing.JFrame
 
 
 private void checkStatus(){
-
-    
-    indexonglets = jTabbedPane1.getSelectedIndex();
-    
-    
     //debutant
     if(level == 1){
         jMenuSetWorkPos.setEnabled(false);
@@ -6173,9 +6305,14 @@ private void checkStatus(){
         jLabelRemoveFocus.setEnabled(true);
         jLabel4.setEnabled(true);
         jTabbedPane1.setEnabledAt(2,true);
+        jDialogLevel.dispose();
+        jDialog3.setLocationRelativeTo(null);
+        jDialog3.setVisible(true);
     
     }
 }
+    
+
     
 
     private void jButtonBrowseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBrowseActionPerformed
@@ -6611,8 +6748,8 @@ private void checkStatus(){
         if(jMenu6.getText()=="Level"){
         // Choix du level
         jDialogLevel.pack();
-        jDialogLevel.setLocationRelativeTo(null); 
         jDialogLevel.setVisible(true);
+
         verified_level = jLevelCombo.getSelectedIndex() + 1;
         UpdateLevel();
         jButton7.requestFocus();
@@ -6622,6 +6759,8 @@ private void checkStatus(){
         jButtonOk3.requestFocus();  
         jButtonOk4.requestFocus();  
    
+
+        verified_level = jLevelCombo.getSelectedIndex() + 1 ;
         }
         else{
             if(null!=jMenu6.getText())switch (jMenu6.getText()) {
@@ -6638,6 +6777,10 @@ private void checkStatus(){
                     break;
             }
         }
+
+
+               
+
             switch (verified_level) {
                 case 1:
                     // Vider tous les Panels sauf CONNECTION
@@ -7344,7 +7487,10 @@ private void checkStatus(){
         {
         }
     }//GEN-LAST:event_jButtonSoftReset3ActionPerformed
-
+    private void jLabelActiveState2PropertyChange(java.beans.PropertyChangeEvent evt){
+        
+        
+    }
     private void jButtonKillAlarm4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonKillAlarm4ActionPerformed
         try
         {
@@ -7381,10 +7527,14 @@ private void checkStatus(){
         
     }//GEN-LAST:event_jLabelActiveStatePropertyChange
 
-    private void jLabelActiveState2PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jLabelActiveState2PropertyChange
-        // TODO add your handling code here:
-       
-    }//GEN-LAST:event_jLabelActiveState2PropertyChange
+    private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
+        jDialog3.dispose();
+        jDialogLevel.dispose();
+        jDialogLevel.dispose();
+    }//GEN-LAST:event_jButton26ActionPerformed
+
+    private void formComponentResized(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentResized
+
 
     private void jCheckBoxEnableGCodeLog1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBoxEnableGCodeLog1ActionPerformed
         // TODO add your handling code here:
@@ -7721,6 +7871,7 @@ private void checkStatus(){
     }//GEN-LAST:event_jButtonCancel8ActionPerformed
 
 
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JDialog JDialogLimitations;
     private javax.swing.JDialog JDialogSecuriter;
@@ -7735,6 +7886,7 @@ private void checkStatus(){
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton24;
     private javax.swing.JButton jButton25;
+    private javax.swing.JButton jButton26;
     private javax.swing.JButton jButton27;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
@@ -7834,7 +7986,11 @@ private void checkStatus(){
     private javax.swing.JButton jConfirmerBoutton;
     private javax.swing.JDialog jDialog1;
     private javax.swing.JDialog jDialog2;
+
     private javax.swing.JDialog jDialogAskTuto;
+
+    private javax.swing.JDialog jDialog3;
+
     private javax.swing.JDialog jDialogGSender;
     private javax.swing.JDialog jDialogImportGCode;
     private javax.swing.JDialog jDialogLevel;
@@ -8018,6 +8174,7 @@ private void checkStatus(){
     private javax.swing.JPanel jPanel29;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel30;
+    private javax.swing.JPanel jPanel31;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
