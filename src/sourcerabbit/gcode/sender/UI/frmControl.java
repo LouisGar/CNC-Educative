@@ -1030,12 +1030,32 @@ public class frmControl extends javax.swing.JFrame
         jButtonReturnToZero2 = new javax.swing.JButton();
         jSliderStepSize2 = new javax.swing.JSlider();
         jPanel20 = new javax.swing.JPanel();
-        JDialogLimitations = new javax.swing.JDialog();
+        JDialogSecuriter2 = new javax.swing.JDialog();
         jLabel59 = new javax.swing.JLabel();
         jTableGCodeLog3 = new javax.swing.JTable();
         jButtonOk8 = new javax.swing.JButton();
         jButtonCancel8 = new javax.swing.JButton();
         jLabel60 = new javax.swing.JLabel();
+        jDialogSecurité = new javax.swing.JDialog();
+        jButton17 = new javax.swing.JButton();
+        jLabel61 = new javax.swing.JLabel();
+        jLabel62 = new javax.swing.JLabel();
+        jLabel63 = new javax.swing.JLabel();
+        jLabel64 = new javax.swing.JLabel();
+        jSeparator22 = new javax.swing.JSeparator();
+        jLabel68 = new javax.swing.JLabel();
+        jLabel69 = new javax.swing.JLabel();
+        jLabel70 = new javax.swing.JLabel();
+        jLabel76 = new javax.swing.JLabel();
+        jDialogLimitations = new javax.swing.JDialog();
+        jLabel71 = new javax.swing.JLabel();
+        jButton18 = new javax.swing.JButton();
+        jSeparator23 = new javax.swing.JSeparator();
+        jLabel72 = new javax.swing.JLabel();
+        jLabel73 = new javax.swing.JLabel();
+        jLabel74 = new javax.swing.JLabel();
+        jLabel75 = new javax.swing.JLabel();
+        jLabel79 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabelRowsInFile = new javax.swing.JLabel();
         jLabelRowsInFile1 = new javax.swing.JLabel();
@@ -1872,7 +1892,7 @@ public class frmControl extends javax.swing.JFrame
                             .addComponent(jButtonGCodeCancel1)
                             .addComponent(jButtonGCodeVisualize1)
                             .addComponent(jButtonGCodeBrowse1))))
-                .addContainerGap(14, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel9.add(jPanelGCodeFile1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 530, 70));
@@ -3229,7 +3249,6 @@ public class frmControl extends javax.swing.JFrame
                 .addContainerGap(22, Short.MAX_VALUE))
         );
 
-        JDialogSecuriter.setMaximumSize(new java.awt.Dimension(620, 620));
         JDialogSecuriter.setMinimumSize(new java.awt.Dimension(620, 620));
 
         jLabel54.setText("<html> <h2 center> Les dangers de la CNC </h2>  <br><br> La CNC est un outil puissant mais potentiellement dangereux. Des vitesses d'avance trop rapides ou des RPM trop faibles peuvent entraîner des accidents graves.   <br><br>Il est important de suivre les procédures de sécurité et de respecter les limites de vitesse et de puissance recommandées.   <br><br> Il est recommandé de porter des équipements de protection tels que des lunettes de protection, et des habits épais ( pas de short ) pour réduire les risques d'accidents.");
@@ -3594,7 +3613,7 @@ public class frmControl extends javax.swing.JFrame
                     .addComponent(jSeparator21)
                     .addGroup(jDialogMachineAxisLayout.createSequentialGroup()
                         .addGap(15, 15, 15)
-                        .addComponent(jLabel53, javax.swing.GroupLayout.DEFAULT_SIZE, 585, Short.MAX_VALUE)))
+                        .addComponent(jLabel53)))
                 .addContainerGap())
             .addGroup(jDialogMachineAxisLayout.createSequentialGroup()
                 .addGroup(jDialogMachineAxisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3628,11 +3647,11 @@ public class frmControl extends javax.swing.JFrame
                 .addContainerGap(17, Short.MAX_VALUE))
         );
 
-        JDialogLimitations.setMaximumSize(new java.awt.Dimension(620, 620));
-        JDialogLimitations.setMinimumSize(new java.awt.Dimension(620, 620));
-        JDialogLimitations.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+        JDialogSecuriter2.setMaximumSize(new java.awt.Dimension(620, 620));
+        JDialogSecuriter2.setMinimumSize(new java.awt.Dimension(620, 620));
+        JDialogSecuriter2.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
-                JDialogLimitationsMouseDragged(evt);
+                JDialogSecuriter2MouseDragged(evt);
             }
         });
 
@@ -3686,29 +3705,29 @@ public class frmControl extends javax.swing.JFrame
             }
         });
 
-        jLabel60.setText("<html> <h1 center> Attention </h1> il est important de noter que ces vitesses peuvent varier en fonction de nombreux facteurs, tels que la géométrie de l'outil de coupe, la profondeur de coupe, la qualité de la surface désirée, etc. Par conséquent, il est recommandé de consulter les spécifications du fabricant de la machine-outil et/ou de l'outil de coupe pour des informations plus précises.</html>");
+        jLabel60.setText("<html> <h1 center> Attention </h1> Il est important de noter que ces vitesses peuvent varier en fonction de nombreux facteurs, tels que la géométrie de l'outil de coupe, la profondeur de coupe, la qualité de la surface désirée, etc. Par conséquent, il est recommandé de consulter les spécifications du fabricant de la machine-outil et/ou de l'outil de coupe pour des informations plus précises.</html>");
 
-        javax.swing.GroupLayout JDialogLimitationsLayout = new javax.swing.GroupLayout(JDialogLimitations.getContentPane());
-        JDialogLimitations.getContentPane().setLayout(JDialogLimitationsLayout);
-        JDialogLimitationsLayout.setHorizontalGroup(
-            JDialogLimitationsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JDialogLimitationsLayout.createSequentialGroup()
+        javax.swing.GroupLayout JDialogSecuriter2Layout = new javax.swing.GroupLayout(JDialogSecuriter2.getContentPane());
+        JDialogSecuriter2.getContentPane().setLayout(JDialogSecuriter2Layout);
+        JDialogSecuriter2Layout.setHorizontalGroup(
+            JDialogSecuriter2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JDialogSecuriter2Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(jButtonOk8, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(32, 32, 32)
                 .addComponent(jButtonCancel8, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(JDialogLimitationsLayout.createSequentialGroup()
+            .addGroup(JDialogSecuriter2Layout.createSequentialGroup()
                 .addGap(16, 16, 16)
-                .addGroup(JDialogLimitationsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(JDialogSecuriter2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel59, javax.swing.GroupLayout.PREFERRED_SIZE, 582, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTableGCodeLog3, javax.swing.GroupLayout.PREFERRED_SIZE, 591, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel60, javax.swing.GroupLayout.PREFERRED_SIZE, 585, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(22, Short.MAX_VALUE))
         );
-        JDialogLimitationsLayout.setVerticalGroup(
-            JDialogLimitationsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(JDialogLimitationsLayout.createSequentialGroup()
+        JDialogSecuriter2Layout.setVerticalGroup(
+            JDialogSecuriter2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(JDialogSecuriter2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel60, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -3716,7 +3735,7 @@ public class frmControl extends javax.swing.JFrame
                 .addGap(18, 18, 18)
                 .addComponent(jLabel59, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
-                .addGroup(JDialogLimitationsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(JDialogSecuriter2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButtonOk8)
                     .addComponent(jButtonCancel8))
                 .addGap(23, 23, 23))
@@ -3725,6 +3744,168 @@ public class frmControl extends javax.swing.JFrame
         if (jTableGCodeLog3.getColumnModel().getColumnCount() > 0) {
             jTableGCodeLog3.getColumnModel().getColumn(0).setResizable(false);
         }
+
+        jButton17.setText("Terminé");
+        jButton17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton17ActionPerformed(evt);
+            }
+        });
+
+        jLabel61.setText("<html> <h1 style =\"font-size: 10px;\"> 1. Porter des équipements de protection individuelle (EPI) </h1> </html>");
+
+        jLabel62.setText("<html>\n    <h1 style=\"font-size: 10px;\"> 2. Éviter les vêtements amples</h1>\n</html>\n");
+
+        jLabel63.setText("<html>     <h1 style=\"font-size: 10px;\">3. S'assurer de la bonne fixation de la pièce à usiner </h1> </html>    ");
+
+        jLabel64.setText("<html>\n    <h1 style=\"font-size: 10px;\">4. Ne pas retirer les copeaux avec les mains</h1>\n</html>");
+
+        jLabel68.setText("<html>\n    <h1 style=\"font-size: 10px;\">5. Respecter les limites de la machine</h1>\n</html>");
+
+        jLabel69.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel69.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel69.setText("SECURITES D'UTILISATION :");
+
+        jLabel70.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sourcerabbit/gcode/sender/UI/Images/pano(1).png"))); // NOI18N
+
+        jLabel76.setText("<html>\n    <h1 style=\"font-size: 10px;\">6. Faire attention à la maintenance </h1>\n</html>\n");
+
+        javax.swing.GroupLayout jDialogSecuritéLayout = new javax.swing.GroupLayout(jDialogSecurité.getContentPane());
+        jDialogSecurité.getContentPane().setLayout(jDialogSecuritéLayout);
+        jDialogSecuritéLayout.setHorizontalGroup(
+            jDialogSecuritéLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialogSecuritéLayout.createSequentialGroup()
+                .addGroup(jDialogSecuritéLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jDialogSecuritéLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jSeparator22, javax.swing.GroupLayout.PREFERRED_SIZE, 445, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jDialogSecuritéLayout.createSequentialGroup()
+                        .addGap(24, 24, 24)
+                        .addComponent(jLabel69, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(121, Short.MAX_VALUE))
+            .addGroup(jDialogSecuritéLayout.createSequentialGroup()
+                .addGroup(jDialogSecuritéLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jDialogSecuritéLayout.createSequentialGroup()
+                        .addGap(27, 27, 27)
+                        .addGroup(jDialogSecuritéLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel61, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel62, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel63, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jDialogSecuritéLayout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton17)
+                        .addGap(59, 59, 59)))
+                .addGroup(jDialogSecuritéLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialogSecuritéLayout.createSequentialGroup()
+                        .addComponent(jLabel70)
+                        .addGap(45, 45, 45))
+                    .addGroup(jDialogSecuritéLayout.createSequentialGroup()
+                        .addGroup(jDialogSecuritéLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel64, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel68, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialogSecuritéLayout.createSequentialGroup()
+                        .addComponent(jLabel76, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+        );
+        jDialogSecuritéLayout.setVerticalGroup(
+            jDialogSecuritéLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialogSecuritéLayout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(jLabel69)
+                .addGap(18, 18, 18)
+                .addComponent(jSeparator22, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jDialogSecuritéLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel64, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel61, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jDialogSecuritéLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel68, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel62, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jDialogSecuritéLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jDialogSecuritéLayout.createSequentialGroup()
+                        .addGap(12, 12, 12)
+                        .addComponent(jLabel63, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton17)
+                        .addGap(26, 26, 26))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialogSecuritéLayout.createSequentialGroup()
+                        .addGap(13, 13, 13)
+                        .addComponent(jLabel76, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
+                        .addComponent(jLabel70, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE))))
+        );
+
+        jLabel71.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel71.setForeground(new java.awt.Color(255, 51, 51));
+        jLabel71.setText("LES LIMITATIONS :");
+
+        jButton18.setText("Terminer");
+        jButton18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton18ActionPerformed(evt);
+            }
+        });
+
+        jLabel72.setText("<html>\n    <h1 style=\"font-size: 10px;\">1. Fraiseuse 3 axes => Pas de rotations</h1>\n</html>\n");
+
+        jLabel73.setText("<html>\n    <h1 style=\"font-size: 10px;\">2. Fraiseuse 4 axes => 1 rotation possible</h1>\n</html>\n");
+
+        jLabel74.setText("<html>\n    <h1 style=\"font-size: 10px;\">3. Fraiseuse 5 axes => 2 rotations possibles</h1>\n</html>\n");
+
+        jLabel75.setText("<html>\n    <h1 style=\"font-size: 10px;\">4. Vérifier la zone de travail possible</h1>\n</html>\n");
+
+        jLabel79.setText("<html>     <h1 style=\"font-size: 10px;\">5. Vérifier les materiaux avant utilisation</h1> </html> ");
+
+        javax.swing.GroupLayout jDialogLimitationsLayout = new javax.swing.GroupLayout(jDialogLimitations.getContentPane());
+        jDialogLimitations.getContentPane().setLayout(jDialogLimitationsLayout);
+        jDialogLimitationsLayout.setHorizontalGroup(
+            jDialogLimitationsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialogLimitationsLayout.createSequentialGroup()
+                .addGroup(jDialogLimitationsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jSeparator23, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jDialogLimitationsLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jDialogLimitationsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jDialogLimitationsLayout.createSequentialGroup()
+                                .addGroup(jDialogLimitationsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel71, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel73, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel72, javax.swing.GroupLayout.PREFERRED_SIZE, 247, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel74, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton18))
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addGroup(jDialogLimitationsLayout.createSequentialGroup()
+                                .addComponent(jLabel79, javax.swing.GroupLayout.DEFAULT_SIZE, 259, Short.MAX_VALUE)
+                                .addGap(169, 169, 169)))))
+                .addContainerGap())
+            .addGroup(jDialogLimitationsLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel75, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jDialogLimitationsLayout.setVerticalGroup(
+            jDialogLimitationsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialogLimitationsLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel71, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jSeparator23, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel72, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel73, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel74, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel75, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel79, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
+                .addComponent(jButton18)
+                .addGap(29, 29, 29))
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("SourceRabbit GCODE Sender");
@@ -4012,7 +4193,7 @@ public class frmControl extends javax.swing.JFrame
                     .addComponent(jLabel7)
                     .addComponent(jTextFieldCommand, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 377, Short.MAX_VALUE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 408, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButtonClearConsole)
@@ -4139,7 +4320,7 @@ public class frmControl extends javax.swing.JFrame
                 .addComponent(jLabel9)
                 .addGap(3, 3, 3)
                 .addComponent(jLabel10)
-                .addContainerGap(444, Short.MAX_VALUE))
+                .addContainerGap(474, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Macros", jPanelMacros);
@@ -4184,7 +4365,7 @@ public class frmControl extends javax.swing.JFrame
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel17)
                     .addComponent(jLabelMachineHomePosition))
-                .addContainerGap(438, Short.MAX_VALUE))
+                .addContainerGap(460, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Machine Information", jPanel7);
@@ -4926,9 +5107,19 @@ public class frmControl extends javax.swing.JFrame
         jMenu5.add(jMenuItem1);
 
         jMenuItem11.setText("CNC : Les Sécuritées ");
+        jMenuItem11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem11ActionPerformed(evt);
+            }
+        });
         jMenu5.add(jMenuItem11);
 
         jMenuItem12.setText("CNC :  Les Limitations");
+        jMenuItem12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem12ActionPerformed(evt);
+            }
+        });
         jMenu5.add(jMenuItem12);
 
         jMenuBar1.add(jMenu5);
@@ -5009,7 +5200,7 @@ public class frmControl extends javax.swing.JFrame
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(8, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -7800,9 +7991,30 @@ private void checkStatus(){
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonCancel8ActionPerformed
 
-    private void JDialogLimitationsMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JDialogLimitationsMouseDragged
+    private void JDialogSecuriter2MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JDialogSecuriter2MouseDragged
         // TODO add your handling code here:
-    }//GEN-LAST:event_JDialogLimitationsMouseDragged
+    }//GEN-LAST:event_JDialogSecuriter2MouseDragged
+
+    private void jMenuItem11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem11ActionPerformed
+        jDialogSecurité.pack();
+        jDialogSecurité.setLocationRelativeTo(null);
+        jDialogSecurité.setVisible(true);
+    }//GEN-LAST:event_jMenuItem11ActionPerformed
+
+    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+        jDialogSecurité.dispose();
+    }//GEN-LAST:event_jButton17ActionPerformed
+
+    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+       
+       jDialogLimitations.dispose();
+    }//GEN-LAST:event_jButton18ActionPerformed
+
+    private void jMenuItem12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem12ActionPerformed
+        jDialogLimitations.pack();
+        jDialogLimitations.setLocationRelativeTo(null);
+        jDialogLimitations.setVisible(true);
+    }//GEN-LAST:event_jMenuItem12ActionPerformed
     private void formMouseDragged(java.awt.event.MouseEvent evt){
         
         
@@ -7810,8 +8022,8 @@ private void checkStatus(){
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JDialog JDialogLimitations;
     private javax.swing.JDialog JDialogSecuriter;
+    private javax.swing.JDialog JDialogSecuriter2;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
@@ -7820,6 +8032,8 @@ private void checkStatus(){
     private javax.swing.JButton jButton14;
     private javax.swing.JButton jButton15;
     private javax.swing.JButton jButton16;
+    private javax.swing.JButton jButton17;
+    private javax.swing.JButton jButton18;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton24;
     private javax.swing.JButton jButton25;
@@ -7928,8 +8142,10 @@ private void checkStatus(){
     private javax.swing.JDialog jDialogGSender;
     private javax.swing.JDialog jDialogImportGCode;
     private javax.swing.JDialog jDialogLevel;
+    private javax.swing.JDialog jDialogLimitations;
     private javax.swing.JDialog jDialogMachineAxis;
     private javax.swing.JDialog jDialogMiseEnPlace;
+    private javax.swing.JDialog jDialogSecurité;
     private javax.swing.JDialog jDialogTab1;
     private javax.swing.JDialog jDialogTab2;
     private javax.swing.JDialog jDialogTab3;
@@ -7993,12 +8209,26 @@ private void checkStatus(){
     private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel60;
+    private javax.swing.JLabel jLabel61;
+    private javax.swing.JLabel jLabel62;
+    private javax.swing.JLabel jLabel63;
+    private javax.swing.JLabel jLabel64;
     private javax.swing.JLabel jLabel65;
     private javax.swing.JLabel jLabel66;
     private javax.swing.JLabel jLabel67;
+    private javax.swing.JLabel jLabel68;
+    private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel70;
+    private javax.swing.JLabel jLabel71;
+    private javax.swing.JLabel jLabel72;
+    private javax.swing.JLabel jLabel73;
+    private javax.swing.JLabel jLabel74;
+    private javax.swing.JLabel jLabel75;
+    private javax.swing.JLabel jLabel76;
     private javax.swing.JLabel jLabel77;
     private javax.swing.JLabel jLabel78;
+    private javax.swing.JLabel jLabel79;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel88;
     private javax.swing.JLabel jLabel9;
@@ -8158,6 +8388,8 @@ private void checkStatus(){
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator20;
     private javax.swing.JSeparator jSeparator21;
+    private javax.swing.JSeparator jSeparator22;
+    private javax.swing.JSeparator jSeparator23;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
