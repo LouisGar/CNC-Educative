@@ -25,7 +25,7 @@ import java.awt.Color;
 import java.awt.Component;
 import java.awt.KeyEventDispatcher;
 import java.awt.KeyboardFocusManager;
-
+import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyAdapter;
@@ -76,6 +76,9 @@ import sourcerabbit.gcode.sender.UI.Tools.frmHoleCenterFinder;
 import sourcerabbit.gcode.sender.UI.Tools.frmSetWorkPosition;
 import sourcerabbit.gcode.sender.UI.Tools.frmZAxisTouchProbe;
 import sourcerabbit.gcode.sender.UI.UITools.UITools;
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
+
 
 
 /**
@@ -793,6 +796,10 @@ public class frmControl extends javax.swing.JFrame
         jLevelCombo = new javax.swing.JComboBox<>();
         jLabel48 = new javax.swing.JLabel();
         jConfirmerBoutton = new javax.swing.JButton();
+        jDialog3 = new javax.swing.JDialog();
+        jPanel30 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jButton26 = new javax.swing.JButton();
         jDialog1 = new javax.swing.JDialog();
         jPanelConnection1 = new javax.swing.JPanel();
         jLabelMachineX2 = new javax.swing.JLabel();
@@ -934,7 +941,7 @@ public class frmControl extends javax.swing.JFrame
         jDialogZeroAxes = new javax.swing.JDialog();
         jPanel24 = new javax.swing.JPanel();
         jPanel25 = new javax.swing.JPanel();
-        jPanel30 = new javax.swing.JPanel();
+        jPanel31 = new javax.swing.JPanel();
         jPanelMachineControl1 = new javax.swing.JPanel();
         jRadioButtonInches1 = new javax.swing.JRadioButton();
         jRadioButtonMillimeters1 = new javax.swing.JRadioButton();
@@ -958,7 +965,7 @@ public class frmControl extends javax.swing.JFrame
         jLabelActiveState2 = new javax.swing.JLabel();
         jButtonConnectDisconnect3 = new javax.swing.JButton();
         jPanelConnection4 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
         jLabel39 = new javax.swing.JLabel();
         jButton14 = new javax.swing.JButton();
         jButton24 = new javax.swing.JButton();
@@ -986,9 +993,9 @@ public class frmControl extends javax.swing.JFrame
         jButtonBrowse1 = new javax.swing.JButton();
         jButtonVisualise1 = new javax.swing.JButton();
         jDialogAskTuto = new javax.swing.JDialog();
-        jLabel50 = new javax.swing.JLabel();
-        jSeparator5 = new javax.swing.JSeparator();
         jLabel51 = new javax.swing.JLabel();
+        jSeparator5 = new javax.swing.JSeparator();
+        jLabel52 = new javax.swing.JLabel();
         jSeparator18 = new javax.swing.JSeparator();
         jButton15 = new javax.swing.JButton();
         jButton16 = new javax.swing.JButton();
@@ -999,8 +1006,8 @@ public class frmControl extends javax.swing.JFrame
         jButtonCancel7 = new javax.swing.JButton();
         jLabel58 = new javax.swing.JLabel();
         jDialogMachineAxis = new javax.swing.JDialog();
-        jLabel52 = new javax.swing.JLabel();
         jLabel53 = new javax.swing.JLabel();
+        jLabel57 = new javax.swing.JLabel();
         jSeparator20 = new javax.swing.JSeparator();
         jSeparator21 = new javax.swing.JSeparator();
         jButtonCancel6 = new javax.swing.JButton();
@@ -1023,11 +1030,11 @@ public class frmControl extends javax.swing.JFrame
         jSliderStepSize2 = new javax.swing.JSlider();
         jPanel20 = new javax.swing.JPanel();
         JDialogLimitations = new javax.swing.JDialog();
-        jLabel57 = new javax.swing.JLabel();
+        jLabel59 = new javax.swing.JLabel();
         jTableGCodeLog3 = new javax.swing.JTable();
         jButtonOk8 = new javax.swing.JButton();
         jButtonCancel8 = new javax.swing.JButton();
-        jLabel59 = new javax.swing.JLabel();
+        jLabel60 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabelRowsInFile = new javax.swing.JLabel();
         jLabelRowsInFile1 = new javax.swing.JLabel();
@@ -1225,11 +1232,65 @@ public class frmControl extends javax.swing.JFrame
                 .addGap(16, 16, 16))
         );
 
-        jDialog1.setMaximumSize(new java.awt.Dimension(612, 552));
+        jDialog3.setTitle("BIENVENUE");
+        jDialog3.setMinimumSize(new java.awt.Dimension(500, 150));
+        jDialog3.setModalExclusionType(java.awt.Dialog.ModalExclusionType.APPLICATION_EXCLUDE);
+        jDialog3.setModalityType(java.awt.Dialog.ModalityType.APPLICATION_MODAL);
+
+        jPanel30.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "BIENVENUE", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(51, 51, 255))); // NOI18N
+
+        jLabel1.setText("<html>Aides disponibles en haut de l'écran au niveau de l'onglet \"Tutoriel\"<html>");
+
+        javax.swing.GroupLayout jPanel30Layout = new javax.swing.GroupLayout(jPanel30);
+        jPanel30.setLayout(jPanel30Layout);
+        jPanel30Layout.setHorizontalGroup(
+            jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel30Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 397, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel30Layout.setVerticalGroup(
+            jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel30Layout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addComponent(jLabel1)
+                .addContainerGap())
+        );
+
+        jButton26.setText("Ok");
+        jButton26.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton26ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jDialog3Layout = new javax.swing.GroupLayout(jDialog3.getContentPane());
+        jDialog3.getContentPane().setLayout(jDialog3Layout);
+        jDialog3Layout.setHorizontalGroup(
+            jDialog3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialog3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jDialog3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel30, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialog3Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jButton26)))
+                .addContainerGap())
+        );
+        jDialog3Layout.setVerticalGroup(
+            jDialog3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialog3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel30, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton26)
+                .addContainerGap())
+        );
+
         jDialog1.setMinimumSize(new java.awt.Dimension(612, 552));
         jDialog1.setModal(true);
         jDialog1.setModalExclusionType(java.awt.Dialog.ModalExclusionType.APPLICATION_EXCLUDE);
-        jDialog1.setPreferredSize(new java.awt.Dimension(612, 512));
 
         jPanelConnection1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Connection", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(255, 255, 255))); // NOI18N
         jPanelConnection1.setToolTipText("Cette interface permets de vérifier l'état de la connection avec la CNC. \\n Lorsqu'une erreur intervient, la CNC se mets en état \"Arlarm\". Pour continuer ou recommencer la découpe, cliquez sur \"Kill Alarm\", puis \"Soft Reset\". \\n En cas d'erreur de connection, cliquez sur \"Disconnect\" et changez le paramètres de connection dans System --> GRBL Settings");
@@ -1376,11 +1437,9 @@ public class frmControl extends javax.swing.JFrame
                 .addGap(29, 29, 29))
         );
 
-        jDialog2.setMaximumSize(new java.awt.Dimension(612, 600));
         jDialog2.setMinimumSize(new java.awt.Dimension(612, 600));
         jDialog2.setModalExclusionType(java.awt.Dialog.ModalExclusionType.APPLICATION_EXCLUDE);
         jDialog2.setModalityType(java.awt.Dialog.ModalityType.APPLICATION_MODAL);
-        jDialog2.setPreferredSize(new java.awt.Dimension(612, 512));
 
         jLabel22.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel22.setText("<html> <h3 text-decoration=\"bold\"> Interface de Connection");
@@ -1626,11 +1685,9 @@ public class frmControl extends javax.swing.JFrame
                 .addContainerGap(29, Short.MAX_VALUE))
         );
 
-        jDialogGSender.setMaximumSize(new java.awt.Dimension(612, 515));
         jDialogGSender.setMinimumSize(new java.awt.Dimension(612, 552));
         jDialogGSender.setModal(true);
         jDialogGSender.setModalExclusionType(java.awt.Dialog.ModalExclusionType.APPLICATION_EXCLUDE);
-        jDialogGSender.setPreferredSize(new java.awt.Dimension(612, 512));
 
         jLabel25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel25.setText("<html> <h3 text-decoration=\"bold\"> Interface de sélection G Code");
@@ -1877,7 +1934,6 @@ public class frmControl extends javax.swing.JFrame
                 .addContainerGap(21, Short.MAX_VALUE))
         );
 
-        jDialogTab1.setMaximumSize(new java.awt.Dimension(612, 512));
         jDialogTab1.setMinimumSize(new java.awt.Dimension(612, 512));
         jDialogTab1.setModal(true);
         jDialogTab1.setModalExclusionType(java.awt.Dialog.ModalExclusionType.APPLICATION_EXCLUDE);
@@ -2761,27 +2817,29 @@ public class frmControl extends javax.swing.JFrame
         jPanelConnection4.setToolTipText("Cette interface permets de vérifier l'état de la connection avec la CNC. \\n Lorsqu'une erreur intervient, la CNC se mets en état \"Arlarm\". Pour continuer ou recommencer la découpe, cliquez sur \"Kill Alarm\", puis \"Soft Reset\". \\n En cas d'erreur de connection, cliquez sur \"Disconnect\" et changez le paramètres de connection dans System --> GRBL Settings");
         jPanelConnection4.setVerifyInputWhenFocusTarget(false);
         jPanelConnection4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
         jPanelConnection4.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 240, 120));
 
-        javax.swing.GroupLayout jPanel30Layout = new javax.swing.GroupLayout(jPanel30);
-        jPanel30.setLayout(jPanel30Layout);
-        jPanel30Layout.setHorizontalGroup(
-            jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel30Layout.createSequentialGroup()
+
+        javax.swing.GroupLayout jPanel31Layout = new javax.swing.GroupLayout(jPanel31);
+        jPanel31.setLayout(jPanel31Layout);
+        jPanel31Layout.setHorizontalGroup(
+            jPanel31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel31Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanelMachineControl1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(jPanel31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanelConnection2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanelConnection4, javax.swing.GroupLayout.DEFAULT_SIZE, 264, Short.MAX_VALUE))
                 .addContainerGap())
         );
-        jPanel30Layout.setVerticalGroup(
-            jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel30Layout.createSequentialGroup()
+        jPanel31Layout.setVerticalGroup(
+            jPanel31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel31Layout.createSequentialGroup()
                 .addContainerGap(31, Short.MAX_VALUE)
-                .addGroup(jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel30Layout.createSequentialGroup()
+                .addGroup(jPanel31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel31Layout.createSequentialGroup()
                         .addComponent(jPanelConnection2, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jPanelConnection4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -2798,14 +2856,14 @@ public class frmControl extends javax.swing.JFrame
                 .addContainerGap())
             .addGroup(jPanel24Layout.createSequentialGroup()
                 .addGap(102, 102, 102)
-                .addComponent(jPanel30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel24Layout.setVerticalGroup(
             jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel24Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -3090,14 +3148,12 @@ public class frmControl extends javax.swing.JFrame
                 .addGap(46, 46, 46))
         );
 
-        jDialogAskTuto.setMaximumSize(new java.awt.Dimension(537, 480));
         jDialogAskTuto.setMinimumSize(new java.awt.Dimension(537, 480));
-        jDialogAskTuto.setPreferredSize(new java.awt.Dimension(537, 480));
 
-        jLabel50.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel50.setText("<html> <h1 font-size=\"100\"> Voulez vous suivre le tutoriel du logiciel ? </h1></html>");
+        jLabel51.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel51.setText("<html> <h1 font-size=\"100\"> Voulez vous suivre le tutoriel du logiciel ? </h1></html>");
 
-        jLabel51.setText("<html> Le tutoriel du logiciel vous guide à travers tous les modules de celui-ci afin de découvrir les bases de ce logiciel.  <br><br> Cliquez sur \"Suivre le tutoriel du logiel\" pour revoir celui-ci. <br> <br> Sinon, vous suivrez un guide sur les dangers et les limitations de la CNC</html>");
+        jLabel52.setText("<html> Le tutoriel du logiciel vous guide à travers tous les modules de celui-ci afin de découvrir les bases de ce logiciel.  <br><br> Cliquez sur \"Suivre le tutoriel du logiel\" pour revoir celui-ci. <br> <br> Sinon, vous suivrez un guide sur les dangers et les limitations de la CNC</html>");
 
         jButton15.setText("<html>Suivre le tutoriel du logiciel</html>");
         jButton15.addActionListener(new java.awt.event.ActionListener() {
@@ -3124,7 +3180,7 @@ public class frmControl extends javax.swing.JFrame
                 .addGroup(jDialogAskTutoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jDialogAskTutoLayout.createSequentialGroup()
                         .addGroup(jDialogAskTutoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel50)
+                            .addComponent(jLabel52)
                             .addGroup(jDialogAskTutoLayout.createSequentialGroup()
                                 .addComponent(jLabel51, javax.swing.GroupLayout.PREFERRED_SIZE, 508, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(0, 17, Short.MAX_VALUE)))
@@ -3140,7 +3196,7 @@ public class frmControl extends javax.swing.JFrame
             jDialogAskTutoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jDialogAskTutoLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel50, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel52, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -3247,19 +3303,17 @@ public class frmControl extends javax.swing.JFrame
             jTableGCodeLog2.getColumnModel().getColumn(0).setResizable(false);
         }
 
-        jDialogMachineAxis.setMaximumSize(new java.awt.Dimension(612, 650));
         jDialogMachineAxis.setMinimumSize(new java.awt.Dimension(612, 650));
         jDialogMachineAxis.setModalExclusionType(java.awt.Dialog.ModalExclusionType.APPLICATION_EXCLUDE);
         jDialogMachineAxis.setModalityType(java.awt.Dialog.ModalityType.APPLICATION_MODAL);
-        jDialogMachineAxis.setPreferredSize(new java.awt.Dimension(612, 512));
-
-        jLabel52.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel52.setText("<html> <h3 text-decoration=\"bold\"> Interface de Connection");
-        jLabel52.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         jLabel53.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel53.setText("<html> <h4><center>Cette interface permets de controler  laposition de la CNC </center></h4>   Entrez un pas manuellement, ou sélectionnez le avec le slider. En appuyant sur un des bouttons, la CNC se déplaceras de cette quantité.  Vous avez la possibilité d'activer le jogging par clabier pour controler la CNC avec les fleches de votre clavier. Cette option n'est pas recomandée au débutants");
+        jLabel53.setText("<html> <h3 text-decoration=\"bold\"> Interface de Connection");
         jLabel53.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        jLabel57.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel57.setText("<html> <h4><center>Cette interface permets de controler  laposition de la CNC </center></h4>   Entrez un pas manuellement, ou sélectionnez le avec le slider. En appuyant sur un des bouttons, la CNC se déplaceras de cette quantité.  Vous avez la possibilité d'activer le jogging par clabier pour controler la CNC avec les fleches de votre clavier. Cette option n'est pas recomandée au débutants");
+        jLabel57.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
         jButtonCancel6.setText("Quitter");
         jButtonCancel6.addActionListener(new java.awt.event.ActionListener() {
@@ -3517,7 +3571,7 @@ public class frmControl extends javax.swing.JFrame
             .addGroup(jDialogMachineAxisLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jDialogMachineAxisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel52, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel57, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jSeparator21)
                     .addGroup(jDialogMachineAxisLayout.createSequentialGroup()
                         .addGap(15, 15, 15)
@@ -3539,7 +3593,7 @@ public class frmControl extends javax.swing.JFrame
             jDialogMachineAxisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jDialogMachineAxisLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel52, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel57, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(5, 5, 5)
                 .addComponent(jSeparator20, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -3557,8 +3611,13 @@ public class frmControl extends javax.swing.JFrame
 
         JDialogLimitations.setMaximumSize(new java.awt.Dimension(620, 620));
         JDialogLimitations.setMinimumSize(new java.awt.Dimension(620, 620));
+        JDialogLimitations.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                JDialogLimitationsMouseDragged(evt);
+            }
+        });
 
-        jLabel57.setText("<html> <h2 center> Les dangers de la CNC </h2>  <br><br> La CNC est un outil puissant mais potentiellement dangereux. Des vitesses d'avance trop rapides ou des RPM trop faibles peuvent entraîner des accidents graves.   <br><br>Il est important de suivre les procédures de sécurité et de respecter les limites de vitesse et de puissance recommandées.   <br><br> Il est recommandé de porter des équipements de protection tels que des lunettes de protection, et des habits épais ( pas de short ) pour réduire les risques d'accidents.");
+        jLabel59.setText("<html> <h2 center> Les dangers de la CNC </h2>  <br><br> La CNC est un outil puissant mais potentiellement dangereux. Des vitesses d'avance trop rapides ou des RPM trop faibles peuvent entraîner des accidents graves.   <br><br>Il est important de suivre les procédures de sécurité et de respecter les limites de vitesse et de puissance recommandées.   <br><br> Il est recommandé de porter des équipements de protection tels que des lunettes de protection, et des habits épais ( pas de short ) pour réduire les risques d'accidents.");
 
         jTableGCodeLog3.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -3608,7 +3667,7 @@ public class frmControl extends javax.swing.JFrame
             }
         });
 
-        jLabel59.setText("<html> <h1 center> Attention </h1> il est important de noter que ces vitesses peuvent varier en fonction de nombreux facteurs, tels que la géométrie de l'outil de coupe, la profondeur de coupe, la qualité de la surface désirée, etc. Par conséquent, il est recommandé de consulter les spécifications du fabricant de la machine-outil et/ou de l'outil de coupe pour des informations plus précises.</html>");
+        jLabel60.setText("<html> <h1 center> Attention </h1> il est important de noter que ces vitesses peuvent varier en fonction de nombreux facteurs, tels que la géométrie de l'outil de coupe, la profondeur de coupe, la qualité de la surface désirée, etc. Par conséquent, il est recommandé de consulter les spécifications du fabricant de la machine-outil et/ou de l'outil de coupe pour des informations plus précises.</html>");
 
         javax.swing.GroupLayout JDialogLimitationsLayout = new javax.swing.GroupLayout(JDialogLimitations.getContentPane());
         JDialogLimitations.getContentPane().setLayout(JDialogLimitationsLayout);
@@ -3625,14 +3684,14 @@ public class frmControl extends javax.swing.JFrame
                 .addGroup(JDialogLimitationsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel59, javax.swing.GroupLayout.PREFERRED_SIZE, 582, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTableGCodeLog3, javax.swing.GroupLayout.PREFERRED_SIZE, 591, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel57, javax.swing.GroupLayout.PREFERRED_SIZE, 585, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel60, javax.swing.GroupLayout.PREFERRED_SIZE, 585, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(22, Short.MAX_VALUE))
         );
         JDialogLimitationsLayout.setVerticalGroup(
             JDialogLimitationsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(JDialogLimitationsLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel57, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel60, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTableGCodeLog3, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -3651,6 +3710,16 @@ public class frmControl extends javax.swing.JFrame
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("SourceRabbit GCODE Sender");
         setSize(new java.awt.Dimension(1000, 728));
+        addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                formMouseDragged(evt);
+            }
+        });
+        addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentResized(java.awt.event.ComponentEvent evt) {
+                formComponentResized(evt);
+            }
+        });
         addWindowFocusListener(new java.awt.event.WindowFocusListener() {
             public void windowGainedFocus(java.awt.event.WindowEvent evt) {
                 formWindowGainedFocus(evt);
@@ -3847,7 +3916,7 @@ public class frmControl extends javax.swing.JFrame
                     .addComponent(jButtonGCodeVisualize)
                     .addComponent(jButtonGCodeBrowse)
                     .addComponent(jButtonVisualise))
-                .addContainerGap(14, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel1.add(jPanelGCodeFile, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 530, 70));
@@ -6030,7 +6099,7 @@ public class frmControl extends javax.swing.JFrame
 //--------------------------Partie NONO--------------------------------
     private void jConfirmerBouttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jConfirmerBouttonActionPerformed
 
-        jDialogLevel.dispose();
+
         checkStatus();
     }//GEN-LAST:event_jConfirmerBouttonActionPerformed
 
@@ -6068,11 +6137,6 @@ public class frmControl extends javax.swing.JFrame
 
 
 private void checkStatus(){
-
-    
-    indexonglets = jTabbedPane1.getSelectedIndex();
-    
-    
     //debutant
     if(level == 1){
         jMenuSetWorkPos.setEnabled(false);
@@ -6152,9 +6216,14 @@ private void checkStatus(){
         jLabelRemoveFocus.setEnabled(true);
         jLabel4.setEnabled(true);
         jTabbedPane1.setEnabledAt(2,true);
+        jDialogLevel.dispose();
+        jDialog3.setLocationRelativeTo(null);
+        jDialog3.setVisible(true);
     
     }
 }
+    
+
     
 
     private void jButtonBrowseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBrowseActionPerformed
@@ -6590,8 +6659,8 @@ private void checkStatus(){
         if(jMenu6.getText()=="Level"){
         // Choix du level
         jDialogLevel.pack();
-        jDialogLevel.setLocationRelativeTo(null); 
         jDialogLevel.setVisible(true);
+
         verified_level = jLevelCombo.getSelectedIndex() + 1;
         UpdateLevel();
         jButton7.requestFocus();
@@ -6601,6 +6670,8 @@ private void checkStatus(){
         jButtonOk3.requestFocus();  
         jButtonOk4.requestFocus();  
    
+
+        verified_level = jLevelCombo.getSelectedIndex() + 1 ;
         }
         else{
             if(null!=jMenu6.getText())switch (jMenu6.getText()) {
@@ -6617,6 +6688,10 @@ private void checkStatus(){
                     break;
             }
         }
+
+
+               
+
             switch (verified_level) {
                 case 1:
                     // Vider tous les Panels sauf CONNECTION
@@ -7323,7 +7398,10 @@ private void checkStatus(){
         {
         }
     }//GEN-LAST:event_jButtonSoftReset3ActionPerformed
-
+    private void jLabelActiveState2PropertyChange(java.beans.PropertyChangeEvent evt){
+        
+        
+    }
     private void jButtonKillAlarm4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonKillAlarm4ActionPerformed
         try
         {
@@ -7360,11 +7438,15 @@ private void checkStatus(){
         
     }//GEN-LAST:event_jLabelActiveStatePropertyChange
 
-    private void jLabelActiveState2PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jLabelActiveState2PropertyChange
-        // TODO add your handling code here:
-       
-    }//GEN-LAST:event_jLabelActiveState2PropertyChange
+    private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
+        jDialog3.dispose();
+        jDialogLevel.dispose();
+        jDialogLevel.dispose();
+    }//GEN-LAST:event_jButton26ActionPerformed
 
+    private void formComponentResized(java.awt.event.ComponentEvent evt) {                                      
+
+    }
     private void jCheckBoxEnableGCodeLog1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBoxEnableGCodeLog1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jCheckBoxEnableGCodeLog1ActionPerformed
@@ -7699,6 +7781,14 @@ private void checkStatus(){
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonCancel8ActionPerformed
 
+    private void JDialogLimitationsMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JDialogLimitationsMouseDragged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_JDialogLimitationsMouseDragged
+    private void formMouseDragged(java.awt.event.MouseEvent evt){
+        
+        
+    }
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JDialog JDialogLimitations;
@@ -7714,6 +7804,7 @@ private void checkStatus(){
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton24;
     private javax.swing.JButton jButton25;
+    private javax.swing.JButton jButton26;
     private javax.swing.JButton jButton27;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
@@ -7813,6 +7904,7 @@ private void checkStatus(){
     private javax.swing.JButton jConfirmerBoutton;
     private javax.swing.JDialog jDialog1;
     private javax.swing.JDialog jDialog2;
+    private javax.swing.JDialog jDialog3;
     private javax.swing.JDialog jDialogAskTuto;
     private javax.swing.JDialog jDialogGSender;
     private javax.swing.JDialog jDialogImportGCode;
@@ -7996,6 +8088,7 @@ private void checkStatus(){
     private javax.swing.JPanel jPanel29;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel30;
+    private javax.swing.JPanel jPanel31;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
